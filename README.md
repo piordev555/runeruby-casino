@@ -1,21 +1,9 @@
-<p align="center">
-  <img src="resources/img/misc/win5x_logo_black.png" alt="Win5X Logo">
-</p>
-<p align="center">
-    <img src="https://img.shields.io/static/v1.svg?label=version&message=3.7.0/RR&color=black">
-</p>
+# Runeruby-casino
+![Screenshot_1](https://user-images.githubusercontent.com/103172597/165888849-8a99ae94-47eb-4c5a-8f29-9cdadc2a2ef9.png)
 
 # Installation
 
 ## WebSockets Setup
-
-Install **fork** of `laravel-echo-server`:
-
-```
-npm install -g laravel-echo-server-whisper
-```
-
-- If NPM repository is down, install it from [https://github.com/RuneRuby-Team/laravel-echo-server](https://github.com/RuneRuby-Team/laravel-echo-server)
 
 ### Private Keys & WS Encryption
 
@@ -160,7 +148,6 @@ Full synchronization may take up to 1 week with average of 3 days depending on s
 ./start.sh is located in geth folder.
 
 Ethereum lightclient node needs peers to work properly.
-You may find them [here](https://gist.github.com/rfikki/e2a8c47f4460668557b1e3ec8bae9c11).
 
 Run ```web3.js``` in project root to process Ethereum payments.
 ```
@@ -224,7 +211,7 @@ Store ETH and TRX addresses/private keys in text file manually.**
 
 ## Multiplayer games
 
-First step is to [setup supervisor](https://laravel.com/docs/7.x/queues#supervisor-configuration).
+First step is to setup supervisor.
 
 After setup is complete you should start the chain so the game would work infinitely (```php artisan game:chain <game_id>```).
 
