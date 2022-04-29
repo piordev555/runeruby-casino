@@ -1,0 +1,151 @@
+// 
+// pages-rtl.scss
+//
+
+
+// Left Timelime
+
+.left-timeline {
+    .events{
+        padding-left: 0;
+        padding-right: 35px;
+        border-left: 0;
+        border-right: 3px solid $gray-300;
+        .event-list{
+            &:before{
+                right: -45px;
+            }
+            &:after{
+                right: -38px;
+            }
+        }
+    }
+}
+
+
+// email
+.email-contaier {
+
+    .inbox-leftbar {
+        float: right;
+    }
+
+    .inbox-rightbar {
+        margin-left: 0px;
+        margin-right: 250px;
+        border-right: 5px solid $body-bg;
+        border-left: 0;
+        padding: 0 25px 1.5rem 0;
+    }
+}
+
+.message-list {
+    display: block;
+    padding-right: 0;
+    li {
+        .col-mail {
+            float: right;
+        }
+        .col-mail-1 {
+            width: 320px;
+            .star-toggle,
+            .checkbox-wrapper-mail,
+            .dot {
+                float: right;
+            }
+            .checkbox-wrapper-mail {
+                margin: 15px 20px 0 10px;
+            }
+            .star-toggle {
+                margin-right: 10px;
+                margin-left: 0;
+            }
+            .title {
+                right: 100px;
+                left: 0;
+            }
+        }
+        .col-mail-2 {
+            right: 320px;
+            left: 0;
+            .subject {
+                right: 0;
+                left: 110px;
+            }
+            .date {
+                left: 0;
+                right: auto;
+                padding-right: 10px;
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+.chatbox{
+    right: auto;
+    left: 35px;
+}
+
+@media (max-width: 648px) {
+    .email-contaier {
+        .inbox-rightbar {
+            margin-right: 0;
+            border: 0;
+            padding-right: 0;
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .message-list li {
+        .col-mail-1 {
+            width: 150px;
+            .title {
+                right: 80px;
+            }
+        }
+        .col-mail-2 {
+            right: 160px;
+            .date {
+                text-align: left;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+        }
+    }
+}
+
+// tasklist
+
+.task-search {
+    .search-input{
+        padding-left: 12px;
+        padding-right: 32px;
+    }
+    .icon-search{
+        right: 10px;
+        left: auto;
+    }
+}
+
+.tasks{
+    &.tasks:not(:last-child) {
+        margin-right: 0;
+        margin-left: 1.25rem;
+    }
+}
+
+// authentication
+
+.authentication-form{
+    .form-group{
+        .form-control{
+            padding-right: 48px;
+        }
+        .form-label-icon{
+            left: auto;
+            right: 7px;
+        }
+    }
+}

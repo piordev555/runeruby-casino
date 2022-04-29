@@ -1,0 +1,71 @@
+//
+// summernote.scss
+//
+//D:\xampp\htdocs\resources\js\components\views\admin
+@font-face {
+  font-family: "summernote";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../../../sass/admin/custom/fonts/summernote.eot");
+  src: url("../../../../sass/admin/custom/fonts/summernote.eot?#iefix") format("embedded-opentype"),
+  url("../../../../sass/admin/custom/fonts/summernote.woff?") format("woff"),
+  url("../../../../sass/admin/custom/fonts/summernote.ttf?") format("truetype")
+}
+
+
+.note-editor{
+  &.note-frame {
+    border: 2px solid lighten($gray-200, 4%);
+    box-shadow: none;
+    margin: 0;
+
+    .note-statusbar {
+      background-color: lighten($gray-200,2%);
+      border-top: 1px solid lighten($gray-200, 4%);
+    }
+
+    .note-editing-area{
+      .note-editable {
+        border: none;
+        color: $gray-600;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+
+.note-status-output {
+  display: none;
+}
+
+.note-editable {
+  border-radius: $input-border-radius;
+  padding: $input-padding-y $input-padding-x;
+
+  p {
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.note-popover .popover-content .note-color .dropdown-menu,
+.card-header.note-toolbar .note-color .dropdown-menu {
+    min-width: 344px;
+}
+
+.note-popover{
+  border-color: $gray-300;
+}
+
+.note-popover .popover-content,
+.card-header.note-toolbar{
+  background-color: $gray-300;
+}
+
+.note-toolbar {
+   z-index: 1;
+   background-color: transparent !important;
+   border-bottom: 2px solid lighten($gray-200, 4%);
+}

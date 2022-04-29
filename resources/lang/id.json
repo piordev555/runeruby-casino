@@ -1,0 +1,897 @@
+{
+    "third-party": {
+        "unavailable_currency": "Maaf, tapi Anda tidak bisa bermain dengan mata uang ini.",
+        "guest": "Anda harus masuk untuk memainkan game ini."
+    },
+    "bonus":{
+        "vip":{
+            "title":"VIP",
+            "description":"ASebagai anggota dari program VIP, Anda berhak mendapatkan bonus VIP mingguan. Ketahui lebih lanjut program ini!",
+            "unavailable_description":"Semua anggota program VIP berhak mendapatkan bonus mingguan."
+        },
+        "wheel":{
+            "description":"Putar roda setiap 3 menit!",
+            "title":"roda"
+        },
+        "promo":{
+            "description":"Punya kode? Tukarkan dan dapatkan bonus!",
+            "activate":"Aktifkan",
+            "title":"Kod promosi",
+            "placeholder":"Kode",
+            "success":"Berhasil",
+            "invalid":"Kode tidak valid",
+            "expired_time":"Kode tidak valid.",
+            "expired_usages":"Kode tidak valid: melewati batas aktivasi.",
+            "used":"Anda sudah menggunakan kode ini."
+        },
+        "partner":{
+            "title":"Program Afiliasi",
+            "description":"Jemput rakan anda ke runeruby.com dan dapatkan bonus untuk 10 rujukan aktif!"
+        },
+        "rain":{
+            "description":"Setiap beberapa jam, sebuah peristiwa diadakan di obrolan yang akan membagikan bonus ke orang-orang secara acak.",
+            "title":"Hujan",
+            "modal_description":"Hujan adalah chatbot yang membagikan koin ke orang-orang secara acak. <br> Kriteria untuk bisa masuk di Hujan:<ul class=\"mt-2\"><li>Wajib menyetor dalam 24 jam terakhir</li><li>Bot ini akan mengirimkan sejumlah koin secara acak pada waktu yang juga acak (jumlah pembagian minimal adalah 10, dan maksimal 20 per harinya)</li><li>Jumlah orang - dari 5 hingga 15</li></ul>"
+        },
+        "discord":{
+            "title":"Discord",
+            "common_desc":"Gabung server Discord kami dan dapatkan bonus!",
+            "description":"Gabung server Discord kami dan dapatkan bonus!",
+            "redirect":"Tautkan akun",
+            "link":"Untuk mendapatkan bonus, Anda harus:<ul><li>Menautkan akun Discord Anda</li><li>Gabung server Discord kami</li></ul>Setelah menautkan akun Discord Anda dan bergabung di server, kembali ke halaman ini dan klik tombol \"Verifikasi\"",
+            "subscribe":"Gabung server Discord kami untuk mendapatkan bonus.<br>Setelah bergabung, klik tombol \"Verifikasi\" dan bonusnya akan diberikan secara langsung!",
+            "check":"Verifikasi",
+            "redirect_group":"Gabung server Discord kami",
+            "success":"Berhasil!",
+            "error":{
+                "1":"Anda belum bergabung di server Discord kami.",
+                "2":"Anda sudah menerima bonus ini."
+            }
+        },
+        "notifications":{
+            "title":"Notifikasi",
+            "description":"Nyalakan notifikasi dan dapatkan informasi terbaru tentang runeruby.com!"
+        }
+    },
+    "footer":{
+        "accepted_currencies": "Mata Uang yang Diterima",
+        "need_help": "Butuh bantuan?",
+        "terms_and_conditions": "Syarat & Ketentuan",
+        "bonus": "Syarat dan Ketentuan Bonus",
+        "privacy_policy": "Kebijakan pribadi",
+        "affiliates": "Afiliasi"
+    },
+    "chat":{
+        "error":{
+            "length":"Pesan terlalu pendek atau panjang",
+            "muted":"Obrolan dibisukan"
+        }
+    },
+    "dice":{
+        "lower":"Lebih rendah",
+        "higher":"Lebih tinggi",
+        "chance":"Peluang"
+    },
+    "error":{
+        "code":"Terjadi kesalahan server internal ({code})",
+        "wait_finish":"Tunggu permainan berakhir",
+        "validation":{
+            "required":"Isi bagian ini",
+            "min":{
+                "string":"Nilai terlalu kecil"
+            },
+            "max":{
+                "string":"Nilai terlalu besar"
+            },
+            "unique":"Nilai ini sudah diregistrasikan",
+            "regex":"Nilai tidak valid"
+        },
+        "invalid_browser":"<h1>Browser web Anda sudah ketinggalan zaman.</h1>Untuk bermain di runeruby.com, Anda perlu memperbarui ke versi terbaru.",
+        "no_js":"<h1>Error</h1>Browser web Anda tidak mendukung JavaScript."
+    },
+    "fairness":{
+        "title": "Keadilan",
+        "tabs":{
+            "overview":"Ringkasan",
+            "dev":"Penerapan",
+            "transform":"Konversi",
+            "events":"Peristiwa permainan",
+            "calculator":"Kalkulator"
+        },
+        "overview":{
+            "1":"<h6>Memecahkan Masalah Kepercayaan dengan Judi Online</h6><p>Konsep dasar dari keadilan yang dapat dibuktikan adalah para pemain memiliki kemampuan untuk membuktikan dan memverifikasi bahwa hasil mereka adil dan tidak dimanipulasi. Hal ini dicapai melalui penggunaan skema komitmen, bersama dengan algoritma kriptografi.</p><p>Skema komitmen digunakan untuk memastikan bahwa pemain memiliki pengaruh pada semua hasil yang diciptakan. Algoritma kriptografi digunakan untuk memastikan bahwa kasino juga tetap jujur pada skema komitmen ini. Kedua konsep ini digabungkan menciptakan lingkungan yang dapat dipercaya ketika berjudi online.</p><p>Hal ini disederhanakan di representasi berikut:</p>"
+        },
+        "dev":{
+            "1":"<h6> Pembuatan Nomor Acak </h6><p> Untuk setiap taruhan yang diperiksa, kami menggunakan: sumber klien, sumber server, kesempatan dan kursor sebagai parameter untuk fungsi pembuatan nomor acak. The function uses the <strong> HMAC_SHA256 </strong> cryptographic hash to generate bytes, which are then used as the basis for how we generate reliably random results on our platform. </p> ",
+            "2":"<h6 class=\"mt-4\"> Benih pelayan </h6>Sumber server dihasilkan oleh sistem kami dalam bentuk rangkaian acak dari 32 karakter sebelum dimulainya permainan, yang tidak bisa Anda ketahui hingga itu selesai. Alasan kami tidak memberikan sumber server setiap saat adalah karena jika begitu pemain akan dapat menghitung hasil dari permainan terlebih dahulu.<h6 class=\"mt-4\"> Benih pelanggan </h6>Sumber klien dimiliki oleh pemain dan digunakan untuk memastikan bahwa pemain juga berpengaruh dalam penciptaan hasil yang acak. Tanpa komponen ini dalam algoritma, hanya sumber dari server yang akan memiliki pengaruh total dalam hasil setiap taruhan. Semua pemain bebas untuk mengedit dan mengubah sisi klien mereka secara reguler untuk menciptakan rantai baru dalam penciptaan hasil mendatang. Hal ini memastikan bahwa pemain memiliki kendali penuh dalam penciptaan hasil, seperti mengocok kartu di kasino biasa. Saat registrasi, browser Anda membuat sumber klien untuk memastikan operasi yang lancar dalam situs ini. Meskipun sumber klien yang diciptakan secara acak ini dianggap tepat, kami sangat merekomendasikan Anda untuk memilihnya sendiri sehingga pengaruh Anda dimasukkan dalam pengacakan. Anda bisa melakukan ini di pengaturan profil.<h6 class=\"mt-4\"> Kesempatan </h6>Kesempatan adalah sebuah nomor yang bertambah 1 dengan setiap taruhan baru yang Anda lakukan. Dikarenakan oleh kekhasan dari fungsi kriptografi SHA256, hasil yang benar-benar baru akan diciptakan setiap saat. The implementation of nonce ensures that we remain committed to your client and server pair, while at the same time generating new results for every bet made.<h6 class=\"mt-4\"> Cursor </h6>We use 4 bytes of data to generate one game result. Since SHA256 is limited to 32 bytes, we use this cursor implementation to enable us to create more game events without having to change our provable honesty algorithm. The cursor is iterated only when the game requires more than 8 (32 bytes / 4 bytes) possible results. For example: when we need to use more than 8 cards in a blackjack game. The cursor starts at 0 and increments by 1 each time 32 bytes are returned by the HMAC_SHA256 function. If we do not need more than 8 random numbers to be generated for game events, the cursor does not increase because there is no need to generate any additional possible game results. "
+        },
+        "transform":{
+            "1":"<h6>Byte titik mengambang</h6><p>Hasil dari fungsi pembuat nomor acak (byteGenerator) adalah hash 32-byte heksadesimal. Seperti dijelaskan di penerapan kursor, kami menggunakan 4 byte data untuk menciptakan hasil dari satu permainan. Setiap set 4 byte digunakan untuk menciptakan nilai titik mengambang dimulai dari 0 hingga 1 (4 byte digunakan daripada 1 agar dapat menyediakan tingkat akurasi yang lebih tinggi ketika menciptakan angka titik mengambang.) Dengan penciptaan nomor ini kami mendapatkan hasil resmi dari algoritma kejujuran yang dapat dibuktikan sebelum ini diwujudkan di peristiwa permainan. </p> ",
+            "2":"<h6 class=\"mt-4\"> Angka titik mengambang di peristiwa permainan </h6><p> Karena proses pembuatan nomor acak itu universal untuk semua permainan kami. Dalam tahap pembuatan hasil permainan inilah prosedur unik diterapkan yang memungkinkan Anda untuk menentukan pemindahan dari angka titik mengambang ke dalam permainan. Hasil yang acak dikalikan dengan sisa kemungkinan hasil di dalam permainan tertentu. Contohnya: dalam permainan yang menggunakan 52 kartu, ini bisa dilakukan dengan mengkalikan angka tersebut dengan 52. Hasil dari perhitungan ini kemudian dikonversi ke peristiwa permainan yang sesuai. Untuk permainan dimana beberapa peristiwa permainan diperlukan, proses ini dilanjutkan setiap 4 byte di rantai hasil, yang diciptakan menggunakan fungsi dari byteGenerator. </p> <h6 class=\"mt-4\"> Pengacakan peristiwa permainan </h6>  <p> Untuk permainan seperti Keno, Mines, dan Video Poker, dimana hasilnya tidak bisa diduplikasikan, kami menggunakan algoritma pengocokan acak <a href=\"https://en.wikipedia.org/wiki/Fisher%E2%80% 93Yates_shuffle\" target=\"_blank\"> Fisher Yates </a>. </p> "
+        },
+        "events":{
+            "1":"<p> Peristiwa permainan adalah perwujudan dari pembuatan nomor acak ke dalam hasil dari kejadian di dalam game tertentu. Ini termasuk semuanya dimulai dari hasil lemparan dadu hingga urutan kartu, atau bahkan lokasi setiap bom di permainan Mines. Berikut adalah penjelasan rinci tentang cara kami mewujudkan nomor ke peristiwa untuk setiap permainan tertentu di platform kami. </p> <h6> Blackjack, Hilo & Bakarat </h6> <p> Ada 52 kemungkinan hasil unik dalam satu set kartu: </p> ",
+            "2":"<h6> Wajik </h6><p> Ketika bermain Wajik, ada 7 kemungkinan hasil dalam bentuk wajik. Untuk mencapai ini, kami mengkalikan setiap angka titik-mengambang dengan 7, kemudian mewujudkannya ke dalam wajik yang sesuai: </p> ",
+            "3":"<p> Lalu pemain menerima 5 wajik. </p><h6> Dadu </h6><p> Dalam permainan Dadu versi kami, kami mencakup kemungkinan penyebaran lemparan dari 00,00 hingga 100,00, yang memiliki jangkauan 10.001 kemungkinan hasil. Perwujudan dari peristiwa permainan dilakukan dengan mengkalikan angka titik-mengambang dengan jumlah kemungkinan hasil, lalu dibagi dengan 100 sehingga hasil angkanya cocok dengan batasan jangkauan dadu kami. </p> ",
+            "4":"<h6> Limbo </h6> <p> Dalam hal Limbo, kami menggunakan proses dua-langkah. Pertama, kami ambil angka dan mengkalikannya dengan kemungkinan pengali maksimal dan dengan % keunggulan kasino. Lalu, untuk menciptakan peristiwa permainan menggunakan <a href=\"https://en.wikipedia.org/wiki/Probability_distribution\" target=\"_blank\"> distribusi kemungkinan </a>, kami membagi faktor kemungkinan maksimal dengan hasil dari langkah pertama untuk menciptakan peristiwa permainan dalam bentuk koefisien akhir. </p> ",
+            "5":"<h6> Plinko </h6><p> Untuk permainan Plinko, hasil yang diciptakan itu berdasarkan dari bola akan jatuh ke sel yang mana. </p> ",
+            "6":"<h6> Rolet </h6><p> Permainan rolet kami diambil dari versi Eropa, dimana rodanya berisikan 37 kemungkinan saku dimulai dari 0 hingga 36. Peristiwa permainan dihitung dengan mengkalikan angka dengan 37, lalu mentransfernya ke saku yang tepat: </p> ",
+            "7":"<h6> Keno </h6> <p> Permainan Keno tradisional membutuhkan pilihan dari 10 kemungkinan peristiwa permainan dalam bentuk sel di atas papan permainan. Untuk mencapai ini, kami mengkalikan setiap angka titik-mengambang dengan jumlah kemungkinan kotak unik. </p> ",
+            "8":"<p> Penerapan dari urutan acak Fisher-Yates digunakan untuk mencegah duplikasi kemungkinan kena. </p><h6> Mines </h6><p> Mines berisikan 24 peristiwa permainan terpisah dalam bentuk mines (bom) di papan permainan. Setiap angka dikalikan dengan jumlah kemungkinan ubin unik yang masih tersisa di papan. Lokasi sel disusun menggunakan posisi kisi dari kiri ke kanan, dari atas ke bawah. Penerapan dari urutan acak Fisher-Yates digunakan untuk mencegah duplikasi kemungkinan kena. Berdasarkan pengaturan yang dipilih, 2 hingga 24 hasil dari peristiwa permainan digunakan. </p><h6> Video Poker </h6><p> Memainkan Video Poker berisi 52 peristiwa permainan tersendiri dalam bentuk kartu dalam satu set. Setiap angka dikalikan dengan jumlah kemungkinan kartu yang masih tersisa di dalam set. </p> ",
+            "9":"<p> Penerapan dari urutan acak Fisher-Yates digunakan untuk mencegah duplikasi kemungkinan kena. </p>"
+        },
+        "calculator":{
+            "game":"Permainan",
+            "client_seed":"Sumber klien",
+            "nonce":"Kesempatan",
+            "server_seed":"Sumber server",
+            "result":"Hasil"
+        }
+    },
+    "game_help":{
+        "next":"Selanjutnya",
+        "close":"Tutup",
+        "dice":{
+            "1":"Atur slider peluang menang dan klik \"Main\", untuk menciptakan hasil dari 0 - 100",
+            "2":"Jika itu jatuh di zona hijau yang Anda pilih - Anda menang!"
+        },
+        "wheel":{
+            "1":"Pilih mode permainan, bertaruh pada warna dan tekan \"Main\"",
+            "2":"Jika roda berhenti pada sektor warna yang telah Anda pilih, Anda menang!"
+        },
+        "x50":{
+            "1":"Pilih mod permainan, bertaruh pada warna dan tekan \"Main\"",
+            "2":"Sekiranya roda berhenti di sektor warna yang anda pilih, anda menang!"
+        },
+        "plinko":{
+            "1":"Tempatkan taruhan, pilih tingkat kesulitan permainan dan jumlah pin, dan klik \"Main\"",
+            "2":"Semakin rumit permainan dan jumlah pin, semakin tinggi peluang menang maksimum dan minimum",
+            "3":"Hadiah Anda ditentukan oleh rasio menang, bergantung pada letak bola jatuh"
+        },
+        "keno":{
+            "1":"Pilih sell dengan nomor dari 1 hingga 10, tempatkan taruhan dan klik \"Main\"",
+            "2":"Lalu sistem akan memilih 10 nomor secara acak. Semakin banyak nomor Anda yang dipilih, semakin banyak keuntungan!"
+        },
+        "mines":{
+            "1":"Tempatkan taruhan, pilih jumlah bom dan klik \"Main\"",
+            "2":"Semakin banyak bom di lapangan, semakin tinggi rasio menang.",
+            "3":"Cari batu, tapi hati-hati dengan bom!",
+            "4":"Dapatkan kemenangan sebelum Anda mendetonasikan bom dan kalah taruhan!"
+        },
+        "diamonds":{
+            "1":"Dapatkan kombinasi wajik terbaik untuk menang.",
+            "2":"Kombinasi terbaik adalah 5 wajik identik.",
+            "3":"Tingkatan kombinasi serupa dengan poker tradisional."
+        },
+        "coinflip":{
+            "1":"Tempatkan taruhan dan klik \"Main\" dan tebak warna apa yang akan jatuh.",
+            "2":"Anda bisa menebak koin sebanyak mungkin setiap permainan, semua koefisien akan ditambahkan."
+        },
+        "blackjack":{
+            "1":"Tempatkan taruhan, setelah itu Anda dan dealer (pembagi kartu) akan diberikan 2 kartu.",
+            "2":"Lalu Anda bisa mengambil kartu tambahan atau berhenti dan tidak merubah kartu yang ada di tangan Anda.",
+            "3":"Dengan mengklik \"Dobel\" Anda menggandakan taruhan Anda dan mengambil satu kartu terakhir.",
+            "4":"Asuransi tersedia hanya jika kartu pertama dealer adalah As dan ini mengasuransikan Anda dari dealer yang mendapatkan blackjack.",
+            "5":"Pemenang adalah yang mendapatkan kartu terdekat ke 21. Jika Anda dan dealer memiliki jumlah yang sama - artinya seri."
+        },
+        "roulette":{
+            "1":"Masukkan cip pada hasil permainan apa pun dan klik \"Main\".",
+            "2":"Jika Anda menebak hasilnya dengan benar, Anda menggandakan taruhan Anda."
+        },
+        "baccarat":{
+            "1":"Anda bisa bertaruh pada kemenangan seorang pemain, bankir atau seri baik secara individu atau kombinasi apa pun.",
+            "2":"Kemenangan ditentukan oleh pihak dengan poin terdekat ke 9. Ketika nilai yang didapat adalah 10 atau lebih, hanya digit kedua dari nomor 2-digit yang akan dihitung.",
+            "3":"Jika taruhan individu pada pemain atau bankir kedua pihak mendapatkan poin yang sama, maka hasilnya seri.",
+            "4":"Pembagian kartu maksimal pada satu tangan adalah 3 kartu. Minimal 2 jika jumlah poin mereka adalah 5 atau lebih."
+        },
+        "hilo":{
+            "1":"Tebak jika kartu selanjutnya akan lebih tinggi atau lebih rendah dari kartu sebelumnya.",
+            "2":"Buka kartu sebanyak-banyaknya, peluang akan ditambahkan. Anda bisa berhenti kapan saja dan mengambil keuntungan."
+        },
+        "limbo":{
+            "1":"Untuk menang, rasio pembayaran target yang ditentukan harus lebih rendah dari yang jatuh keluar dari permainan.",
+            "2":"Rasio target maksimal adalah 1.000.000."
+        },
+        "crash":{
+            "1":"Siapkan taruhan, klik \"Main\" dan tonton bagaimana jadwalnya tumbuh",
+            "2":"Tarik uang sebelum grafiknya turun dan jangan sampai kalah taruhan."
+        },
+        "stairs":{
+            "1":"Tempatkan taruhan, pilih jumlah batu untuk setiap gerakan dan klik \"Main\"",
+            "2":"Naik tangga, hati-hati dengan batu yang berjatuhan! Semakin tinggi Anda naik, semakin banyak keuntungan yang diperoleh.",
+            "3":"Anda bisa mendapatkan kemenangan kapan saja atau terus melanjutkan 13 gerakan dan dapatkan hadiah maksimum."
+        },
+        "tower":{
+            "1":"Tempatkan taruhan, pilih jumlah bom dan klik \"Main\"",
+            "2":"Cari batu yang bergerak dari atas ke bawah, tapi hati-hati dengan bom!",
+            "3":"Dapatkan kemenangan sebelum Anda mendetonasikan bom dan kalah taruhan!"
+        },
+        "videopoker":{
+            "1":"Tempatkan taruhan dan klik \"Main\"",
+            "2":"Anda akan diberikan 5 kartu. Anda bisa meninggalkan kartu yang Anda perlukan dengan mengkliknya. Untuk mengakhiri permainan, klik \"Bagikan kartu\"",
+            "3":"Jika kombinasinya sama dengan yang ditunjukkan di meja, Anda menang dan menggandakan taruhan Anda."
+        },
+        "bullvsbear":{
+            "1":"Setiap permainan dimulai dengan menentukan 'Harga Strike Game' dengan mengambil harga rata-rata dari koin yang dipilih. Kami tidak menggunakan oracle harga, tetapi kami menarik harga pasar langsung dari Price Websocket API Coinbase. Angka inilah yang akan digunakan trader untuk bertaruh pada fase berikutnya untuk memprediksi apakah harga pasar akan berada di atas atau di bawah \"Harga Strike Game\" di akhir setiap game.",
+            "2":"Setelah Harga Strike Game telah ditetapkan, pemain memiliki satu menit untuk bertaruh apakah harga pasar di akhir setiap game akan berada di atas atau di bawah angka ini. Semua taruhan ditempatkan dalam dua pool, mereka yang memprediksi harga akan berada di atas, dan mereka yang memprediksi harga akan berada di bawah.",
+            "3":"Di akhir setiap permainan, taruhan pihak yang kalah dikumpulkan dan didistribusikan kepada pemenang secara proporsional. Jika seorang pemain bertaruh lebih banyak daripada pemenang lainnya, dia akan menerima lebih banyak pool. Sekarang jika seorang pemain kalah, kerugiannya juga sebanding dengan besarnya, artinya jika seorang pemain bertaruh lebih banyak dari pemain lain, dalam situasi ini pemain tersebut tidak akan kehilangan seluruh taruhannya, hanya sebagian kecil..",
+            "4":"Kami ingin menghindari memberikan keuntungan yang signifikan kepada penggerak terakhir, oleh karena itu kami menerapkan faktor keuntungan yang mengurangi waktu untuk memberi insentif pada taruhan yang cepat - memberikan keuntungan (atau kemenangan) penggerak awal yang lebih baik dan mencegah orang-orang dari bertaruh di akhir ronde. Sebagai seorang trader, Anda dapat mengawasi volatilitas saat ini dan membuat taruhan Anda dengan menunggu sedikit lebih lama dan mengambil keuntungan yang lebih sedikit tetapi dengan probabilitas yang lebih tinggi, atau sebaliknya, bertaruh lebih awal dengan potensi keuntungan yang lebih tinggi tetapi probabilitas yang lebih rendah untuk memenangkan permainan.",
+            "5":"Setiap ronde pertaruhan berdurasi 90 detik dan dimulai pada pembayaran x5.00. Ini menurun dari waktu ke waktu sampai menjadi x1.01"
+        }
+    },
+    "general":{
+        "language":"Indonesia",
+        "head":{
+            "index":"Beranda",
+            "description":"Judi online dengan bonus untuk pemain baru",
+            "games":"Permainan",
+            "help":"Bantuan",
+            "wallet":"Setor",
+            "wallet_open_demo":"Demo",
+            "wallet_real":"Real",
+            "wallet_demo":"Demo",
+            "chat":"Obrolan",
+            "admin":"Administrasi",
+            "bonus":"Keran",
+            "bonus_short":"Bonus",
+            "theme":"Tema",
+            "profile":"Profil",
+            "logout":"Keluar",
+            "invest":"Bankroll"
+        },
+        "sidebar":{
+            "admin": "Admin",
+            "favorite": "Favorit",
+            "recent": "Baru",
+            "originals": "Asli",
+            "slots": "Slot",
+            "multiplayer": "Multiplayer",
+            "blackjack": "Selikuran",
+            "poker": "Poker",
+            "table": "Permainan Meja",
+            "instant": "Instan",
+            "roulette": "Rolet",
+            "baccarat": "Baccarat",
+            "evo-play": "Penyedia: EvoPlay",
+            "no_games": "Kategori ini kosong",
+            "mark_as_favorite": "Tandai sebagai favorit",
+            "remove_from_favorite": "Hapus dari favorit"
+        },
+        "chat_commands":{
+            "/user":"Lihat pengguna",
+            "/bet":"Lihat taruhan",
+            "/ignore":"Abaikan pengguna",
+            "/unignore":"Berhenti mengabaikan pengguna",
+            "/tip":"Tip pengguna",
+            "/rain":"Buat Hujan",
+            "modal":{
+                "rain":{
+                    "amount":"Jumlah",
+                    "number_of_users":"Jumlah Pengguna (Maks 25)",
+                    "send":"Kirim Hujan",
+                    "invalid_users_length":"Jumlah pengguna tidak valid",
+                    "invalid_amount":"Jumlah tidak valid"
+                },
+                "tip":{
+                    "amount":"Jumlah",
+                    "send":"Kirim Tip",
+                    "user":"Nama pengguna",
+                    "make_public":"Buat tip publik (akan terlihat di obrolan global)",
+                    "invalid_name":"Nama pengguna tidak valid",
+                    "invalid_amount":"Jumlah tidak valid",
+                    "notify":"{name} memberimu tip {value} <i class=\"{icon}\" style=\"color: {style}\"></i>"
+                }
+            }
+        },
+        "biggest_winner_today": "Pemenang terbesar hari ini",
+        "tip":"Tip",
+        "tip_chat":"<a href=\"{link}\">{name}</a> mengirimkan {value} <i class=\"{icon}\" style=\"color: {style}\"></i> ke <a href=\"{tolink}\">{toname}</a>",
+        "or": "ATAU",
+        "wallet":{
+            "demo":{
+                "error":"Saldo demo Anda harus kosong",
+                "obtain":"Terima saldo demo"
+            }
+        },
+        "demo":{
+            "title":"Perhatian",
+            "description":"Registrasi diperlukan jika Anda ingin bermain dengan saldo asli.",
+            "register":"Daftar"
+        },
+        "chat":{
+            "enter_message":"Ketik pesan Anda..."
+        },
+        "auth":{
+            "login":"Masuk",
+            "register":"Daftar",
+            "through_login":"Masuk dan kata sandi",
+            "through_social":"Jejaring sosial",
+            "wrong_credentials":"Nama atau kata sandi salah",
+            "credentials":{
+                "login":"Masuk",
+                "password":"Kata sandi",
+                "email":"Email"
+            },
+            "create_account":"Buat akun",
+            "forgot_password":"Lupa kata sandi?",
+            "notice":"Saya mengonfirmasi bahwa saya berusia lebih dari 18 tahun dan saya menerima persyaratan layanan runeruby.com"
+        },
+        "profile":{
+            "password_changed":"Kata sandi telah diubah",
+            "general":"Umum",
+            "login":"Masuk",
+            "password":"Kata sandi",
+            "password_current":"Kata sandi saat ini",
+            "password_new":"Kata sandi baru",
+            "password_repeat":"Setujui password",
+            "password_reset":"Reset",
+            "security":"Keamanan",
+            "email":"Email",
+            "update":"Pembaruan",
+            "verify_email":"Email dengan link konfirmasi telah dikirim ke alamat Anda.",
+            "invalid_email":"Email tidak valid",
+            "settings":"Pengaturan",
+            "wager":"Ditaruhkan",
+            "games":"Total permainan",
+            "best_mul":"Pembayaran terbaik",
+            "best_win":"Keuntungan terbaik",
+            "incognito":"Pengguna menyembunyikan profil mereka",
+            "set_private_profile":"Sembunyikan profil Anda",
+            "set_private_bets":"Sembunyikan taruhan Anda",
+            "empty":"Data tidak cukup untuk ditampilkan",
+            "privacy":"Privasi",
+            "fairness":"Kejujuran",
+            "client_seed":"Sumber klien",
+            "change":"Ubah",
+            "change_avatar":"Ubah avatar",
+            "avatar":"Avatar",
+            "stats":"Statistik",
+            "latest_games":"Permainan terbaru",
+            "vip":"VIP",
+            "partner":"Program afiliasi",
+            "change_name":"Ubah nama",
+            "new_name":"Nama baru",
+            "social":"Akun yang ditautkan",
+            "vk":"VKontakte",
+            "fb":"Facebook",
+            "google":"Google",
+            "discord":"Discord",
+            "steam":"Steam",
+            "link":"Tautkan",
+            "linked":"Ditautkan",
+            "somebody_already_linked":"Akun jejaring sosial ini telah ditautkan ke akun runeruby.com lain",
+            "link_discord":"Untuk mengakses kode promo VIP dan peran di server Discord, Anda perlu menautkan akun Anda.",
+            "discord_vip":"Gabung server Discord kami dan dapatkan kode promo VIP!",
+            "discord_vip_ok":"Perbarui peran di server",
+            "vip_discord_updated":"Peran di server Discord telah diperbarui.",
+            "bets":"Taruhan",
+            "wins":"Menang",
+            "losses":"Kalah",
+            "wagered":"Ditaruhkan",
+            "total_profit":"Jumlah keuntungan",
+            "2fa":"2FA",
+            "keep_secure":"Jangan sampai ini dilihat siapapun!",
+            "copy_this_to_2fa":"Salin kode ini ke aplikasi autentikator Anda",
+            "2fa_code":"Kode 2 Faktor",
+            "2fa_enable":"Aktifkan",
+            "error_2fa":"Kode 2FA tidak valid",
+            "2fa_enabled":"2FA telah diaktifkan di akun Anda.",
+            "disable_2fa":"Matikan 2FA",
+            "2fa_validate":"Validasi",
+            "2fa_description":"Masukkan kode 6-digit dari aplikasi 2 faktor autentikator Anda",
+            "2fa_digits":":digits sisa digit",
+            "profit":"Keuntungan",
+            "games_c":"Permainan:",
+            "chart":{
+                "today":"Hari ini",
+                "3days":"3 hari",
+                "1week":"1 minggu",
+                "1month":"1 bulan",
+                "loading":"Memuat..."
+            }
+        },
+        "notifications":{
+            "title":"Notifikasi",
+            "withdraw_accepted":{
+                "title":"runeruby.com",
+                "message":"Permintaan pembayaran Anda dibuat {diff} ({sum} {currency}) telah diterima."
+            },
+            "withdraw_declined":{
+                "title":"runeruby.com",
+                "message":"Permintaan pembayaran Anda dibuat {diff} ({sum} {currency}) telah ditolak. Alasan: {reason}"
+            },
+            "vip_discord":{
+                "title":"VIP",
+                "message":"Anda telah menerima <svg style=\"width: 14px; height: 14px\"><use href=\"#vip-bronze\"></use></svg> status VIP perunggu!<br><br>Ingin kode promo VIP eksklusif? Bergabunglah dengan server Discord kami dan tautkan akun Discord Anda untuk mendapatkan peran VIP."
+            },
+            "email_reminder":{
+                "title":"runeruby.com",
+                "message":"Jangan lupa untuk menambahkan alamat email, jika tidak Anda bisa kehilangan akses ke akun Anda!"
+            },
+            "deposit":"Setoran baru: {sum} {currency}"
+        },
+        "fairness":{
+            "client_seed":"Sumber klien:",
+            "server_seed":"Sumber server:",
+            "nonce":"Kesempatan:"
+        },
+        "lines":"Garis",
+        "profit_per_line":"Jumlah Taruhan Per Baris",
+        "invalid_amount_per_line":"Jumlah taruhan tidak valid per baris",
+        "ignore":"Berhasil ditambahkan ke daftar pengabaian",
+        "unignore":"Anda tidak lagi mengabaikan pengguna ini",
+        "ignored_already":"Anda sudah mengabaikan pengguna ini",
+        "not_ignored":"Pengguna ini tidak diabaikan",
+        "not_available":"Tidak tersedia",
+        "obtained":"Diterima",
+        "latest_bets": "Hidup",
+        "select_currency": "Pilih Koin",
+        "strike_price": "Harga Game Strike",
+        "non_verifiable": "Anda tidak dapat memverifikasi game ini melalui alat yang Terbukti Adil. Bandingkan harga pasar riil sebagai gantinya.",
+        "bullvsbear": {
+            "waiting_phase": "Fase Menunggu",
+            "bet_phase": "Fase Taruhan",
+            "processing": "Pengolahan",
+            "target": "Saya pikir nilai itu akan hilang...",
+            "up": "Naik",
+            "down": "Turun",
+            "decay_value": "Memenangkan Pembayaran"
+        },
+        "bets":{
+            "game":"Permainan",
+            "player":"Pemain",
+            "time":"Waktu",
+            "bet":"Taruhan",
+            "mul":"Pembayaran",
+            "win":"Keuntungan",
+            "manual":"Manual",
+            "auto":"Otomatis",
+            "games":"Jumlah permainan",
+            "victory_stop":"Berhenti saat Menang",
+            "on_win":"Saat menang",
+            "on_loss":"Saat kalah",
+            "reset":"Reset",
+            "increase":"Tambahkan",
+            "auto_games_blocked":"Untuk menetapkan batasan, klik &#8734;.",
+            "hidden":"Pemain menyembunyikan profilnya",
+            "hidden_name":"Tersembunyi",
+            "make_bet":"Tempatkan taruhan",
+            "all":"Semua",
+            "mine":"Taruhan Saya",
+            "high_rollers":"Penjudi Ulung",
+            "lucky_wins":"Pemenang Beruntung"
+        },
+        "error":{
+            "invalid_password_confirm":"Sandi tidak cocok",
+            "offline_node":"Saat ini kami tidak dapat memproses pembayaran untuk mata uang ini.",
+            "auth":"Otorisasi diperlukan",
+            "wager":"Jumlah minimal - {value}",
+            "disabled":"Permainan tidak tersedia untuk sementara",
+            "unknown_game":"Permainan tidak dikenal",
+            "unknown_user":"Pengguna tidak dikenal",
+            "invalid_wager":"Uang tidak cukup",
+            "unknown_error":"Terjadi kesalahan (code {code})",
+            "empty":"Pilih sel!",
+            "should_have_empty_balance":"Untuk menerima bonus, saldo Anda harus kosong",
+            "autobet_pick_something":"Pilih sel untuk mode tawaran otomatis.",
+            "disabled_notifications":"Anda menolak untuk menerima notifikasi. Ini bisa diubah di pengaturan browser Anda.",
+            "connection_lost":"Kehilangan koneksi ke server",
+            "connection_recovered":"Koneksi telah pulih",
+            "disabled_bets":"Penerimaan taruhan saat ini tidak tersedia.",
+            "disabled_demo_bets":"Permainan ini tidak menerima taruhan dalam mode demo.",
+            "muted":"Obrolan dibisukan hingga {time}",
+            "invalid_withdraw":"Jumlah penarikan tidak valid.",
+            "only_one_withdraw":"Anda sudah meminta penarikan.",
+            "enter_wallet":"Masukkan nomor dompet!",
+            "promo_limit":"Anda telah mencapai batas aktivasi kode promo harian.",
+            "autobet_mines_error":"Anda telah memilih lebih banyak sel dari kristal yang tersedia.",
+            "vip_only_promocode":"Kode promosi ini hanya tersedia dengan status VIP."
+        },
+        "profit_monitoring":{
+            "title":"Statistik",
+            "wager":"Taruhan",
+            "profit":"Keuntungan",
+            "wins":"Menang",
+            "losses":"Kalah",
+            "no_data":"Tidak ada data"
+        },
+        "rain":"Lagi hujan!<br>{sum} {currency}",
+        "snow":"Lagi salju!<br>{sum} {currency}",
+        "quiz":"Pertanyaan:",
+        "quiz_answer":"Jawaban yang benar:",
+        "quiz_user":"Pengguna:",
+        "chart":"Grafik",
+        "hilo-skip":"Melewatkan",
+        "crash":"HANCUR",
+        "yes":"Ya",
+        "no":"Tidak",
+        "coming_soon":"Segera Hadir",
+        "reload":"mengisi ulang",
+        "spin":"Putar",
+        "wager":"Jumlah taruhan",
+        "chip":"Nilai Cip ({value})",
+        "profit":"Keuntungan",
+        "payout":"Pembayaran",
+        "play":"Main",
+        "our_games":"Game Kami",
+        "unit":"Satuan",
+        "cancel":"Batal",
+        "undo":"Batalkan",
+        "close":"Tutup",
+        "change":"Ubah",
+        "even":"genap",
+        "odd":"ganjil",
+        "to":"{1} - {2}",
+        "take":"Ambil {value}",
+        "start":"Mulai",
+        "stop":"Hentikan",
+        "overview":"Lihat",
+        "share_text":"Tonton permainan saya di runeruby.com!",
+        "share_vk":"Bagikan tautan di VK",
+        "share_chat":"Kirim ke obrolan",
+        "share_telegram":"Bagikan permainan ini di Telegram",
+        "share_twitter":"Bagikan permainan ini di Twitter",
+        "share_link":"Bagikan tautan",
+        "link_copied":"Disalin!",
+        "game_mode":"Mode permainan",
+        "color":"Warna",
+        "pins":"Jumlah pin",
+        "autopick":"<i class=\"fas fa-wand-magic mr-1\"></i> Pilih Otomatis",
+        "clear":"Bersihkan",
+        "mines":"Jumlah bom",
+        "edit":"Edit",
+        "add":"Tambah",
+        "already_purchased":"Dibeli",
+        "purchase_sticker_pack":"Beli dengan {coins} <i class=\"fas fa-coins\"></i>",
+        "hilo-higher":"Lebih tinggi",
+        "hilo-lower":"lebih rendah",
+        "hilo-same":"sama",
+        "chance":"Peluang",
+        "chat_at":"Ketik @<strong>nama pengguna</strong> untuk memberitahu pengguna",
+        "autoStop":"Pembayaran di",
+        "target_payout":"Target pembayaran",
+        "win_chance":"Peluang menang",
+        "demo_popup_link":"Main untuk dapat uang",
+        "double":"Dobel",
+        "divide":"Pisah",
+        "got":"Dapat",
+        "videopoker":{
+            "f_r":"Royal Flush",
+            "s_f":"Straight Flush",
+            "k":"Four of a kind",
+            "f_h":"Full House",
+            "f":"Flash",
+            "s":"Straight",
+            "t":"Triple",
+            "t_p":"Two pairs",
+            "p":"Pair (J, Q, K, A)"
+        },
+        "deal":"Bagikan kartu",
+        "stand":"Tahan",
+        "hit":"Tambah",
+        "split":"Pisah",
+        "insurance":"Apa Anda ingin asuransi?",
+        "accept":"Terima",
+        "decline":"Tolak",
+        "insurance_success":"Anda telah membeli asuransi.",
+        "blackjack":{
+            "0":"Seri",
+            "1":"Anda kalah",
+            "2":"Anda menang",
+            "3":"Anda menang",
+            "4":"Anda kalah",
+            "5":"Anda menang",
+            "6":"Anda kalah"
+        },
+        "difficulty":{
+            "title":"Tingkat kesulitan",
+            "low":"Rendah",
+            "medium":"Sedang",
+            "high":"Tinggi"
+        },
+        "baccarat":{
+            "player":"Pemain",
+            "tie":"Dasi",
+            "pair_player":"{P} Pasangan",
+            "pair_banker":"{B} Pasangan",
+            "pair":"Pasangan",
+            "banker":"Bankir",
+            "empty":"Menjadi yang pertama - bertaruh"
+        },
+        "verify":"Memeriksa",
+        "black":"Hitam",
+        "red":"Merah",
+        "green":"hijau",
+        "yellow":"Kuning",
+        "blue":"Biru"
+    },
+    "help":{
+        "contact_us":"Hubungi kami",
+        "vk":{
+            "title":"VKontakte - Layanan Bantuan",
+            "time":"Waktu respons rata-rata: 30 menit"
+        },
+        "email":{
+            "title":"Email - Layanan Bantuan",
+            "time":"Waktu respons rata-rata: 240 menit"
+        },
+        "block":{
+            "questions":{
+                "title":"Pertanyaan yang sering diajukan",
+                "about":{
+                    "title":"Tentang kami",
+                    "description":"runeruby.com - judi bitcoin online. permainan dengan mekanisme menarik dan peluang menang tinggi."
+                },
+                "how_to_play":{
+                    "title":"Bagaimana cara bermain?",
+                    "description":"Pergi ke halaman permainan apa saja, tentukan jumlah taruhan dan klik \"Main\"."
+                },
+                "bonus":{
+                    "title":"Bonus",
+                    "description":"<a href=\"/bonus\">Coba lihat halaman ini</a>!"
+                },
+                "fairness":{
+                    "title":"Kejujuran",
+                    "description":"Pembuat Nomor Acak menciptakan nomor acak yang benar-benar jujur dan dapat dibuktikan, nomor tersebut digunakan untuk menentukan hasil dari setiap permainan yang dimainkan di situs ini. Setiap pengguna bisa memeriksa hasil dari permainan apa pun dengan cara yang sepenuhnya deterministik. Dengan menyediakan satu parameter, Sumber Klien, ke dalam input pembuatan nomor acak, runeruby.com tidak bisa memanipulasi hasil. Pembuatan nomor acak Win5X memungkinkan setiap permainan untuk meminta nomor apapun dari nomor acak yang diberikan dari nomor awal klien, nomor awal server dan nomor satu-kali. Anda bisa mempelajari lebih lanjut tentang cara kerjanya di halaman permainan yang adil."
+                },
+                "partner":{
+                    "title":"Program afiliasi",
+                    "description":"Undang pemain lain ke situs kami melalui tautan rujukan Anda dan peroleh uang. Detailnya bisa ditemukan dalam profil Anda."
+                },
+                "chat_rules":{
+                    "title":"Peraturan Obrolan",
+                    "description":"Dilarang:<ul><li>Spam</li><li>Mengemis</li><li>Membanjiri dengan pesan seperti \"Hujan\" dan \"Kuis\"</li><li>Tautan eksternal/dompet/halaman</li><li>Menghina siapapun</li><li>Menjual \"Taktik\" dan layanan untuk menaikkan saldo ke pemain lain, dsb</li></ul>"
+                },
+                "p":{
+                    "title":"Kemitraan",
+                    "description":"Hubungi kami: <a href=\"mailto:support@runeruby.com\">support@runeruby.com</a>"
+                }
+            },
+            "payments":{
+                "title":"Setor",
+                "how_to":{
+                    "title":"Bagaimana cara menyetor?",
+                    "description":"Untuk menyetor, klik tombol dengan saldo di ujung kanan atas situs ini. Pilih metode pembayaran yang cocok untuk Anda dan masukkan jumlah koin."
+                },
+                "com":{
+                    "title":"Komisi",
+                    "description":"Komisi dari semua metode pembayaran ditunjukkan di halaman penyetoran"
+                },
+                "time":{
+                    "title":"Catatan",
+                    "description":"Semua transaksi diproses secara instan. Penundaan bisa terjadi hanya jika terjadi masalah dalam metode pembayaran. Jika terjadi kesalahan, hubungi tim dukungan kami dan berikan informasi sedetail mungkin tentang masalah Anda."
+                }
+            },
+            "withdraws":{
+                "title":"Penarikan dana",
+                "how_to":{
+                    "title":"Cara untuk menarik uang?",
+                    "description":"Untuk menarik uang dari akun Anda, klik tombol Dompet di ujung kanan atas situs ini. Pilih metode penarikan yang cocok untuk Anda, masukkan jumlahnya dan klik \"Pergi ke pembayaran\". Untuk menarik uang, Anda perlu bertaruh 100% dari jumlah setoran Anda (jika Anda bermain tanpa menyetor - ini tidak diperlukan)."
+                },
+                "com":{
+                    "title":"Komisi",
+                    "description":"Komisi dari penarikan uang yang dijalankan."
+                },
+                "time":{
+                    "title":"Waktu Penarikan",
+                    "description":"Semua permintaan diproses rata-rata dalam 1 hari, maksimal 3 hari. Dalam kasus langka, penarikan bisa jadi tertunda, alasannya adalah pemuatan di bank, dsb.<br>Periksa bahwa Anda telah memasukkan detail yang benar untuk penarikan di halaman transaksi di profil Anda. Batalkan pembayaran jika itu salah. Jika pembayaran telah dilakukan ke nomor yang salah, uang tidak akan dikembalikan."
+                }
+            },
+            "other":{
+                "title":"Lainnya",
+                "rain":{
+                    "title":"Hujan/Salju",
+                    "description":"Hujan atau Salju adalah chatbot yang membagikan saldo secara acak ke para pemain yang online dan telah menyetor dalam 24 jam terakhir."
+                },
+                "demo":{
+                    "title":"Akun demo",
+                    "description":"Anda bisa mengaktifkan akun demo dengan mengklik ikon saldo di ujung kanan atas situs ini. Itu hanya untuk latihan - Anda tidak bisa menarik uang yang diperoleh di demo, dan riwayat permainan tidak akan disimpan."
+                },
+                "quiz":{
+                    "title":"Kuis",
+                    "description":"Kuis bisa diadakan secara otomatis dalam bentuk contoh matematika, atau oleh moderator situs ini. Pemain pertama yang menjawab pertanyaan dengan benar akan menerima hadiah."
+                },
+                "tactics":{
+                    "title":"Taktik",
+                    "description":"Tidak ada taktik yang dijamin akan berhasil. Ini semua tergantung dengan gaya bermain Anda: cepat dengan risiko tinggi atau pelan-pelan tapi pasti."
+                },
+                "lost":{
+                    "title":"Saya kalah",
+                    "description":"Tidak ada permainan di situs kami dengan peluang menang 100%. Bahkan 99,9% artinya 1 dari 1000 Anda masih bisa kalah. Contohnya, dalam permainan Stairs, ketika Anda bermain di 1 batu - ini adalah peluang 1 dari 20 (5%) Anda bisa kalah. Kami tidak pernah ikut campur dalam permainan, itu semua bergantung pada keberuntungan Anda. Kami tidak bisa mengganti hasil dari permainan Anda, karena ada baris di sisi Anda yang bertuliskan \"Sumber Klien\". Awalnya, \"sumber Klien\" dihasilkan secara otomatis, namun Anda bisa selalu mengubahnya dan memasukkan karakter apapun di dalamnya. Untuk memeriksa hasil dari permainan Anda, klik permainan apapun di halaman riwayat dan di jendela yang muncul di bawahnya Anda akan melihat 2 kolom \"sumber Klien\" dan \"sumber Server\". Untuk memeriksa hasil dari permainan, Anda perlu mengklik \"ubah sumber server\" dan klik tombol \"Periksa\" - Anda akan melihat hasil dari permainan tidak akan berubah. Kami menyarankan Anda untuk bermain dengan lebih nyaman. Gunakan strategi sendiri dalam permainan Anda. Jangan keterusan, bersiaplah untuk berhenti pada waktu yang tepat dan tarik uang. Judi didesain untuk menghibur. Ingatlah untuk menarik uang setelah taruhan. Jangan mengeluarkan uang berlebihan."
+                },
+                "reviews":{
+                    "title":"Ulasan",
+                    "description":"Ulasan tersedia di grup jejaring sosial kami."
+                },
+                "job":{
+                    "title":"Pekerjaan",
+                    "description":"Daftar lowongan tersedia di<a href=\"/job\">halaman ini</a>. Harap diingat bahwa ini bisa kosong untuk waktu yang lama - kami tidak selalu membutuhkan orang baru dalam tim kami."
+                }
+            }
+        }
+    },
+    "invest":{
+        "sidebar":{
+            "your_bankroll":"Bankroll Anda",
+            "your_share":"Saham Anda",
+            "your_investing_profit":"Keuntungan Anda",
+            "site_bankroll":"Bankroll Situs",
+            "site_profit":"Keuntungan Situs",
+            "amount":"Jumlah (Minimal {min})",
+            "invest":"Berinvestasi"
+        },
+        "history":{
+            "amount":"Jumlah Investasi",
+            "your_share":"Saham Anda",
+            "profit":"Jumlah saat ini",
+            "status":"Status",
+            "cancelled":"Dibatalkan",
+            "disinvest":"Lepaskan investasi",
+            "dead":"Kalah"
+        },
+        "your_balance":"Keseimbanganmu: {balance}",
+        "min":"Jumlah minimal: {min}",
+        "invest":"Berinvestasi",
+        "invest_fee":"<span>1%</span> dari deposit Anda akan dipotong sebagai biaya yang tidak dapat dikembalikan.",
+        "invest_fee_withdraw":"<span>{value}%</span> komisi akan dipotong dari penarikan Anda.",
+        "tabs":{
+            "overview":"Ringkasan",
+            "invest":"Berinvestasi",
+            "history":"riwayat"
+        }
+    },
+    "partner":{
+        "tabs":{
+            "overview":"Ringkasan",
+            "list":"Rujukan",
+            "analytics":"Analitik"
+        },
+        "overview":{
+            "guest_content":"<p>Iklankan runeruby.com dan dapatkan uang dengan berpartisipasi dalam program afiliasi kami!</p><p>You will receive various bonuses for each active user who will register and play on runeruby.com through your link.</p><button class=\"btn btn-primary\">Login</button>",
+            "content":"<p>Iklankan runeruby.com dan dapatkan uang dengan berpartisipasi dalam program afiliasi kami!</p><p>You will receive various bonuses for each active user who will register and play on runeruby.com through your link.</p><strong class=\"mt-2\">Referral link</strong><input readonly class=\"mt-2\" style=\"cursor: pointer !important;\" id=\"link\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Copy link\" value=\"https://runeruby.com/?c={id}\"><p class=\"mt-4\"><strong>Rewards</strong><ul><li>Your referral will receive a bonus after registration.</li><li>You will also receive a bonus if the referral is active. You can track this through the \"Referrals\" tab.</li><li>If you have invited 10 active referrals - visit the \"Bonus\" page, click on the \"Affiliate Program\" and get an increased reward!</li><li>You will get 5% from your referral deposit</li></ul></p>",
+            "header": "Apa yang akan Anda dapatkan jika mengikuti program afiliasi:",
+            "1": "1. Anda akan mendapatkan% dari setoran afiliasi Anda, yang didasarkan pada level VIP Anda.",
+            "2": "2. Afiliasi Anda akan menerima bonus gratis dalam BTC setelah pendaftaran.",
+            "3": "3. Anda juga akan menerima bonus dari afiliasi Anda jika dia aktif. Anda dapat melacaknya melalui tab \"Afiliasi\".",
+            "4": "4. Setiap 10 afiliasi aktif akan memberi Anda bonus putaran Roda dengan peningkatan hadiah."
+        },
+        "list":{
+            "name":"Nama",
+            "activity":"Bonus aktivasi diterima"
+        },
+        "analytics":{
+            "referrals":"<strong>Jumlah rujukan:</strong> {count}",
+            "referrals_bonus":"<strong>Rujukan aktif:</strong> {count}"
+        }
+    },
+    "policy":{
+        "gaming_policy":"File ini dapat diedit di /sumber daya/lang/en/en.json",
+        "privacy_notice":"File ini dapat diedit di /sumber daya/lang/en/en.json",
+        "privacy_policy":"File ini dapat diedit di /sumber daya/lang/en/en.json",
+        "terms_and_conditions":"File ini dapat diedit di /sumber daya/lang/en/en.json"
+    },
+    "vip":{
+        "rank":{
+            "level":"Tingkat VIP - :level",
+            "0":"-",
+            "1":"Rubi",
+            "2":"Zamrud",
+            "3":"Safir",
+            "4":"Berlian",
+            "5":"Emas"
+        },
+        "description":"Tingkat VIP Anda dihitung berdasarkan taruhan Anda di mata uang favorit Anda ({currency})",
+        "benefits_description":"Keuntungan VIP:",
+        "benefits":"Keuntungan",
+        "benefit_list":{
+            "ruby":{
+                "1":"Bonus VIP Mingguan",
+                "2":"Akses ke kode promo VIP",
+                "3":"Peran VIP di server Discord",
+                "4":"Komisi 2% dari setoran afiliasi"
+            },
+            "emerald":{
+                "1":"Batas aktivasi Kode Promosi per hari ditingkatkan dari 2 menjadi 3",
+                "2":"Peningkatan Bonus VIP Mingguan",
+                "3":"Komisi 3% dari setoran afiliasi"
+            },
+            "sapphire":{
+                "1":"Kode promo VIP tidak akan memengaruhi batas aktivasi per hari",
+                "2":"Peningkatan Bonus VIP Mingguan",
+                "3":"Komisi 5% dari setoran afiliasi"
+            },
+            "diamond":{
+                "1":"Penarikan Anda memiliki prioritas lebih tinggi di antrean",
+                "2":"Batas aktivasi kode sekarang direset setiap 12 jam",
+                "3":"Meningkatnya Bonus Mingguan"
+            },
+            "gold":{
+                "1":"Kode VIP tidak mempengaruhi batas aktivasi kode promosi",
+                "2":"Meningkatnya Bonus Mingguan",
+                "3":"Peningkatan Bonus VIP Mingguan",
+                "4":"Komisi 20% dari setoran afiliasi"
+            }
+        },
+        "bonus":{
+            "tooltip":"Bonus VIP Mingguan",
+            "title":"Bonus Mingguan",
+            "progress_title":"Perkembangan",
+            "description":"Sebagai hadiah untuk menjadi VIP di casino42, Anda mendapatkan bonus mingguan, jumlah maksimalnya ditentukan oleh status VIP Anda - {vip}.<br><br>Each your bet adds 0.1% to progress bar.<br>You can withdraw your weekly bonus at any time, but keep in mind that after this you will not be able to receive this bonus for the rest of the week.<br><br>We reset weekly progress every Sunday. Remember to take the reward before this day!",
+            "timeout":"<br><strong>Anda sudah menerima bonus ini.</strong><br>Kembali lagi hari Minggu!<br><br>"
+        }
+    },
+    "wallet":{
+        "tabs":{
+            "deposit":"Penyetoran",
+            "withdraw":"Penarikan",
+            "history":"Riwayat",
+            "deposits":"Penyetoran",
+            "withdraws":"Penarikan",
+            "exchange":"Bertukar"
+        },
+        "exchange": "Bertukar",
+        "exchange_success": "Keberhasilan!",
+        "set_email":"Setel email di profil Anda untuk menggunakan metode pembayaran ini.",
+        "bank":{
+            "title":"Deposit bank",
+            "description":"Permintaan verifikasi berhasil dikirim. Anda dapat melihat statusnya di \"Riwayat\" -> \"Penyetoran\" tab.",
+            "transfer_here":"Transfer dana ke nomor bank ini:",
+            "bank_check":"Minta verifikasi",
+            "transaction_id":"ID transaksi",
+            "notify":"Setelah transfer selesai, klik tombol \"Minta verifikasi \".<br>Operator kami akan memeriksa transaksi Anda dan menambahkan dana ke akun Anda secara manual.<br>Metode pembayaran ini <strong>bukan</strong> instan.",
+            "invalid_txid":"ID transaksi tidak valid",
+            "already_have_one_in_moderation":"Anda sudah memiliki satu permintaan verifikasi yang menunggu keputusan.",
+            "cancelled":"Permintaan verifikasi setoran bank dibatalkan"
+        },
+        "s":{
+            "amount":"Jumlah setoran",
+            "deposit":"Penyetoran",
+            "invalid_amount":"Jumlah tidak valid",
+            "conversion_rate":"Tingkat konversi: {usd} USD = {token} <i class=\"{icon}\" style=\"color: {style}\"></i>"
+        },
+        "pending":"Menunggu keputusan",
+        "method":"Cara Pembayaran:",
+        "troubles":"Butuh bantuan?<br>Hubungi kami <a href=\"/help\">tim pendukung</a>",
+        "fast":"Anda akan segera diberitahu setelah Anda melakukan penyetoran dan akan dapat melihat jumlah konfirmasi transaksi Anda",
+        "deposit":{
+            "address":"Anda {currency} alamat deposit",
+            "confirmations":"Hanya kirim {currency} ke alamat ini, {confirmations} konfirmasi dibutuhkan."
+        },
+        "withdraw":{
+            "title":"penarikan",
+            "button":"penarikan",
+            "method":"Metode penarikan:",
+            "enter_wallet":"dompet:",
+            "wallet":"dompet",
+            "go":"penarikan",
+            "content":"Penarikan berhasil dipesan. Anda dapat memeriksa statusnya di bagian \"Riwayat \".",
+            "vip_content":"<div class=\"mt-2\">Karena level VIP Anda adalah <svg style=\"width: 14px; height: 14px;\"><use href=\"#vip-diamond\"></use></svg>, permintaan Anda ditempatkan paling awal dalam antrian.</div>"
+        },
+        "history":{
+            "empty":"Anda belum memesan apa pun.",
+            "name":"Mata uang",
+            "sum":"Jumlah",
+            "date":"Tanggal",
+            "status":"Status",
+            "confirmations":"Konfirmasi",
+            "id":"ID: :Identitas",
+            "paid":"Berhasil",
+            "wallet":"Alamat: {wallet}",
+            "cancel":"Batal",
+            "withdraw_cancelled":"Pembayaran telah dibatalkan.",
+            "withdraw_status":{
+                "moderation":"Moderasi",
+                "accepted":"Berhasil",
+                "declined":"ditolak",
+                "reason":"Alasan:",
+                "cancelled":"Dibatalkan oleh pengguna"
+            }
+        },
+        "copy":"Salin",
+        "copied":"Disalin!"
+    },
+    "404": {
+        "title": "Maaf, halaman ini tidak tersedia.",
+        "subtitle": "Tautan yang Anda ikuti mungkin rusak, atau halaman mungkin telah dihapus."
+    }
+}

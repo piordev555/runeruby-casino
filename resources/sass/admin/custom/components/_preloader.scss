@@ -1,0 +1,49 @@
+// 
+// preloader.scss
+//
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $body-bg;
+    z-index: 9999;
+}
+
+#status {
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -40px 0 0 -40px;
+}
+
+.spinner {
+    > div {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: $white;
+        border: 2px solid $primary;
+        border-radius: 50%;
+        animation: circle-loader 1s infinite ease-in-out both;
+        margin: 0px 7px;
+    }
+    .circle1 {
+        animation-delay: -0.32s;
+    }
+    .circle2 {
+        animation-delay: -0.16s;
+    }
+}
+
+
+@keyframes circle-loader {
+    0%, 80%, 100% { 
+        transform: scale(0.4);
+    } 40% { 
+        transform: scale(1.0);
+    }
+}

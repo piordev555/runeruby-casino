@@ -1,0 +1,15 @@
+
+// 
+// breadcrumb.scss
+//
+
+
+// Breadcrumb item arrow
+.breadcrumb-item {
+    +.breadcrumb-item {
+        &::before {
+            font-family: "unicons";
+        }
+    }
+}
+  

@@ -1,0 +1,897 @@
+{
+    "third-party": {
+        "unavailable_currency": "对不起，你不能玩这种货币.",
+        "guest": "你需要登录才能玩这个游戏."
+    },
+    "bonus":{
+        "vip":{
+            "title":"會員",
+            "description":"作為會員計劃的一名成員，您可以獲得每週會員獎金。了解更多!",
+            "unavailable_description":"所有會員計劃的參加者都可以獲得每週獎金."
+        },
+        "wheel":{
+            "description":"每3分鐘轉動一次轉盤!",
+            "title":"轉盤"
+        },
+        "promo":{
+            "description":"有一個兌換代碼？兌換它並獲得獎金!",
+            "activate":"激活",
+            "title":"促销代码",
+            "placeholder":"代碼",
+            "success":"成功",
+            "invalid":"無效代碼",
+            "expired_time":"無效代碼.",
+            "expired_usages":"無效代碼：超過激活期限.",
+            "used":"您已經使用過此代碼."
+        },
+        "partner":{
+            "title":"從屬項目",
+            "description":"邀请您的朋友到runeruby.com，并获得10个有效推荐人的奖金!"
+        },
+        "rain":{
+            "description":"每隔幾個小時，聊天中就會舉行一個活動，獎金分配給隨機的人",
+            "title":"雨",
+            "modal_description":"雨是一個聊天機器人，他會隨機給人分發硬幣. <br> 進入雨的聊天室的標準:<ul class=\"mt-2\"><li>在過去24小時內需要押金</li><li>機器人在隨機的時間發放隨機數量的硬幣（最小分發數量是每天10個，最大是每天20個）</li><li>人數-從5到15個</li></ul>"
+        },
+        "discord":{
+            "title":"Discord",
+            "common_desc":"加入我們的Discord務器並獲得獎金！",
+            "description":"加入我們的Discord務器並獲得獎金！",
+            "redirect":"連接賬號",
+            "link":"想要獲得獎金，您必須:<ul><li>連接您的Discord賬號</li><li>加入我們的Discord</li></ul>在連接您的Discord賬號並加入服務器後，返回到此頁面，並點擊\"驗證\"按鈕.",
+            "subscribe":"加入我們的Discord務器獲得獎金.<br>加入後，點擊\"驗證\"按鈕，獎金立即記入您的賬號！",
+            "check":"验证",
+            "redirect_group":"加入我們的Discord務器",
+            "success":"成功!",
+            "error":{
+                "1":"您還沒有加入我們的Discord務器.",
+                "2":"您已經獲得過獎金."
+            }
+        },
+        "notifications":{
+            "title":"通知",
+            "description":"打開通知，及時了解runeruby.com的更新信息!"
+        }
+    },
+    "footer":{
+        "accepted_currencies": "接受的货币",
+        "need_help": "需要帮助吗？",
+        "terms_and_conditions": "条款和条件",
+        "bonus": "奖金条款和条件",
+        "privacy_policy": "私隐政策",
+        "affiliates": "联营公司"
+    },
+    "chat":{
+        "error":{
+            "length":"信息太短或太長",
+            "muted":"聊天已被靜音"
+        }
+    },
+    "dice":{
+        "lower":"較低",
+        "higher":"較高",
+        "chance":"機會"
+    },
+    "error":{
+        "code":"內部務器發生錯誤 ({code})",
+        "wait_finish":"等待遊戲結束",
+        "validation":{
+            "required":"填寫此字段",
+            "min":{
+                "string":"值太小"
+            },
+            "max":{
+                "string":"值太大"
+            },
+            "unique":"此值已被註冊",
+            "regex":"無效值"
+        },
+        "invalid_browser":"<h1>您的網絡瀏覽器已過時.</h1>要在runeruby.com上運行，您需要升級到最新版本.",
+        "no_js":"<h1>錯誤</h1>您的網絡瀏覽器不支持JavaScript."
+    },
+    "fairness":{
+        "title": "公平性",
+        "tabs":{
+            "overview":"概述",
+            "dev":"實現",
+            "transform":"轉換",
+            "events":"遊戲事件",
+            "calculator":"計算器"
+        },
+        "overview":{
+            "1":"<h6>解決在線賭博的信任問題</h6><p>可證明公平的基本概念是，玩家有能力證明和驗證他們的結果是公平而不受操縱的. 這是通過使用承諾方案和加密散列來實現的.</p><p>承諾方案用於確保玩家能夠影響所有產生的結果. 加密散列用於確保賭場也對這個承諾方案保持誠實的態度. 這兩個概念結合在一起為在線賭博創造了一個可信任的環境.</p><p>這可以簡化為以下表示:</p>"
+        },
+        "dev":{
+            "1":"<h6> 生成隨機數字 </h6><p> 對於被檢查的每一個賭注，我們使用：客戶端種子、服務器種子、隨機數和游標作為隨機數字生成函數的輸入參數. 該函數使用 <strong> HMAC_SHA256 </strong> 用加密散列生成字節，然後將字節用作在平台上可靠地生成隨機結果的基礎. </p> ",
+            "2":"<h6 class=\"mt-4\"> 服务器种子 </h6>服務器種子是由我們的系統在遊戲開始前以32個字符的隨機字符串生成的，在遊戲結束後您才能識別. 我們在任何時候都不提供服務器種子的原因是，在這種情況下玩家可以提前計算遊戲結果.<h6 class=\"mt-4\"> 客户种子 </h6>客戶端種子由玩家擁有，用於確保玩家也影響生成結果的隨機性. 如果沒有這個算法組件，只有服務器種子會對每次下注的結果產生完全的影響. 所有玩家都可以自由編輯和改變他們的客戶端，定期創建一個新的隨機結果鏈. 這確保玩家能夠完全控制結果的生成，就像在普通賭場中切牌一樣. 在註冊期間，您的瀏覽器創建一個客戶端種子，以確保網站的平穩運行. 雖然這種隨機生成的客戶端種子被認為是合適的，但我們強烈建議您選擇自己的客戶端種子，以便將您的影響包含在隨機性中. 您可以在配置文件設置中進行此操作.<h6 class=\"mt-4\"> 隨機數 </h6>隨機數只是一個數字，您每下一個新賭注，它就增加1. 由於SHA256密碼函數的特性，每次都會創建一個全新的結果. 隨機數的實現確保了我們對客戶端和服務器的忠誠，同時為每一次下注生成新的結果.<h6 class=\"mt-4\"> 游標 </h6>我們使用4個字節的數據來生成一個遊戲結果. 由於SHA256被限制為32個字節，我們使用這個遊標實現使我們能夠創建更多的遊戲事件，而不必改變我們的可證明的誠實算法. 只有當遊戲需要超過8個（32字節/ 4字節）可能的結果時，才會迭代光標. 例如：當我們在21點遊戲中需要使用超過8張牌的時候. 遊標從0開始，每次HMAC_SHA256函數返回32個字節時，游標遞增1. 如果我們不需要為遊戲事件生成超過8個隨機數，游標就不會增加，因為不需要生成任何其他可能的遊戲結果. "
+        },
+        "transform":{
+            "1":"<h6>浮點字節</h6><p>随机数生成器(byteGenerator)函数的结果是一个十六进制32字节散列. 正如在游標實現中所解釋的，我們使用4字節數據來生成一個遊戲結果. 每一套4字節用於生成0到1之間的浮點值 （在生成浮點數時，使用4字節而不是1字節來提供更高級別的精度）. 正是通過這些生成的數字，我們在將可證明的誠實算法轉化為遊戲事件之前得到了它的正式結果. </p> ",
+            "2":"<h6 class=\"mt-4\"> 遊戲事件中的浮點數 </h6><p> 因為隨機數生成過程對我們所有的遊戲都是通用的. 在生成遊戲結果的這個階段，實現了一個獨特的過程，允許您確定從浮點數到遊戲事件的轉移. 個隨機產生的結果乘以一個特定遊戲可能剩余的結果. 例如：在一副52張牌的遊戲中，這可以通過簡單地將數字乘以52來實現. 然後將該方程的結果轉換為相應的遊戲事件. 對於需要多個遊戲事件的遊戲，這個過程在結果鏈中每隔4個字節繼續進行，該結果鏈是使用所描述的byteGenerator函數生成的. </p> <h6 class=\"mt-4\"> 洗牌遊戲事件 </h6>  <p> 对于像基诺、地雷和视频扑克这样结果不能复制的游戏，我们使用随机洗牌算法 <a href=\"https://en.wikipedia.org/wiki/Fisher%E2%80% 93Yates_shuffle\" target=\"_blank\"> 費雪耶玆 </a>. </p> "
+        },
+        "events":{
+            "1":"<p> 遊戲事件是將隨機產生的數字轉換為相應的遊戲特定結果. 這包括從擲骰子的結果到紙牌的順序，甚至是每枚炸彈在地雷遊戲中的位置. 以下是我們如何將數字轉化為我們平台上每一個特定遊戲事件的詳細解釋. </p> <h6> 21点、Hilo和百家樂 </h6> <p> 在一副標準的紙牌中有52種獨特的可能結果: </p> ",
+            "2":"<h6> 方塊 </h6><p> 在方塊遊戲中，有7種可能的結果。為此，我們將每個浮點數乘以7，然後將其轉換為相應的方塊: </p> ",
+            "3":"<p> 然後玩家可以得到5個方塊. </p><h6> 骰子 </h6><p> 在我們的骰子遊戲中，我們覆蓋了從00.00到100.00的可能投擲範圍，總共有10001個可能的結果. 遊戲事件的轉換是通過將浮點數乘以可能結果的數量，然後除以100來執行的，這樣得到的數字就符合了我們聲稱的骰子範圍的限制. </p> ",
+            "4":"<h6> 僵局 </h6> <p> 當遇到僵局時，我們採取兩個步驟的過程. 首先，我們用這個數字乘以最大可能的乘數和賭場優勢的百分比. 然後使用 <a href=\"https://en.wikipedia.org/wiki/Probability_distribution\" target=\"_blank\"> 概率分佈 </a>, 我們用最大可能因素除以第一步的結果，以最終系數的形式創建壹個遊戲事件. </p> ",
+            "5":"<h6> 彈珠台 </h6><p> 對於任何彈珠台遊戲，生成的結果是基於球將落入哪個格子. </p> ",
+            "6":"<h6> 輪盤賭 </h6><p> 我們的輪盤是取自歐洲版本的遊戲，其中的輪盤有37個不同可能的口袋，範圍從0到36. 個遊戲事件是由數字乘以37計算而成，然後轉到適當的口袋中: </p> ",
+            "7":"<h6> 基諾 </h6> <p> 傳統的基諾遊戲需要以遊戲板上格子的形式選擇10個可能的遊戲事件. 為了實現這一點，我們將每個浮點數乘以唯一可能的平方數. </p> ",
+            "8":"<p> 隨機洗牌算法序列的實現用於防止重復可能的命中. </p><h6> 地雷 </h6><p> 地雷由24個獨立的遊戲事件組成，比賽形式是在操場上的地雷. 每一個數字乘以仍保留在游戏板上可能唯一的瓷磚數量. 格子位置是使用從左到右、從上到下的網格位置構造的. 隨機洗牌算法序列的實現用於防止重復可能的命中. 根據所選的設置，將使用2到24個遊戲事件的結果. </p><h6> 視頻撲克 </h6><p> 玩視頻撲克包括52個單獨的以牌堆中的紙牌為形式的遊戲事件. 每一個數字乘以剩下可能紙牌的數量. </p> ",
+            "9":"<p> 隨機洗牌算法序列的實現用於防止重復可能的命中. </p>"
+        },
+        "calculator":{
+            "game":"遊戲",
+            "client_seed":"客戶端種子",
+            "nonce":"隨機數",
+            "server_seed":"服務器種子",
+            "result":"結果"
+        }
+    },
+    "game_help":{
+        "next":"下一個",
+        "close":"關閉",
+        "dice":{
+            "1":"設置滑塊獲勝的機會，並點擊\"開始遊戲\"，從而產生一個從0 – 100的結果",
+            "2":"如果骰子落在您選擇的綠色區域——您就贏了!"
+        },
+        "wheel":{
+            "1":"選擇遊戲模式，按顏色下注，並按\"開始\"",
+            "2":"如果轉盤停在您選擇的顏色區域，您就贏了!"
+        },
+        "x50":{
+            "1":"选择游戏模式，押注颜色并按 \"開始\"",
+            "2":"如果轮子停在你所选择的颜色区间，你将获得!"
+        },
+        "plinko":{
+            "1":"下注，選擇遊戲難度和大頭針的數量，點擊\"開始\"",
+            "2":"遊戲越複雜，大頭針數量越多，最大勝率就越高，最小勝率就越低",
+            "3":"您的獎金是由勝率決定的，取決於彈珠落在哪裡"
+        },
+        "keno":{
+            "1":"從1到10個格子中選擇數字，下註並點擊\"開始\"",
+            "2":"然後系統隨機選擇10個數字。擊中您的數字越多，獲得的獎金就越多!"
+        },
+        "mines":{
+            "1":"下註，選擇炸彈數量，點擊\"開始\"",
+            "2":"遊戲場地裡的炸彈數量越多，獲勝比例就越高.",
+            "3":"尋找石頭，但要小心炸彈!",
+            "4":"在您引爆一枚炸彈並輸掉賭註之前先贏一場!"
+        },
+        "diamonds":{
+            "1":"獲得最好的鑽石組合，並贏得遊戲.",
+            "2":"最好的組合是5個相同的鑽石.",
+            "3":"組合層次結構類似於傳統撲克."
+        },
+        "coinflip":{
+            "1":"下注，點擊\"開始\"，猜猜什麼顏色會掉下來.",
+            "2":"在每次遊戲中，您可以無限次猜一枚硬幣的情況，所有的系數都會相加."
+        },
+        "blackjack":{
+            "1":"下註，然後您和莊家將得到兩張牌.",
+            "2":"然後您可以再拿一張牌，或者停止拿牌，不改變當前的手牌.",
+            "3":"點擊\"加倍\"，您可以加倍您的賭注，並獲得最後一張牌.",
+            "4":"只有當莊家的第一張牌是A時可以選擇保險，並在莊家獲得21點手牌時保護您.",
+            "5":"手牌最接近21點的那一方獲勝。如果您和裝甲有相同數值的手牌——將再進行一次抽牌."
+        },
+        "roulette":{
+            "1":"在遊戲的任何結果上放籌碼，然後點擊\"開始\"",
+            "2":"如果您猜出遊戲結果，您的賭注翻倍."
+        },
+        "baccarat":{
+            "1":"您可以單獨或任意組合地打賭某位玩家、銀行家或平局.",
+            "2":"點數最接近9的一方獲勝。當點數為10或10以上，只考慮兩位數的個位數部分.",
+            "3":"如果一個人在一個玩家或一個銀行家身上下註，雙方都獲得相同的點數，那麽結果就是沒有輸掉賭註的平局.",
+            "4":"個手牌的最大發牌量是3張。如果總點數是5或以上，最少是2張牌."
+        },
+        "hilo":{
+            "1":"猜猜下一張牌的等級是比前一張高還是低.",
+            "2":"打開無限張牌，勝算就累加起來了。您可以在任何時候停下來領取獎金"
+        },
+        "limbo":{
+            "1":"想要獲勝，指定的目標派彩比例必須低於在遊戲中掉出來的那一個.",
+            "2":"最大目標比率是1,000,000."
+        },
+        "crash":{
+            "1":"下注，點擊\"開始\"，看時間表如何增長",
+            "2":"在圖表崩潰和您輸掉賭注之前撤資."
+        },
+        "stairs":{
+            "1":"下注，選者每步石頭的數量，點擊\"開始\"",
+            "2":"爬上樓梯，小心掉下來的石頭！您爬得越高，收穫的獎金就越多.",
+            "3":"您在任何時候贏得獎金並結束遊戲，或者在走完13步之後獲得最大的獎金."
+        },
+        "tower":{
+            "1":"下注，選擇炸彈數量，點擊\"開始\"",
+            "2":"尋找從上到下移動的石頭，但要小心炸彈!",
+            "3":"在您引爆一個炸彈和輸掉賭注之前先贏一場!"
+        },
+        "videopoker":{
+            "1":"下注，並點擊\"開始\"",
+            "2":"接下來您將得到5張紙牌。您可以通過點擊紙牌留下您需要的。想要結束遊戲，點擊\"發牌\"",
+            "3":"如果組合和表格中顯示的一致，您就贏了，您的賭注翻倍."
+        },
+        "bullvsbear":{
+            "1":"每一局游戏开始时，都是通过选择硬币的平均价格来决定 \"游戏的执行价格\". 我们没有使用价格神谕，而是直接从Coinbase的Price Websocket API中提取市场价格. 这个数字是交易者在接下来的阶段中用来下注的，以预测每场游戏结束时的市场价格是高于还是低于 \"游戏的执行价格\".",
+            "2":"一旦游戏的执行价格被设定，玩家有一分钟的时间来投注每场游戏结束时的市场价格是高于还是低于这个数字. 所有的投注都会被分成两个池子，预测价格高于的人和预测价格低于的人.",
+            "3":"每场比赛结束后，输家的赌注会被集中起来，按比例分配给赢家. 如果玩家的投注额比其他赢家多，他或她将获得更多的彩池. 现在如果一个玩家输了，他们的损失也是和他们的大小成正比的，也就是说如果一个玩家下注比其他玩家多，在这种情况下，这个玩家不会输掉自己的全部赌注，只是输掉一小部分而已.",
+            "4":"我们希望避免给最后行动者带来任何明显的优势，因此我们实施了一个时间递减的收益系数来激励及时投注--给早期行动者提供更好的收益（或赢利），并阻止人们在本轮后期进行投注. 作为一个交易者，你可以关注当前的波动率，并通过等待时间稍长，获取较小的收益但概率较高的方式进行下注；或者，提前下注，潜在收益较高，但获胜概率较低的方式进行下注.",
+            "5":"每轮投注时间为90秒，开始时赔率为x5.00。它随着时间的推移而减少，直到成为x1.01."
+        }
+    },
+    "general":{
+        "language":"汉语",
+        "head":{
+            "index":"首頁",
+            "description":"為新玩家而設的在線賭博贏獎金",
+            "games":"遊戲",
+            "help":"幫助",
+            "wallet":"存款",
+            "wallet_open_demo":"演示",
+            "wallet_real":"真正的",
+            "wallet_demo":"演示",
+            "chat":"聊天",
+            "admin":"管理",
+            "bonus":"免費金幣",
+            "bonus_short":"獎金",
+            "theme":"主題",
+            "profile":"個人資料",
+            "logout":"退出",
+            "invest":"钞票"
+        },
+        "sidebar":{
+            "admin": "管理员",
+            "favorite": "最爱",
+            "recent": "最近",
+            "originals": "原创",
+            "slots": "老虎机",
+            "multiplayer": "多人游戏",
+            "blackjack": "21点",
+            "poker": "扑克",
+            "table": "桌游",
+            "instant": "瞬间",
+            "roulette": "轮盘赌",
+            "baccarat": "百家乐",
+            "evo-play": "提供商: EvoPlay",
+            "no_games": "此类别为空",
+            "mark_as_favorite": "标记为收藏夹",
+            "remove_from_favorite": "从收藏夹中删除"
+        },
+        "chat_commands":{
+            "/user":"查看用户",
+            "/bet":"查看投注",
+            "/ignore":"忽略用户",
+            "/unignore":"不要再无视用户",
+            "/tip":"提示用戶",
+            "/rain":"用戶在聊天中給另一個用戶贈送免費金幣",
+            "modal":{
+                "rain":{
+                    "amount":"數量",
+                    "number_of_users":"用戶數量（最多25人)",
+                    "send":"發送給雨",
+                    "invalid_users_length":"無效用戶數量",
+                    "invalid_amount":"無效數量"
+                },
+                "tip":{
+                    "amount":"數量",
+                    "send":"發送提示",
+                    "user":"用戶名",
+                    "make_public":"公開提示（將出現在全球聊天中)",
+                    "invalid_name":"無效用戶名",
+                    "invalid_amount":"無效數量",
+                    "notify":"{name} 倾囊相授 {value} <i class=\"{icon}\" style=\"color: {style}\"></i>"
+                }
+            }
+        },
+        "biggest_winner_today": "今天最大的赢家",
+        "tip":"提示",
+        "tip_chat":"<a href=\"{link}\">{name}</a> 发送 {value} <i class=\"{icon}\" style=\"color: {style}\"></i> to <a href=\"{tolink}\">{toname}</a>",
+        "or": "或",
+        "wallet":{
+            "demo":{
+                "error":"您的演示余額必須為0",
+                "obtain":"接收演示余額"
+            }
+        },
+        "demo":{
+            "title":"註意",
+            "description":"如果您想達到真正的收支平衡，您需要進行註冊.",
+            "register":"註冊"
+        },
+        "chat":{
+            "enter_message":"輸入您的信息..."
+        },
+        "auth":{
+            "login":"登錄",
+            "register":"注册",
+            "through_login":"登錄和密碼",
+            "through_social":"社交網絡",
+            "wrong_credentials":"登錄或密碼錯誤",
+            "credentials":{
+                "login":"登錄",
+                "password":"密碼",
+                "email":"電子郵箱"
+            },
+            "create_account":"創建賬號",
+            "forgot_password":"忘記您的密碼?",
+            "notice":"我确认我已年满18岁，并接受runeruby.com的服务条款"
+        },
+        "profile":{
+            "password_changed":"密码已更改",
+            "general":"一般性",
+            "login":"登錄",
+            "password":"密碼",
+            "password_current":"当前密码",
+            "password_new":"新密码",
+            "password_repeat":"确认密码",
+            "password_reset":"重置",
+            "security":"安全",
+            "email":"電子郵箱",
+            "update":"更新",
+            "verify_email":"包含确认链接的电子邮件已发送至您的地址.",
+            "invalid_email":"無效電子郵箱",
+            "settings":"設置",
+            "wager":"下註",
+            "games":"總遊戲",
+            "best_mul":"最好的派彩",
+            "best_win":"最好的收益",
+            "incognito":"用戶隱藏了他的個人資料",
+            "set_private_profile":"隱藏您的個人資料",
+            "set_private_bets":"隱藏您的賭注",
+            "empty":"沒有足夠的數據顯示",
+            "privacy":"隱私",
+            "fairness":"公平",
+            "client_seed":"客戶端種子",
+            "change":"更改",
+            "change_avatar":"更改頭像",
+            "avatar":"頭像",
+            "stats":"統計",
+            "latest_games":"最新遊戲",
+            "vip":"會員",
+            "partner":"從屬節目",
+            "change_name":"更改名字",
+            "new_name":"新名字",
+            "social":"關聯帳號",
+            "vk":"VKontakte",
+            "fb":"Facebook",
+            "google":"Google",
+            "discord":"Discord",
+            "steam":"Steam",
+            "link":"關聯",
+            "linked":"已關聯",
+            "somebody_already_linked":"該社交帳號已關聯到另一個runeruby.com帳號上",
+            "link_discord":"想要訪問Discord服務器上到VIP優惠碼和角色，您需要關聯您到帳號.",
+            "discord_vip":"加入我的Discord服務器，並獲得VIP推廣碼!",
+            "discord_vip_ok":"更新服務器角色",
+            "vip_discord_updated":"Discord服務器角色已更新.",
+            "bets":"下注",
+            "wins":"贏",
+            "losses":"輸",
+            "wagered":"下注",
+            "total_profit":"利潤總額",
+            "2fa":"2FA",
+            "keep_secure":"不要讓任何人看到這個!",
+            "copy_this_to_2fa":"將此代碼複製到驗證器app上",
+            "2fa_code":"雙因子碼",
+            "2fa_enable":"允許",
+            "error_2fa":"無效2FA碼",
+            "2fa_enabled":"您的帳號已啟動2FA.",
+            "disable_2fa":"禁用2FA",
+            "2fa_validate":"驗證",
+            "2fa_description":"從您的雙因子驗證器app輸入6位數字代碼",
+            "2fa_digits":":digits 留下的數字",
+            "profit":"利潤",
+            "games_c":"遊戲:",
+            "chart":{
+                "today":"今天",
+                "3days":"3天",
+                "1week":"1周",
+                "1month":"1个月",
+                "loading":"加载..."
+            }
+        },
+        "notifications":{
+            "title":"通知",
+            "withdraw_accepted":{
+                "title":"runeruby.com",
+                "message":"您創建的付款請求 {diff} ({sum} {currency}) 已被接受."
+            },
+            "withdraw_declined":{
+                "title":"runeruby.com",
+                "message":"您創建的付款請求 {diff} ({sum} {currency}) 已被拒絕. 原因: {reason}"
+            },
+            "vip_discord":{
+                "title":"會員",
+                "message":"您已收到 <svg style=\"width: 14px; height: 14px\"><use href=\"#vip-bronze\"></use></svg> 铜牌贵宾身份!<br><br>想要專屬會員推廣碼? 加入我们的Discord服务器，并链接您的Discord账户以获得VIP角色."
+            },
+            "email_reminder":{
+                "title":"runeruby.com",
+                "message":"別忘了添加電子郵箱，否則您不能訪問您的賬號!"
+            },
+            "deposit":"新存款: {sum} {currency}"
+        },
+        "fairness":{
+            "client_seed":"客戶端種子:",
+            "server_seed":"務器種子:",
+            "nonce":"隨機數:"
+        },
+        "lines":"行",
+        "profit_per_line":"每行投注金额",
+        "invalid_amount_per_line":"每行投注金额无效",
+        "ignore":"成功添加到忽略列表",
+        "unignore":"你不再忽视这个用户",
+        "ignored_already":"你已经忽略了这个用户",
+        "not_ignored":"这个用户没有被忽略",
+        "not_available":"可用",
+        "obtained":"已獲得",
+        "latest_bets": "住",
+        "select_currency": "选择硬币",
+        "strike_price": "游戏罢工价格",
+        "non_verifiable": "你无法通过Provably Fair工具验证这个游戏. 比较实际市场价格，而不是.",
+        "bullvsbear": {
+            "waiting_phase": "等待阶段",
+            "bet_phase": "赌注阶段",
+            "processing": "加工",
+            "target": "我认为，价值将去...",
+            "up": "涨幅",
+            "down": "下",
+            "decay_value": "中奖赔率"
+        },
+        "bets":{
+            "game":"遊戲",
+            "player":"玩家",
+            "time":"時間",
+            "bet":"賭注",
+            "mul":"派彩",
+            "win":"利潤",
+            "manual":"手動",
+            "auto":"自動",
+            "games":"遊戲次數",
+            "victory_stop":"贏了就停止",
+            "on_win":"在贏",
+            "on_loss":"在輸",
+            "reset":"重置",
+            "increase":"增加",
+            "auto_games_blocked":"設置限制，請點擊 &#8734;.",
+            "hidden":"玩家已隱藏他的個人資料",
+            "hidden_name":"已隱藏",
+            "make_bet":"下注",
+            "all":"所有",
+            "mine":"我的賭注",
+            "high_rollers":"高額賭注",
+            "lucky_wins":"幸運贏家"
+        },
+        "error":{
+            "invalid_password_confirm":"密码不匹配",
+            "offline_node":"我们目前无法处理这种货币的付款.",
+            "auth":"需要授权",
+            "wager":"最低数量 - {value}",
+            "disabled":"遊戲暫時可用",
+            "unknown_game":"未知遊戲",
+            "unknown_user":"未知用户",
+            "invalid_wager":"沒有足夠的錢",
+            "unknown_error":"出現一個錯誤 (code {code})",
+            "empty":"選擇格子!",
+            "should_have_empty_balance":"想要獲得獎金，您的餘額必須為0",
+            "autobet_pick_something":"選擇格子進入自動下注模式.",
+            "disabled_notifications":"您已拒絕接受通知。可以在您的瀏覽器設置中進行更改.",
+            "connection_lost":"務器連接丟失",
+            "connection_recovered":"連接已恢復",
+            "disabled_bets":"目前無法接受投注.",
+            "disabled_demo_bets":"本遊戲在演示模式下不接受投注.",
+            "muted":"聊天被靜音，直到 {time}",
+            "invalid_withdraw":"無效的提現金額.",
+            "only_one_withdraw":"您已要求提現.",
+            "enter_wallet":"請輸入您的錢包號碼!",
+            "promo_limit":"您已達到推廣碼的每日激活限制.",
+            "autobet_mines_error":"您已選擇了超出可用水晶數量的格子.",
+            "vip_only_promocode":"此推廣碼只適用於VIP會員."
+        },
+        "profit_monitoring":{
+            "title":"統計",
+            "wager":"賭注",
+            "profit":"利潤",
+            "wins":"贏",
+            "losses":"輸",
+            "no_data":"無數據"
+        },
+        "rain":"正在下雨!<br>{sum} {currency}",
+        "snow":"正在下雪!<br>{sum} {currency}",
+        "quiz":"問題:",
+        "quiz_answer":"正確答案:",
+        "quiz_user":"用戶:",
+        "chart":"图表",
+        "hilo-skip":"跳过",
+        "crash":"崩溃了",
+        "yes":"是",
+        "no":"否",
+        "coming_soon":"即",
+        "reload":"补给",
+        "spin":"旋轉",
+        "wager":"賭注金額",
+        "chip":"芯片值 ({value})",
+        "profit":"利潤",
+        "payout":"派彩",
+        "play":"開始",
+        "our_games":"我们的游戏",
+        "unit":"单位",
+        "cancel":"取消",
+        "undo":"撤銷",
+        "close":"關閉",
+        "change":"更改",
+        "even":"偶數",
+        "odd":"奇數",
+        "to":"{1} - {2}",
+        "take":"取出 {value}",
+        "start":"開始",
+        "stop":"結束",
+        "overview":"查看",
+        "share_text":"在runeruby.com上看我的遊戲!",
+        "share_vk":"在VK上分享鏈接",
+        "share_chat":"發送到聊天",
+        "share_telegram":"在Telegram上分享該遊戲",
+        "share_twitter":"在Twitter上分享該遊戲",
+        "share_link":"分享鏈接",
+        "link_copied":"已複製!",
+        "game_mode":"遊戲模式",
+        "color":"顏色",
+        "pins":"大頭針數量",
+        "autopick":"<i class=\"fas fa-wand-magic mr-1\"></i> 自動挑選",
+        "clear":"清除",
+        "mines":"地雷數量",
+        "edit":"編輯",
+        "add":"增加",
+        "already_purchased":"已購買",
+        "purchase_sticker_pack":"購買 {coins} <i class=\"fas fa-coins\"></i>",
+        "hilo-higher":"较高",
+        "hilo-lower":"降低",
+        "hilo-same":"一样",
+        "chance":"機會",
+        "chat_at":"輸入 @<strong>username</strong> 通知用戶",
+        "autoStop":"申請提現",
+        "target_payout":"目標派彩",
+        "win_chance":"獲勝機會",
+        "demo_popup_link":"為錢而玩",
+        "double":"雙倍",
+        "divide":"分開",
+        "got":"已得到",
+        "videopoker":{
+            "f_r":"皇家同花順",
+            "s_f":"同花順",
+            "k":"四張同號",
+            "f_h":"滿堂紅",
+            "f":"同花",
+            "s":"順子",
+            "t":"條",
+            "t_p":"兩對",
+            "p":"對 (J, Q, K, A)"
+        },
+        "deal":"發牌",
+        "stand":"停牌",
+        "hit":"拿牌",
+        "split":"分牌",
+        "insurance":"您需要保險嗎?",
+        "accept":"接受",
+        "decline":"拒絕",
+        "insurance_success":"您已購買保險.",
+        "blackjack":{
+            "0":"抽牌",
+            "1":"您輸了",
+            "2":"您贏了",
+            "3":"您贏了",
+            "4":"您輸了",
+            "5":"您贏了",
+            "6":"您輸了"
+        },
+        "difficulty":{
+            "title":"難度",
+            "low":"低",
+            "medium":"中",
+            "high":"高"
+        },
+        "baccarat":{
+            "player":"玩家",
+            "tie":"领带",
+            "pair_player":"{P} 对子",
+            "pair_banker":"{B} 对子",
+            "pair":"对子",
+            "banker":"银行家",
+            "empty":"成为第一个 - 下注"
+        },
+        "verify":"验证",
+        "black":"黑色",
+        "red":"红色",
+        "green":"绿化",
+        "yellow":"黃色",
+        "blue":"藍色"
+    },
+    "help":{
+        "contact_us":"聯繫我們",
+        "vk":{
+            "title":"VKontakte - 支持服务",
+            "time":"平均反应时间: 30 minutes"
+        },
+        "email":{
+            "title":"電子郵件-支持服務",
+            "time":"平均響應時間: 240 minutes"
+        },
+        "block":{
+            "questions":{
+                "title":"常見問題",
+                "about":{
+                    "title":"關於我們",
+                    "description":"runeruby.com - 在線比特幣賭博. 我们的游戏具有激动人心的机制和高胜算."
+                },
+                "how_to_play":{
+                    "title":"怎麼玩?",
+                    "description":"進入任何遊戲頁面，指定下注金額，點擊\"開始\"."
+                },
+                "bonus":{
+                    "title":"獎金",
+                    "description":"<a href=\"/bonus\">查看該頁面</a>!"
+                },
+                "fairness":{
+                    "title":"公平",
+                    "description":"隨機數生成器創建可證明且絕誠實的隨機數，用於確定在網站上每個遊戲結果. 每個用戶都可以以完全確定的方式檢查任何遊戲的結果. 向隨機數產生器輸入提供一個參數（客戶端種子），runeruby.com無法按自己的要求操作結果. runeruby.com隨機數產生器允許每個遊戲從給定的初始客戶端號、初始務器號碼和一次性號碼中請求任意隨機數. 您可以在公平遊戲頁面了解更多關於隨機數如何運作的資訊."
+                },
+                "partner":{
+                    "title":"從屬項目",
+                    "description":"邀請其他玩家通過您的推薦鏈接到我們的網站，並賺取傭金。詳細資訊可以在您的個人資料中找到."
+                },
+                "chat_rules":{
+                    "title":"了解規則",
+                    "description":"禁止:<ul><li>屏蔽</li><li>乞求</li><li>充滿了像\"雨\"和\"測試\"這樣的信息</li><li>外部鏈接/錢包/頁面</li><li>任何侮辱</li><li>給其他玩家銷售“戰術”和服務來提高餘額等.</li></ul>"
+                },
+                "p":{
+                    "title":"夥伴關係",
+                    "description":"聯繫我們: <a href=\"mailto:support@runeruby.com\">support@runeruby.com</a>"
+                }
+            },
+            "payments":{
+                "title":"存款",
+                "how_to":{
+                    "title":"如何存款?",
+                    "description":"想要存款，請點擊網頁右上角的餘額按鈕. 選擇一種方便的付款方式，輸入金額數量."
+                },
+                "com":{
+                    "title":"佣金",
+                    "description":"所有付款方式的佣金都會顯示在付款頁面"
+                },
+                "time":{
+                    "title":"注意",
+                    "description":"所有交易都會立即處理. 交易延遲只會發生在付款方式出現問題的情況下. 如有問題，請給我們的支援團隊來信，並提供關於您的問題最詳細的資訊."
+                }
+            },
+            "withdraws":{
+                "title":"提取資金",
+                "how_to":{
+                    "title":"如何提現?",
+                    "description":"從您的賬戶中提取資金，請點擊網頁右上角的錢包按鈕. 選擇方便的提現方式，輸入金額，並點擊\"前往付款\". 提取資金時，您必須下注您押金的100%（如果您不是用押金下注，則無需這樣做）."
+                },
+                "com":{
+                    "title":"佣金",
+                    "description":"提現時我們收取的佣金."
+                },
+                "time":{
+                    "title":"提現時間",
+                    "description":"所有請求的平均處理時間為1天，最長是3天. 在極少情況下，提現可能會延遲，原因是銀行負荷等.<br>檢查您是否在個人資料的交易頁面上輸入了正確的提現詳細資訊. 如果出現錯誤，請取消付款。如果已付款到錯誤的號碼，這筆錢將不能被退回."
+                }
+            },
+            "other":{
+                "title":"其他",
+                "rain":{
+                    "title":"雨/雪",
+                    "description":"雨或雪是一個聊天機器人，它餘額隨機分配給網站在線並在過去24小時內存入款項的隨機玩家."
+                },
+                "demo":{
+                    "title":"演示賬號",
+                    "description":"您可以通過點擊網站右上角的餘額圖示來啟動一個演示賬號. 它僅用於訓練目的——您不能撤回這些資金，遊戲歷史記錄也不會被保存下來."
+                },
+                "quiz":{
+                    "title":"測試",
+                    "description":"測驗可以以數學例子的形式自動進行，也可以由網站管理員來進行. 第一個正確回答問題的玩家將獲得獎勵."
+                },
+                "tactics":{
+                    "title":"戰術",
+                    "description":"沒有什麼戰術能保證有效. 這完全取決於您的玩法：快而高風險，或者慢而穩健."
+                },
+                "lost":{
+                    "title":"我輸了",
+                    "description":"在我們的網站上沒有一款遊戲的獲勝機會的100%的. 即使是99.9%的獲勝率，您也有千分之一的概率會輸掉. 例如，在遊戲“樓梯”中，當您在1塊石頭上玩時，您輸掉的概率為二十分之一（5%）. 我們從不干涉遊戲玩法，所以一切都取決於您的運氣. 我們不能替代您的遊戲結果，因為您那邊有一行字寫著“客戶端種子”. 最初，“客戶端種子”是自動生成的，但是您可以隨時更改它並在其中放置任何字符. 要檢查您的遊戲結果，點擊您的任何遊戲歷史記錄，在下方的視窗您會看到兩個欄位“客戶端種子”和“務器種子”. 要查看遊戲結果，您需要點擊“更改務器種子”，然後點擊“檢查”按鈕——您會看到遊戲結果保持不變. 我們建議您玩得更舒服些。發揮您自己的策略. 不要過於輕率，要及時停止並體現。賭博是用來娛樂的。當您下賭注的時候，記住您是在花錢做這件事。不要花費超過您能承受的範圍."
+                },
+                "reviews":{
+                    "title":"評論",
+                    "description":"評論可在我們的社交網路群組中獲得."
+                },
+                "job":{
+                    "title":"工作",
+                    "description":"空缺清单可在以下网站查阅 <a href=\"/job\">本页</a>. 請記住，這可能是空了很長一段時間的職位——我們並不總是需要新人加入我們的團隊."
+                }
+            }
+        }
+    },
+    "invest":{
+        "sidebar":{
+            "your_bankroll":"您的資金",
+            "your_share":"您的股份",
+            "your_investing_profit":"您的利润",
+            "site_bankroll":"網站的資金",
+            "site_profit":"網站的利潤",
+            "amount":"金額 (最小 {min})",
+            "invest":"投資"
+        },
+        "history":{
+            "amount":"投资",
+            "your_share":"您的份額",
+            "profit":"当前",
+            "status":"狀態",
+            "cancelled":"已取消",
+            "disinvest":"減資",
+            "dead":"損失"
+        },
+        "your_balance":"您的余额: {balance}",
+        "min":"最低数量: {min}",
+        "invest":"投资",
+        "invest_fee":"<span>1%</span> 您的定金将被扣除，作为不可退还的费用.",
+        "invest_fee_withdraw":"<span>{value}%</span> 佣金将从您的提款中扣除.",
+        "tabs":{
+            "overview":"概况",
+            "invest":"投资",
+            "history":"歷史記錄"
+        }
+    },
+    "partner":{
+        "tabs":{
+            "overview":"概况",
+            "list":"转诊",
+            "analytics":"分析"
+        },
+        "overview":{
+            "guest_content":"<p>參加我們的聯盟計畫，通過推廣runeruby.com賺錢!</p><p>每一位通过您的链接在runeruby.com上注册和游戏的活跃用户，您都会收到各种奖金.</p><button class=\"btn btn-primary\">登錄</button>",
+            "content":"<p>參加我們的聯盟計畫，通過推廣runeruby.com賺錢!</p><p>每一位通过您的链接在runeruby.com上注册和游戏的活跃用户，您都会收到各种奖金.</p><strong class=\"mt-2\">推薦鏈接</strong><input readonly class=\"mt-2\" style=\"cursor: pointer !important;\" id=\"link\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Copy link\" value=\"https://runeruby.com/?c={id}\"><p class=\"mt-4\"><strong>獎勵</strong><ul><li>用戶通過您的推薦鏈接進行註冊後，您將獲得獎金.</li><li>如果推薦是有效的，您也可以獲得獎金。您可以通過\"Referrals\"標籤追蹤您的推薦情況.</li><li>如果您已經成功邀請10位用戶，訪問\"Bonus\"頁面，點擊\"Affiliate Program\"，並得到一個增加到獎勵!</li><li>您將從您推薦人的存款中得到5%</li></ul></p>",
+            "header": "参与联盟计划，您将获得什么？:",
+            "1": "1. 您将根据您的VIP等级获得联盟存款的%.",
+            "2": "2. 注册后，您的会员将获得免费的BTC奖金.",
+            "3": "3. 如果您的联属会员很活跃，您还会收到他的奖金。您可以通过 \"联盟成员\"选项卡进行追踪.",
+            "4": "4. 每10个活跃的联属会员将为您提供一个奖励车轮旋转，并增加奖励."
+        },
+        "list":{
+            "name":"姓名",
+            "activity":"已收到活動獎勵"
+        },
+        "analytics":{
+            "referrals":"<strong>推薦次數:</strong> {count}",
+            "referrals_bonus":"<strong>活躍推薦:</strong> {count}"
+        }
+    },
+    "policy":{
+        "gaming_policy":"这个文件可以在/resources/lang/en/en.json",
+        "privacy_notice":"这个文件可以在/resources/lang/en/en.json",
+        "privacy_policy":"这个文件可以在/resources/lang/en/en.json",
+        "terms_and_conditions":"这个文件可以在/resources/lang/en/en.json"
+    },
+    "vip":{
+        "rank":{
+            "level":"會員級別 - :level",
+            "0":"-",
+            "1":"红宝石",
+            "2":"翡翠",
+            "3":"蓝宝石",
+            "4":"鑽石",
+            "5":"黄金"
+        },
+        "description":"您的會員級別是以您最喜歡的貨幣(:currency)來計算的 ({currency})",
+        "benefits_description":"會員權益:",
+        "benefits":"權益",
+        "benefit_list":{
+            "ruby":{
+                "1":"每周VIP奖励",
+                "2":"获取VIP密码",
+                "3":"Discord服务器上的VIP角色",
+                "4":"联盟存款的2%佣金"
+            },
+            "emerald":{
+                "1":"每天激活Promocode的次数从2次增加到3次",
+                "2":"增加每周VIP奖金",
+                "3":"联盟存款的3%佣金"
+            },
+            "sapphire":{
+                "1":"VIP促销码不会影响每天的激活上限",
+                "2":"增加每周VIP奖金",
+                "3":"联盟存款的5%佣金"
+            },
+            "diamond":{
+                "1":"您的取款在排隊中具有更高的優先順序",
+                "2":"代碼啟動限制現在每12小時重置一次",
+                "3":"每週獎金增加"
+            },
+            "gold":{
+                "1":"會員碼影響推廣碼的整體激活限制",
+                "2":"每週獎金增加",
+                "3":"增加每周VIP奖金",
+                "4":"20％的佣金从联盟存款"
+            }
+        },
+        "bonus":{
+            "tooltip":"每週會員獎金",
+            "title":"每週獎金",
+            "progress_title":"進步",
+            "description":"成為runeruby.com會員，您將獲得每週獎金作為獎勵，獎金的最大數額是由您的會員級別決定的 - {vip}.<br><br>您每下賭注一次，獎金就增加0.1%.<br>您可以在任何時候提取您的每週獎金，但請記住，提取獎金之後，這週的剩餘時間裡，您將無法獲得這筆獎金.<br><br>我們每週日重置每週進度。記得在這天之前領取獎勵!",
+            "timeout":"<br><strong>您已收到獎金了.</strong><br>請星期天再回來!<br><br>"
+        }
+    },
+    "wallet":{
+        "tabs":{
+            "deposit":"存款",
+            "withdraw":"提現",
+            "history":"歷史紀錄",
+            "deposits":"存款",
+            "withdraws":"提現",
+            "exchange":"兑换"
+        },
+        "exchange": "兑换",
+        "exchange_success": "成功案例!",
+        "set_email":"在您的个人资料中设置电子邮件以使用这种付款方式.",
+        "bank":{
+            "title":"银行存款",
+            "description":"验证请求发送成功。你可以在 \"历史记录\"中查看它的状态 -> \"存款\" tab.",
+            "transfer_here":"转账到这个银行号码:",
+            "bank_check":"要求核查",
+            "transaction_id":"交易ID",
+            "notify":"转账完成后，点击 \"请求验证\"按钮.<br>我们的操作员会检查您的交易，并手动将资金添加到您的账户中.<br>这种付款方式 <strong>是不是</strong> 即时.",
+            "invalid_txid":"无效的交易ID",
+            "already_have_one_in_moderation":"你已经有一个验证请求在等待.",
+            "cancelled":"银行存款验证请求被取消"
+        },
+        "s":{
+            "amount":"存款金额",
+            "deposit":"存款",
+            "invalid_amount":"无效金额",
+            "conversion_rate":"转换率: {usd} USD = {token} <i class=\"{icon}\" style=\"color: {style}\"></i>"
+        },
+        "pending":"待定",
+        "method":"付款方式:",
+        "troubles":"需要帮助?<br>联系我们<a href=\"/help\">支援队</a>",
+        "fast":"当您入金后，您会收到即时通知，并能查看您的交易确认次数",
+        "deposit":{
+            "address":"您的 {currency} 存款地址",
+            "confirmations":"只發送 {currency} 到該地址，需要 {confirmations} 確認."
+        },
+        "withdraw":{
+            "title":"提現",
+            "button":"提現",
+            "method":"取款方式:",
+            "enter_wallet":"錢包:",
+            "wallet":"錢包",
+            "go":"提現",
+            "content":"撤单成功。你可以在 \"历史记录\"部分查看它的状态.",
+            "vip_content":"<div class=\"mt-2\">由于您的VIP级别是 <svg style=\"width: 14px; height: 14px;\"><use href=\"#vip-diamond\"></use></svg>, 你的请求被放在了队列的最前面.</div>"
+        },
+        "history":{
+            "empty":"你还没有订购任何东西呢.",
+            "name":"貨幣",
+            "sum":"金額",
+            "date":"日期",
+            "status":"狀態",
+            "confirmations":"確認",
+            "id":"ID: :身份",
+            "paid":"成功",
+            "wallet":"地址: {wallet}",
+            "cancel":"取消",
+            "withdraw_cancelled":"付款已取消.",
+            "withdraw_status":{
+                "moderation":"適度",
+                "accepted":"成功",
+                "declined":"拒絕",
+                "reason":"原因:",
+                "cancelled":"用戶已取消"
+            }
+        },
+        "copy":"複製",
+        "copied":"已複製!"
+    },
+    "404": {
+        "title": "抱歉，此页面无法使用.",
+        "subtitle": "您所跟随的链接可能已断开，或者该页面可能已被删除."
+    }
+}

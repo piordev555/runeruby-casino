@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="126px" viewBox="0 0 20 126" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Payout pointer</title>
+    <defs>
+        <path d="M11,2 L11.0008069,108.083094 C13.8381232,108.559504 16,111.027285 16,114 C16,117.313708 13.3137085,120 10,120 C6.6862915,120 4,117.313708 4,114 C4,111.026937 6.16238395,108.558925 9.00019152,108.082926 L9,2 L11,2 Z" id="path-1"></path>
+        <filter x="-58.3%" y="-4.2%" width="216.7%" height="111.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Payout-pointer" fill-rule="nonzero">
+            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            <use fill="#FFFFFF" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

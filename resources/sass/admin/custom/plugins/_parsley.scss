@@ -1,0 +1,43 @@
+//
+// parsley.scss
+//
+ 
+.parsley-errors-list {
+  margin: 0;
+  padding: 0;
+
+  > li {
+    list-style: none;
+    color: $danger;
+    margin-top: 10px;
+    padding: 4px 7px 4px 28px;
+    position: relative;
+    display: inline-block;
+    background-color: rgba($danger, 0.2);
+    border-radius: 7px;
+  
+    &:before {
+      content: "\ebee";
+      font-family: "unicons";
+      position: absolute;
+      left: 8px;
+      top: 4px;
+    }
+    &:after {
+      content: "";
+      border: 8px solid transparent;
+      border-bottom-color: rgba($danger, 0.2);
+      position: absolute;
+      left: 14px;
+      top: -16px;
+    }
+  }
+}
+
+.parsley-error {
+  border-color: $danger;
+}
+
+.parsley-success {
+  border-color: $success;
+}

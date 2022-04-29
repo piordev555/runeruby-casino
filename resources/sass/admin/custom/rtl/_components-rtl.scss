@@ -1,0 +1,162 @@
+//
+// components-rtl.scss
+//
+
+
+// Custom Accordion
+
+.custom-accordion{
+  .card{
+    padding-left: 0px;
+    padding-right: 40px;
+    border-left: 0 !important;
+    border-right: 2px dashed $gray-300 !important;
+  }
+
+  .card-header{
+    &:before{
+      right: 6px
+    }
+  }
+
+  .help-icon{
+    right: -12px;
+  }
+}
+
+// icons
+
+.icons-list-demo{
+  i{
+    margin-left: 12px;
+    margin-right: 0;
+  }
+}
+
+// Custom-radio
+
+.checkbox {
+  label {
+    padding-right: 8px;
+    padding-left: 0;
+
+    &::before {
+      left: auto;
+      right: 0;
+      margin-left: 0;
+      margin-right: -18px;
+    }
+
+    &::after {
+      left: auto;
+      right: 0;
+      margin-right: -18px;
+      margin-left: 0;
+      padding-left: 0;
+      padding-right: 3px;
+    }
+  }
+
+  input[type="checkbox"]:checked+label {
+    &::after {
+      left: auto;
+      right: 7px;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.checkbox.checkbox-single {
+  label {
+    &:before {
+      margin-right: 0;
+    }
+
+    &:after {
+      margin-right: 0;
+    }
+  }
+}
+
+
+// custom-radio
+
+.radio {
+  label {
+    padding-left: 0;
+    padding-right: 8px;
+
+    &::before {
+      left: auto;
+      right: 0;
+      margin-left: 0;
+      margin-right: -18px;
+    }
+
+    &::after {
+      left: 0;
+      right: 6px;
+      margin-left: 0;
+      margin-right: -20px;
+    }
+  }
+}
+
+// Chat widget
+
+.conversation-list {
+  .chat-avatar {
+    float: right;
+  }
+  .ctext-wrap {
+    &:after {
+      left: 99%;
+      right: auto;
+      margin-left: 0;
+      margin-right: -1px;
+      border-right-color: transparent;
+      border-left-color: lighten($primary, 40%);
+    }
+  }
+
+  .conversation-text {
+    float: right;
+    margin-right: 12px;
+    margin-left: 0;
+  }
+    .odd {
+    .chat-avatar {
+      float: left !important;
+    }
+
+    .conversation-text {
+      float: left !important;
+      margin-right: 0;
+      margin-left: 12px;
+      text-align: left;
+    }
+
+    .ctext-wrap {
+      &:after {
+        border-color: transparent;
+        border-left-color: transparent;
+        border-right-color: $gray-200;
+        border-top-color: $gray-200;
+        left: auto !important;
+        right: 99% !important;
+      }
+    }
+  }
+}
+
+
+// Invoice
+
+@media print {
+  .content-page,
+  .content,
+  body {
+      margin-right: 0;
+  }
+}
+

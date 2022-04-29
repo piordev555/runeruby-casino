@@ -1,0 +1,3 @@
+This game provider requires individual API key, which we can't provide ourselves for demo website.
+
+Contact our sales team if you want to connect this game provider on your website.

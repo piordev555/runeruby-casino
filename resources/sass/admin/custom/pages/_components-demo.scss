@@ -1,0 +1,73 @@
+// 
+// components-demo.scss
+//
+
+// Demo Only
+.button-list {
+    margin-left: -8px;
+    margin-bottom: -12px;
+    
+    .btn {
+        margin-bottom: 12px;
+        margin-left: 8px;
+    }
+}
+
+
+// Icon demo ( Demo only )
+.icons-list-demo {
+    div {
+        cursor: pointer;
+        line-height: 45px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display: block;
+        overflow: hidden;
+        color: $gray-600;
+        p {
+            margin-bottom: 0;
+            line-height: inherit;
+        }
+    }
+    i {
+        text-align: center;
+        vertical-align: middle;
+        font-size: 22px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        margin-right: 12px;
+        border-radius: 50%;
+        display: inline-block;
+        transition: all 0.2s;
+    }
+    .col-lg-4 {
+        border-radius: 3px;
+        background-clip: padding-box;
+        margin-top: 10px;
+
+        &:hover {
+            i {
+                background-color: $primary;
+                color: $white;
+                text-shadow: 5px 5px rgba($white, 0.2);
+            }
+        }
+    }
+}
+
+.icons-list  {
+    .icon-item{
+        padding: 15px 0;
+        color: $gray-600;
+        svg{
+            margin-right: 10px;
+        }
+        
+        span{
+            line-height: 30px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+}

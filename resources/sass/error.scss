@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
+@import 'variables';
+
+body {
+    background: #1a191e;
+    color: white;
+    font-family: $font-family-sans-serif;
+}
+
+.code {
+    position: absolute;
+    left: 10%;
+    top: 40%;
+
+    div:first-child {
+        font-size: 3.5em;
+    }
+
+    div:last-child {
+        font-size: 1.5em;
+    }
+}

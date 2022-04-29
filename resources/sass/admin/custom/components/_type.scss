@@ -1,0 +1,80 @@
+// 
+// type.scss
+//
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 10px 0;
+    font-family: $font-family-secondary;
+    color: $gray-700;
+    font-weight: $font-weight-semibold;
+}
+
+p {
+    line-height: 1.6;
+}
+
+// Font sizes (Custom)
+.font-size-11 {
+    font-size: 11px !important;
+}
+
+.font-size-12 {
+    font-size: 12px !important;
+}
+
+.font-size-13 {
+    font-size: 13px !important;
+}
+
+.font-size-14 {
+    font-size: 14px !important;
+}
+
+.font-size-15 {
+    font-size: 15px !important;
+}
+
+.font-size-16 {
+    font-size: 16px !important;
+}
+
+.font-size-17 {
+    font-size: 17px !important;
+}
+
+.font-size-18 {
+    font-size: 18px !important;
+}
+
+.font-size-19 {
+    font-size: 19px !important;
+}
+
+.font-size-20 {
+    font-size: 20px !important;
+}
+
+.font-size-22 {
+    font-size: 22px !important;
+}
+
+.font-size-24 {
+    font-size: 24px !important;
+}
+
+// text utilies
+.text-unline-dashed {
+    border-bottom: $gray-400 1px dashed !important;
+    padding-bottom: 1px;
+}

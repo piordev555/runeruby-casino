@@ -1,0 +1,72 @@
+//
+// reboot.scss
+//
+
+
+// a
+
+a {
+  text-decoration: none !important;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+// Forms
+label {
+  font-weight: $font-weight-semibold;
+}
+
+// Buttons
+button:focus {
+  outline: none;
+}
+
+// blockquote
+
+.blockquote{
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid $gray-200;
+  
+  &.blockquote-reverse{
+    border-left: 0;
+    border-right: 4px solid $gray-200;
+    text-align: right;
+  }
+}
+
+
+// Icons
+.icon-dual {
+  color: $gray-600;
+  fill: rgba($gray-600, 0.12);
+}
+
+@each $color, $value in $theme-colors {
+  .icon-dual-#{$color} {
+    color: $value;
+    fill: rgba($value, 0.16);
+  }
+}
+
+.icon-xs {
+  height: 16px;
+  width: 16px;
+}
+
+.icon-lg {
+  height: 32px;
+  width: 32px;
+}
+
+.icon-xl {
+  height: 48px;
+  width: 48px;
+}
+
+.icon-xxl {
+  height: 72px;
+  width: 72px;
+}

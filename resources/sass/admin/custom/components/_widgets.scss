@@ -1,0 +1,138 @@
+// 
+// widgets.scss
+//
+
+
+// Simple tile box
+.widget-flat {
+    position: relative;
+    overflow: hidden;
+
+    i.widget-icon {
+        font-size: 36px;
+    }
+}
+
+/* Chat widget */
+
+.conversation-list {
+    list-style: none;
+    height: 332px;
+    padding: 0 7px;
+
+    li {
+        margin-bottom: 24px;
+    }
+
+    .chat-avatar {
+        float: left;
+        text-align: center;
+        width: 34px;
+
+        img {
+            border-radius: 100%;
+            width: 100%;
+        }
+
+        i {
+            font-size: 12px;
+            font-style: normal;
+        }
+    }
+
+    .ctext-wrap {
+        background: lighten($primary, 32%);
+        color: $primary;
+        border-radius: $border-radius;
+        display: inline-block;
+        padding: 4px 12px;
+        position: relative;
+        min-width: 160px;
+
+        i {
+            display: block;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: $font-weight-bold;
+            position: relative;
+        }
+
+        p {
+            margin: 0;
+            padding-top: 3px;
+        }
+
+        &:after {
+            right: 98%;
+            top: 0;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-top-color: lighten($primary, 32%);
+            border-width: 6px;
+            margin-left: -1px;
+            border-right-color: lighten($primary, 32%);
+        }
+    }
+
+    .conversation-text {
+        float: left;
+        font-size: 12px;
+        margin-left: 12px;
+        width: 70%;
+    }
+
+    .odd {
+        .chat-avatar {
+            float: right !important;
+        }
+
+        .conversation-text {
+            float: right !important;
+            margin-right: 12px;
+            text-align: right;
+            width: 70% !important;
+        }
+
+        .ctext-wrap {
+            background-color: $gray-300;
+            color: $gray-700;
+            &:after {
+                border-color: transparent;
+                border-left-color: $gray-300;
+                border-top-color: $gray-300;
+                left: 99% !important;
+            }
+        }
+    }
+}
+
+/* profile / users */
+.profile-widget {
+    position: relative;
+
+    .card-action {
+        position: absolute;
+        right: 7px;
+        top: 12px;
+        z-index: 100;
+    }
+
+    .card-img-top {
+        max-height: 220px;
+    }
+
+    .profile-info {
+        margin-top: -2.7rem;
+    }
+}
+
+.calendar-widget {
+    .flatpickr-calendar {
+        box-shadow: none;
+        border: $border-width solid $border-color !important;
+    }
+}

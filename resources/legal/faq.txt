@@ -1,0 +1,79 @@
+Useful tips on how you can start your game journey today and answers to frequently asked questions (FAQs).
+
+Do I have to register on your website in order to use it?
+
+Yes. Registering is very easy. You need to be at least 18 years old. You must also have reached the age of majority in your jurisdiction.
+
+You must also be allowed to play online games under the laws of your country that apply to you. Please read our terms and conditions for more information about this specific topic.
+
+Please note: Online games may possibly be addictive. We advise players to seek professional help if this is the case and/or apply methods of self control.
+
+Questions concerning my account: I've forgotten my password. What shall I do?
+
+We suggest that you reset it by using our 'Forget password' link. Next you will receive an email with instructions on how to reset your password.
+
+If you follow these instructions you will quickly regain access to your account.
+
+I don't have access to my mobile phone because it has been damaged or because I've lost it or because it has been stolen: What steps are necessary to reset Google authenticator?
+
+If you cannot longer use the two-factor authentication (2FA) provided by Google or similar services, you'll have to contact us.
+
+After we've received your application to reset 2FA for your account, we will ask you a few security questions. If you answer them correctly, we will remove 2FA.
+
+I wish to use a new username or or change the email address under which I've registered for your service. How do I do that?
+
+We are sorry, but we cannot change this information. If you persist on changing registered email and/or username, we recommend that you close your existing account and register a different one.
+
+I'd really like to enjoy VIP privileges, what is necessary to achieve this status?
+
+Our VIP club is strictly by invitation. In order to become an exclusive member, all you have to do is to begin your journey of the game, play regularly.
+
+After a short while we will inform you by email about your VIP status.
+
+Questions about my wallet: I understand that my wallet is part of the user account as a whole. What can I do with it?
+
+Yes, your wallet is part of your account.
+
+You can view the balance of all supported currencies that it contains. You can also deposit or withdraw money. And you can search the transaction records.
+
+Speaking about depositing: How do I do that?
+
+It's quite simple: Go to 'My wallet'. Open the the deposit page. On this page, the wallet address will be displayed. Copy ithe address or scan the QR code displayed next to it and make your payment.
+
+OK, I now know how to deposit money, but how do I withdraw?
+
+Again, go to 'My wallet', open the withdraw page, provide the target address of the wallet you wish to withdraw to.
+
+Next enter the amount of cryptocurrency you wish to withdraw. Have a look at the fees that may apply and confirm the withdrawal by clicking the confirmation button.
+
+Now the cryptocurrency will be transmitted to your wallet. Look at the corresponding cryptocurrency and check that it has arrived.
+
+Now that I know more about how withdrawing works, I'd like to know: Is there a minimum amount for withdrawals?
+
+Yes. It varies depending on which cryptocurrency you withdraw. The reason behind this is: Each cryptocurrency has a different value. Therefore, the the minimum amount that can be withdrawn also varies.
+
+OK, I understand that. Next I'd like to know: How much time does it take until the money arrives at my account (deposits) and how long do withdrawals take?
+
+This depends among other things on the cryptocurrency and its blockchain.  Each transaction requires several confirmations on the blockchain before it is considered final.
+
+This may take some time. As a rule of thumb, it typically takes 5–15 minutes until a transaction is confirmed on the blockchain (sometimes faster).
+
+In case you {encounter|experience} any issues during deposits or withdrawals, feel free to check the status of your transaction at blockchain.info.
+
+Alternatively, contact the technical support on our site.
+
+I see, transactions  may take some time because of the need of several confirmations on the blockchain. How many are required?
+
+For withdrawals, at least three confirmations are necessary. You can check the progress by clicking deposit link on the withdrawal page.
+
+Who provides these confirmations for my transaction?
+
+All information concerning confirmations is provided by a) the wallet supplier, b) the blockchain and c) the miners.
+
+How long do I have to wait for a confirmation of a transaction?
+
+As we said earlier: It depends on the blockchain, i.e. the type of cryptocurrency. In addition, it also relies on the transfer fee. In some cases it may take several hours.
+
+What shall I do if my game hangs or there is another technical problem with it?
+
+In case you encounter a technical issue while playing, please first refresh the game. Typically it will work fine after a refresh. If the issue persists, please contact us, and we will help you.

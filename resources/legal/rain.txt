@@ -1,0 +1,7 @@
+"Rain" is a chat bot that distributes funds to random people that made at least one deposit in latest 24 hours.
+
+Requirements:
+
+1. Deposit is required in the last 24 hours
+2. The bot sends a random number of funds at a random time (the minimum number of distributions is 10 per day, the maximum is 20)
+3. Number of people - from 5 to 15 per distribution

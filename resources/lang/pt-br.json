@@ -1,0 +1,897 @@
+{
+    "third-party": {
+        "unavailable_currency": "Desculpe, mas você não pode brincar com esta moeda.",
+        "guest": "Você precisa fazer login para poder jogar este jogo."
+    },
+    "bonus":{
+        "vip":{
+            "title":"VIP",
+            "description":"Como membro do programa VIP, você tem direito a um bônus VIP semanal. Descubra mais sobre isso!",
+            "unavailable_description":"Todos os participantes do programa VIP têm direito a um bônus semanal."
+        },
+        "wheel":{
+            "description":"Gire a roleta a cada 3 minutos para obter um bonus gratuito!",
+            "title":"roleta"
+        },
+        "promo":{
+            "description":"Tem um código? Resgate-o e obtenha um bônus!",
+            "activate":"Ativar",
+            "title":"Código promocional",
+            "placeholder":"Código",
+            "success":"Sucesso",
+            "invalid":"Código inválido",
+            "expired_time":"Código inválido.",
+            "expired_usages":"Código inválido: limite de ativação excedido.",
+            "used":"Você já utilizou este código."
+        },
+        "partner":{
+            "title":"Programa de afiliados",
+            "description":"Convide seus amigos para o runeruby.com.com e ganhe um bónus por 10 referidos ativos!"
+        },
+        "rain":{
+            "description":"Depois de algumas horas, ocorre um evento no chat que distribui o bônus para pessoas aleatórias.",
+            "title":"chuva",
+            "modal_description":"Chuva é um chatbot que distribui moedas para pessoas aleatórias. <br> Critérios para concorrer à chuva:<ul class=\"mt-2\"><li>É necessário ter feito um depósito nas últimas 24 horas</li><li>O bot envia um número aleatório de moedas em um momento aleatório (o número mínimo de distribuições por dia é 10, e o máximo é 20)</li><li>Número de pessoas – de 5 a 15</li></ul>"
+        },
+        "discord":{
+            "title":"Discord",
+            "common_desc":"Participe do nosso servidor Discord e ganhe um bônus!",
+            "description":"Participe do nosso servidor Discord e ganhe um bônus!",
+            "redirect":"Conectar conta",
+            "link":"Para receber um bonus, você deve:<ul><li>Conectar-se à sua conta no Discord</li><li>Participe do nosso servidor Discord</li></ul>Depois de conectar-se à sua conta no Discord e participar do servidor, volte a essa página e clique no botão \"Verificar\".",
+            "subscribe":"Participe do nosso servidor Discord para receber um bonus.<br>Depois de participar, clique no botão “Verificar” e o bônus vai ser depositado instantaneamente!",
+            "check":"Verificar",
+            "redirect_group":"Participe do nosso servidor Discord",
+            "success":"Sucesso!",
+            "error":{
+                "1":"Você não está participando do nosso servidor Discord.",
+                "2":"Você já recebeu este bônus."
+            }
+        },
+        "notifications":{
+            "title":"Notificações",
+            "description":"Habilite as notificações e seja o primeiro a receber atualizações sobre o runeruby.com!"
+        }
+    },
+    "footer":{
+        "accepted_currencies": "Moedas aceitas",
+        "need_help": "Precisa de ajuda?",
+        "terms_and_conditions": "Termos e condições",
+        "bonus": "Termos e Condições de Bônus",
+        "privacy_policy": "Política de Privacidade",
+        "affiliates": "Afiliados"
+    },
+    "chat":{
+        "error":{
+            "length":"ua mensagem é muito curta ou muito longa",
+            "muted":"O chat está mudo"
+        }
+    },
+    "dice":{
+        "lower":"Mais baixo",
+        "higher":"Mais alto",
+        "chance":"Chance"
+    },
+    "error":{
+        "code":"Ocorreu um erro no servidor interno ({code})",
+        "wait_finish":"Aguarde o término do jogo",
+        "validation":{
+            "required":"Preencha este campo",
+            "min":{
+                "string":"Valor é baixo demais"
+            },
+            "max":{
+                "string":"Valor é alto demais"
+            },
+            "unique":"Este valor já foi registrado",
+            "regex":"Valor inválido"
+        },
+        "invalid_browser":"<h1>Seu navegador da web está desatualizado.</h1>Para jogar no runeruby.com, você precisa atualizá-lo com a versão mais recente.",
+        "no_js":"<h1>Error</h1>Seu navegador da web não oferece suporte para JavaScript."
+    },
+    "fairness":{
+        "title": "Equidade",
+        "tabs":{
+            "overview":"Visão Geral",
+            "dev":"Implementação",
+            "transform":"Conversão",
+            "events":"Eventos do jogo",
+            "calculator":"Calculadora"
+        },
+        "overview":{
+            "1":"<h6>Resolvendo o Problema da Falta de Confiança com Apostas Online</h6><p>O conceito subjacente de imparcialidade comprovável é que os jogadores têm a capacidade de provar e verificar que seus resultados são justos e não manipulados. Isso é obtido através do uso de um esquema de comprometimento, juntamente com hashing criptográfico.</p><p>O esquema de comprometimento é usado para garantir que o jogador tenha influência em todos os resultados gerados. O hashing criptográfico é usado para garantir que o cassino também permaneça honesto com este esquema de comprometimento. Ambos os conceitos combinados criam um ambiente de confiança quando se joga online.</p><p>Isso é simplificado na seguinte representação:</p>"
+        },
+        "dev":{
+            "1":"<h6> Geração de Número Aleatório </h6><p>Para cada aposta que é verificada, nós usamos: seed do cliente, seed do servidor, nonce e cursor como parâmetros de entrada para a função de geração de número aleatório. A função usa o <strong> HMAC_SHA256 </strong> hash criptográfico para gerar bytes, que são então usados como a base de como geramos resultados aleatórios confiáveis em nossa plataforma. </p> ",
+            "2":"<h6 class=\"mt-4\"> Semente de servidor </h6>O seed do servidor é gerado pelo nosso sistema na forma de uma sequência aleatória de 32 caracteres antes do início do jogo, que você não consegue reconhecer até que seja concluído. A razão pela qual não fornecemos a você o seed do servidor em nenhum momento é que, neste caso, o jogador seria capaz de calcular os resultados dos jogos com antecedência.<h6 class=\"mt-4\"> Semente de cliente </h6>O seed do cliente é propriedade do jogador e é usado para garantir que o jogador também influencie a aleatoriedade dos resultados gerados. Sem este componente do algoritmo, apenas o seed do servidor terá uma influência completa no resultado de cada aposta. Todos os jogadores são livres para editar e mudar seu lado do cliente regularmente para criar uma nova cadeia de próximos resultados aleatórios. Isso garante que o jogador tenha controle absoluto sobre a geração do resultado, como cortar um baralho em um cassino normal. Durante o registro, seu navegador cria um seed do cliente para garantir o bom funcionamento do site. Embora este seed do cliente gerado aleatoriamente seja considerado apropriado, recomendamos fortemente que você escolha o seu próprio para que sua influência seja incluída na aleatoriedade. Você pode fazer isso nas configurações do seu perfil.<h6 class=\"mt-4\"> Nonce </h6>Nonce é simplesmente um número que aumenta em 1 com cada nova aposta que você faz. Devido às peculiaridades da função de criptografia SHA256, um resultado completamente novo é criado a cada vez. A implementação do nonce garante que permaneçamos comprometidos com o seu par cliente e servidor, ao mesmo tempo que geramos novos resultados para cada aposta feita.<h6 class=\"mt-4\"> Cursor </h6>Nós usamos 4 bytes de dados para gerar um resultado de jogo. Como o SHA256 é limitado a 32 bytes, usamos esta implementação de cursor para nos permitir criar mais eventos de jogo sem ter que mudar nosso algoritmo de honestidade comprovável. O cursor é iterado apenas quando o jogo requer mais de 8 (32 bytes / 4 bytes) resultados possíveis. Por exemplo: quando nós precisamos usa mais do que 8 cartas em um jogo de blackjack. O cursor começa em 0 e aumenta em 1 cada vez que 32 bytes são retornados pela função HMAC_SHA256. Se não precisarmos que mais de 8 números aleatórios sejam gerados para eventos de jogo, o cursor não aumenta porque não há necessidade de gerar quaisquer resultados possíveis de jogo adicionais. "
+        },
+        "transform":{
+            "1":"<h6>Bytes de poto flutuante</h6><p>O resultado da função do gerador de números aleatórios (byteGenerator) é um hash hexadecimal de 32 bytes. Conforme explicado na implementação do cursor, usamos 4 bytes de dados para gerar um resultado do jogo. Conforme explicado na implementação do cursor, usamos 4 bytes de dados para gerar um resultado do jogo (4 bytes são usados em vez de um para fornecer um nível mais alto de precisão ao gerar números de ponto flutuante. É com esses números gerados que obtemos o resultado formal do algoritmo honesto comprovável antes de ser traduzido em eventos de jogo. </p> ",
+            "2":"<h6 class=\"mt-4\"> Números de ponto flutuante em eventos de jogo </h6><p> Uma vez que o processo de geração de números aleatórios é universal para todos os nossos jogos,É nesta fase da geração do resultado do jogo que um procedimento único é implementado, permitindo determinar a transferência de um número de ponto flutuante para eventos do jogo. Um resultado gerado aleatoriamente é multiplicado pelos possíveis resultados restantes de um determinado jogo. Por exemplo: em um jogo que usa um baralho de 52 cartas, isso pode ser feito simplesmente multiplicando o número por 52. O resultado dessa equação é então convertido no evento de jogo correspondente. Para jogos em que vários eventos de jogo são necessários, esse processo continua a cada 4 bytes na cadeia de resultados, que foi gerada usando a função byteGenerator descrita. </p> <h6 class=\"mt-4\"> Eventos de jogo aleatório </h6>  <p> Para jogos como Keno, Campo Minado e Vídeo-pôquer, onde os resultados não podem ser duplicados, usamos o algoritmo de embaralhamento aleatório <a href=\"https://en.wikipedia.org/wiki/Fisher%E2%80% 93Yates_shuffle\" target=\"_blank\"> Fisher Yates </a>. </p> "
+        },
+        "events":{
+            "1":"<p> Os eventos do jogo são a tradução de números gerados aleatoriamente no resultado específico do jogo correspondente. Isso inclui tudo, desde o resultado de um lançamento de dados até a ordem das cartas no baralho ou até mesmo a localização de cada bomba no Campo Minado. A seguir está uma explicação detalhada de como traduzimos números em eventos para cada jogo específico em nossa plataforma. </p> <h6> Blackjack, Hilo & Bacará </h6> <p> Existem 52 resultados possíveis diferentes no baralho de cartas padrão: </p> ",
+            "2":"<h6> Diamantes </h6><p> Ao jogar Diamantes, existem 7 resultados possíveis na forma de diamantes. Para conseguir isso, multiplicamos cada número de ponto flutuante por 7 e, em seguida, traduzimos para o diamante correspondente: </p> ",
+            "3":"<p> Em seguida, o jogador recebe 5 diamantes. </p><h6> Dado </h6><p> Em nossa versão do jogo de dados, cobrimos o possível spread de lançamento de 00,00 a 100,00, que tem um intervalo de 10.001 resultados possíveis. A tradução dos eventos do jogo é realizada multiplicando o número de ponto flutuante pelo número de resultados possíveis e, em seguida, dividindo por 100 para que o número resultante corresponda aos limites de nosso intervalo declarado de dados. </p> ",
+            "4":"<h6> Limbo </h6> <p> Quando se trata do Limbo, usamos um processo de duas etapas. Em primeiro lugar, pegamos o número e o multiplicamos pelo multiplicador máximo possível e por% da vantagem da casa. Então, para gerar um evento de jogo usando <a href=\"https://en.wikipedia.org/wiki/Probability_distribution\" target=\"_blank\"> distribuição de probabilidade </a>, dividimos o fator máximo possível pelo resultado da primeira etapa para criar um evento de jogo na forma de um coeficiente final. </p> ",
+            "5":"<h6> Canaleta </h6><p> Para qualquer jogo de Canaleta, o resultado gerado é baseado em qual célula a bola cairá. </p> ",
+            "6":"<h6> Roleta </h6><p> Nossa roleta é retirada da versão europeia do jogo, na qual a roda consiste em 37 bolsos possíveis diferentes no intervalo de 0 a 36. Um evento de jogo é calculado multiplicando o número por 37 e, em seguida, transferido para o bolso apropriado: </p> ",
+            "7":"<h6> Keno </h6> <p> Os jogos Keno tradicionais requerem uma seleção de 10 eventos de jogo possíveis na forma de células no tabuleiro de jogo. Para conseguir isso, multiplicamos cada número de ponto flutuante pelo número de quadrados únicos possíveis. </p> ",
+            "8":"<p> A implementação de uma sequência aleatória de Fisher-Yates é usada para evitar a duplicação de possíveis resultados. </p><h6> Campo Minado </h6><p> Campo Minado consiste em 24 eventos de jogo separados na forma de minas no campo de jogo. Cada número é multiplicado pelo número de peças únicas possíveis que ainda permanecem no tabuleiro. As localizações das células são construídas usando a posição da grade da esquerda para a direita, de cima para baixo. A implementação de uma sequência aleatória de Fisher-Yates é usada para evitar a duplicação de possíveis resultados. Dependendo das configurações selecionadas, 2 a 24 resultados de eventos de jogo são usados. </p><h6> Vídeo-pôquer </h6><p> Jogar Vídeo-pôquer inclui 52 eventos de jogo individuais na forma de cartas no baralho. Cada número é multiplicado pelo número de cartas possíveis restantes no baralho. </p> ",
+            "9":"<p> A implementação de uma sequência aleatória de Fisher-Yates é usada para evitar a duplicação de possíveis resultados. </p>"
+        },
+        "calculator":{
+            "game":"Jogo",
+            "client_seed":"Seed do cliente",
+            "nonce":"Nonce",
+            "server_seed":"Seed do servidor",
+            "result":"Resultado"
+        }
+    },
+    "game_help":{
+        "next":"Próximo",
+        "close":"Perto",
+        "dice":{
+            "1":"Defina a chance de ganhar na barra deslizante e clique em \"Jogar\" para gerar um resultado de 0 a 100",
+            "2":"Se os ossos caírem na zona verde que você escolheu – você ganhou!"
+        },
+        "wheel":{
+            "1":"Selecione um modo de jogo, aposte na cor e aperte \"Jogar\"",
+            "2":"Se a roleta parar em um setor da cor que você escolheu, você ganhou!"
+        },
+        "x50":{
+            "1":"Selecione um modo de jogo, aposte na cor e pressione \"Jogar\".",
+            "2":"Se a roda parar no setor de cor que você escolheu, você ganhou!"
+        },
+        "plinko":{
+            "1":"Faça sua aposta, selecione a dificuldade do jogo e o número de pinos, e clique \"Jogar\"",
+            "2":"Quanto maior a complexidade do jogo e o número de pinos, maior o máximo e menor o mínimo de chances de ganhar",
+            "3":"Sua recompensa é determinada pela taxa de vitórias, dependendo de onde a bola cair"
+        },
+        "keno":{
+            "1":"Escolha 1 a 10 células com números, faça sua aposta e clique em \"Jogar\"",
+            "2":"O sistema seleciona 10 números aleatórios. Quanto mais vezes cair nos seus números, maiores os seus ganhos!"
+        },
+        "mines":{
+            "1":"Faça sua aposta, selecione o número de bombas e clique em \"Jogar\"",
+            "2":"Quanto maior o número de bombas no campo, maior a taxa de vitórias.",
+            "3":"Procure pelas pedras, mas cuidado com as bombas!",
+            "4":"Vença antes de detonar uma bomba e perder uma aposta!"
+        },
+        "diamonds":{
+            "1":"Obtenha a melhor combinação de diamantes para ganhar.",
+            "2":"A melhor combinação é composta por 5 diamantes idênticos.",
+            "3":"A hierarquia de combinações é semelhante à do pôquer tradicional."
+        },
+        "coinflip":{
+            "1":"Faça sua aposta e clique em \"Jogar\" e adivinhe em qual cor vai cair.",
+            "2":"Você pode apostar em cara ou coroa um número ilimitado de vezes por jogo, todos os coeficientes serão somados."
+        },
+        "blackjack":{
+            "1":"Faça sua aposta, depois disso você e o dealer receberão duas cartas.",
+            "2":"Então você pode pegar uma outra carta ou parar e não mudar a mão atual.",
+            "3":"Ao clicar em \"Dobrar\" você dobra sua aposta e pega a última carta.",
+            "4":"Um seguro é disponível apenas quando a primeira carta do dealer é um ás e isso te assegura das mãos de um dealer com um blackjack.",
+            "5":"O ganhador é o que está mais próximo do 21. Se você e o dealer têm o mesmo valor – será um empate."
+        },
+        "roulette":{
+            "1":"Coloque suas peças em qualquer resultado do jogo e clique em \"Jogar\"",
+            "2":"Se você adivinhou o resultado do jogo, você multiplica sua aposta."
+        },
+        "baccarat":{
+            "1":"Você pode apostar na vitória de um jogador, da banca ou em ambos individualmente e em qualquer combinação.",
+            "2":"Vence quem tiver um número de pontos mais próximo de 9. Quando um valor de 10 ou mais é definido, apenas o segundo dígito do número de dois dígitos é considerado.",
+            "3":"Se for uma aposta individual em um jogador ou na banca, ambas as partes ganham a mesma quantidade de pontos, e o resultado é um empate sem perder a aposta.",
+            "4":"O máximo número de cartas na mão é 3. O mínimo é 2 se o total de pontos entre eles for 5 ou mais."
+        },
+        "hilo":{
+            "1":"Adivinhe se a próxima carta vai ser maior ou menor que a anterior.",
+            "2":"Abra um número ilimitado de cartas, as chances são somadas. Você pode parar a qualquer momento e pegar o que você ganhou"
+        },
+        "limbo":{
+            "1":"Para ganhar, o alvo especificado da taxa de pagamento deve ser inferior ao que caiu no jogo.",
+            "2":"O alvo máximo da taxa é 1.000.000."
+        },
+        "crash":{
+            "1":"Faça sua aposta, clique em \"Jogar\" e assista a agenda crescer",
+            "2":"Saque seus fundos antes de a tabela desmoronar e você perder sua aposta."
+        },
+        "stairs":{
+            "1":"Faça sua aposta, selecione o número de pedras por movimentação e clique em \"Jogar\"",
+            "2":"Suba as escadas e cuidado com as pedras que caem! Quanto mais alto você subir, mais você vai receber.",
+            "3":"Você pode coletar o que ganhou a qualquer momento ou passar por todas as 13 movimentações e ganhar a recompensa máxima."
+        },
+        "tower":{
+            "1":"Faça sua aposta, selecione o número de bombas e clique em \"Jogar\"",
+            "2":"Procure por pedras se movendo de cima para baixo, mas cuidado com as bombas!",
+            "3":"Colete seus ganhos antes de detonar uma bomba e perder uma aposta!"
+        },
+        "videopoker":{
+            "1":"Faça sua aposta e clique em \"Jogar\"",
+            "2":"Agora você receberá 5 cartas. Você pode deixar as cartas que precisar, clicando nelas. Para terminar o jogo, clique em \"Dar as cartas\" ",
+            "3":"Se a combinação for a mesma mostrada na tabela, você ganha e multiplica sua aposta."
+        },
+        "bullvsbear":{
+            "1":"Cada jogo começa determinando qual será o \"Preço de Greve do Jogo\", tomando o preço médio da moeda selecionada. Não estamos usando um oráculo de preço, mas, em vez disso, puxamos o preço de mercado diretamente da Coinbase's Price Websocket API. Este número é o que os comerciantes usarão para apostar contra na fase seguinte para prever se o preço de mercado estará acima ou abaixo do \"Preço de Greve do Jogo\" no final de cada jogo",
+            "2":"Uma vez estabelecido o Preço de Greve do Jogo, os jogadores têm um minuto para apostar se o preço de mercado no final de cada jogo estará acima ou abaixo deste número. Todas as apostas são colocadas em dois grupos, aqueles que prevêem o preço estarão acima, e aqueles que prevêem o preço estarão abaixo.",
+            "3":"No final de cada jogo, as apostas do lado perdedor são agrupadas e distribuídas aos vencedores proporcionalmente. Se um jogador apostar mais do que os outros ganhadores, ele ou ela receberá mais do pool. Agora, se um jogador perder, suas perdas também são proporcionais ao seu tamanho, ou seja, se um jogador aposta mais do que os outros jogadores, nesta situação esse jogador não perderá toda a sua aposta, apenas uma fração.",
+            "4":"Queríamos evitar dar qualquer vantagem significativa aos últimos apostadores, por isso implementamos um fator de ganho de tempo decrescente para incentivar as apostas rápidas - dando aos primeiros apostadores melhores ganhos (ou ganhos) e desencorajando as pessoas de apostar mais tarde na rodada. Como trader, você pode ficar de olho na volatilidade atual e fazer sua aposta aguardando um pouco mais e tomando ganhos menores, mas com maior probabilidade, ou alternadamente, apostando cedo com maior ganho potencial, mas menor probabilidade de ganhar o jogo.",
+            "5":"Cada rodada de apostas tem duração de 90 segundos e começa no pagamento de x5,00. Ele diminui com o tempo até se tornar x1,01."
+        }
+    },
+    "general":{
+        "language":"Brasileiro/Português",
+        "head":{
+            "index":"Início",
+            "description":"Apostas online com bônus para novos jogadores",
+            "games":"Jogos",
+            "help":"Suporte",
+            "wallet":"Depósito",
+            "wallet_open_demo":"Demo",
+            "wallet_real":"Real",
+            "wallet_demo":"Demo",
+            "chat":"Chat",
+            "admin":"Administração",
+            "bonus":"Torneira",
+            "bonus_short":"Bônus",
+            "theme":"Tema",
+            "profile":"Perfil",
+            "logout":"Logout",
+            "invest":"Banca"
+        },
+        "sidebar":{
+            "admin": "Admin",
+            "favorite": "Favorito",
+            "recent": "Recentes",
+            "originals": "Originais",
+            "slots": "Caça-níqueis",
+            "multiplayer": "Multiplayer",
+            "blackjack": "Blackjack",
+            "poker": "Pôquer",
+            "table": "Jogos de mesa",
+            "instant": "Instantâneo",
+            "roulette": "Roleta",
+            "baccarat": "Baccarat",
+            "evo-play": "Fornecedor: EvoPlay",
+            "no_games": "Esta categoria está vazia",
+            "mark_as_favorite": "Marcar como favorito",
+            "remove_from_favorite": "Retirar dos favoritos"
+        },
+        "chat_commands":{
+            "/user":"ver usuário",
+            "/bet":"ver aposta",
+            "/ignore":"Ignorar usuário",
+            "/unignore":"Pare de ignorar o usuário",
+            "/tip":"Dar gorjeta ao usuário",
+            "/rain":"Faça Chover",
+            "modal":{
+                "rain":{
+                    "amount":"Valor",
+                    "number_of_users":"Número de Usuários (Máx 25)",
+                    "send":"Enviar Chuva",
+                    "invalid_users_length":"Número de usuários inválido",
+                    "invalid_amount":"Valor inválido"
+                },
+                "tip":{
+                    "amount":"Valor",
+                    "send":"Enviar Gorjeta",
+                    "user":"Usuário",
+                    "make_public":"Tornar gorjeta pública (aparecerá no chat global)",
+                    "invalid_name":"Nome de usuário inválido",
+                    "invalid_amount":"Valor inválido",
+                    "notify":"{nome} te deu uma gorjeta {value} <i class=\"{icon}\" style=\"color: {style}\"></i>"
+                }
+            }
+        },
+        "biggest_winner_today": "O maior vencedor hoje",
+        "tip":"Gorjeta",
+        "tip_chat":"<a href=\"{link}\">{nome}</a> enviou {value} <i class=\"{icon}\" style=\"color: {style}\"></i> para <a href=\"{tolink}\">{paranome}</a>",
+        "or": "OU",
+        "wallet":{
+            "demo":{
+                "error":"Seu saldo da conta demo deve ser zero",
+                "obtain":"Receber saldo demo"
+            }
+        },
+        "demo":{
+            "title":"Atenção",
+            "description":"É necessário se cadastrar se você quiser jogar para obter um saldo real.",
+            "register":"Cadastre-se"
+        },
+        "chat":{
+            "enter_message":"Digite sua mensagem..."
+        },
+        "auth":{
+            "login":"Login",
+            "register":"Cadastro",
+            "through_login":"Login e senha",
+            "through_social":"Redes sociais",
+            "wrong_credentials":"Login e senha incorretos",
+            "credentials":{
+                "login":"Login",
+                "password":"Senha",
+                "email":"Email"
+            },
+            "create_account":"Criar conta",
+            "forgot_password":"Esqueceu sua senha?",
+            "notice":"Eu confirmo que tenho mais que 18 anos e aceito os termos de serviço do runeruby.com"
+        },
+        "profile":{
+            "password_changed":"A senha foi alterada",
+            "general":"Geral",
+            "login":"Login",
+            "password":"Senha",
+            "password_current":"Senha atual",
+            "password_new":"Nova senha",
+            "password_repeat":"Confirmar senha",
+            "password_reset":"Reposição",
+            "security":"Segurança",
+            "email":"Email",
+            "update":"Atualizar",
+            "verify_email":"E-mail com link de confirmação foi enviado para seu endereço.",
+            "invalid_email":"Email inválido",
+            "settings":"Configurações",
+            "wager":"Apostado",
+            "games":"Total de jogos",
+            "best_mul":"Maior pagamento",
+            "best_win":"Maior lucro",
+            "incognito":"Usuário ocultou seu perfil",
+            "set_private_profile":"Oculte seu perfil",
+            "set_private_bets":"Oculte suas apostas",
+            "empty":"Não há dados suficientes para mostrar",
+            "privacy":"Privacidade",
+            "fairness":"Imparcialidade",
+            "client_seed":"Seed do cliente",
+            "change":"Alterar",
+            "change_avatar":"Alterar avatar",
+            "avatar":"Avatar",
+            "stats":"Estatísticas",
+            "latest_games":"Últimos jogos",
+            "vip":"VIP",
+            "partner":"Programa de afiliados",
+            "change_name":"Alterar nome",
+            "new_name":"Novo nome",
+            "social":"Contas conectadas",
+            "vk":"VKontakte",
+            "fb":"Facebook",
+            "google":"Google",
+            "discord":"Discord",
+            "steam":"Steam",
+            "link":"Conectar",
+            "linked":"Linked",
+            "somebody_already_linked":"A conta da rede social já foi conectada a outra conta no runeruby.com.com",
+            "link_discord":"Para acessar códigos promocionais VIP e papéis no servidor do Discord, você precisa conectar sua conta.",
+            "discord_vip":"Participe do nosso servidor Discord e obtenha códigos promocionais VIP!",
+            "discord_vip_ok":"Atualizar papel do servidor",
+            "vip_discord_updated":"Papel do servidor Discord foi atualizado.",
+            "bets":"Apostas",
+            "wins":"Vitórias",
+            "losses":"Derrotas",
+            "wagered":"Apostado",
+            "total_profit":"Lucro total",
+            "2fa":"2FA",
+            "keep_secure":"Não deixe ninguém ver isso!",
+            "copy_this_to_2fa":"Copie este código para seu aplicativo autenticador",
+            "2fa_code":"Código de Autenticador em Duas Etapas",
+            "2fa_enable":"Habilitar",
+            "error_2fa":"Código 2FA inválido",
+            "2fa_enabled":"2FA está habilitado em sua conta.",
+            "disable_2fa":"Desabilitar 2FA",
+            "2fa_validate":"Validar",
+            "2fa_description":"Digite o código de 6 dígitos do seu aplicativo autenticador em duas etapas",
+            "2fa_digits":":dígitos dígitos restantes",
+            "profit":"Lucro",
+            "games_c":"Jogos:",
+            "chart":{
+                "today":"Jogos",
+                "3days":"3 dias",
+                "1week":"1 semana",
+                "1month":"1 mês",
+                "loading":"Carregamento..."
+            }
+        },
+        "notifications":{
+            "title":"Notificações",
+            "withdraw_accepted":{
+                "title":"runeruby.com",
+                "message":"Sua solicitação de pagamento criada {diff} ({sum} {currency}) foi aceitada."
+            },
+            "withdraw_declined":{
+                "title":"runeruby.com",
+                "message":"Sua solicitação de pagamento criada {diff} ({sum} {currency}) foi negada. Motivo: {reason}"
+            },
+            "vip_discord":{
+                "title":"VIP",
+                "message":"Você recebeu <svg style=\"width: 14px; height: 14px\"><use href=\"#vip-bronze\"></use></svg> o status VIP bronze!<br><br>Quer códigos promocionais VIP exclusivos? Participe do nosso servidor Discord e Veja todos os recursos VIP."
+            },
+            "email_reminder":{
+                "title":"runeruby.com",
+                "message":"Não esqueça de adicionar o endereço de email, senão você pode perder o acesso à sua conta!"
+            },
+            "deposit":"Novo depósito: {sum} {currency}"
+        },
+        "fairness":{
+            "client_seed":"Seed do cliente:",
+            "server_seed":"Seed do servidor:",
+            "nonce":"Nonce:"
+        },
+        "lines":"Linhas",
+        "profit_per_line":"Valor da aposta por linha",
+        "invalid_amount_per_line":"Valor da aposta inválida por linha",
+        "ignore":"Adicionado com sucesso para ignorar a lista",
+        "unignore":"Você não mais ignora este usuário",
+        "ignored_already":"Você já ignora este usuário",
+        "not_ignored":"Este usuário não é ignorado",
+        "not_available":"Indisponível",
+        "obtained":"Obtido",
+        "latest_bets": "Ao vivo",
+        "select_currency": "Selecione Moeda",
+        "strike_price": "Preço da greve de jogo",
+        "non_verifiable": "Você não pode verificar este jogo através de ferramentas Provably Fair. Compare os preços reais de mercado em vez disso.",
+        "bullvsbear": {
+            "waiting_phase": "Fase de espera",
+            "bet_phase": "Fase de aposta",
+            "processing": "Processamento",
+            "target": "Eu acho que esse valor irá...",
+            "up": "Para cima",
+            "down": "Abaixo",
+            "decay_value": "Pagamento Vencedor"
+        },
+        "bets":{
+            "game":"Jogo",
+            "player":"Jogador",
+            "time":"Tempo",
+            "bet":"Aposta",
+            "mul":"Pagamento",
+            "win":"Lucro",
+            "manual":"Manual",
+            "auto":"Auto",
+            "games":"Número de jogos",
+            "victory_stop":"Parar ao Ganhar",
+            "on_win":"Ao ganhar",
+            "on_loss":"Ao perder",
+            "reset":"Reiniciar",
+            "increase":"Aumentar",
+            "auto_games_blocked":"Para estabelecer um limite, clique em &#8734;.",
+            "hidden":"O jogador ocultou seu perfil",
+            "hidden_name":"Oculto",
+            "make_bet":"Fazer uma aposta",
+            "all":"Tudo",
+            "mine":"Minhas Apostas",
+            "high_rollers":"Roda-Gigante",
+            "lucky_wins":"Jogadores Sortudos"
+        },
+        "error":{
+            "invalid_password_confirm":"As senhas não combinam",
+            "offline_node":"No momento não conseguimos processar os pagamentos para esta moeda.",
+            "auth":"Necessita de autorização",
+            "wager":"Valor mínimo - {value}",
+            "disabled":"Jogo está temporariamente indisponível",
+            "unknown_game":"Jogo desconhecido",
+            "unknown_user":"Usuário desconhecido",
+            "invalid_wager":"Não há dinheiro suficiente",
+            "unknown_error":"Ocorreu um erro (code {code})",
+            "empty":"Selecionar células!",
+            "should_have_empty_balance":"Para receber um bonus, seu saldo deve ser zero",
+            "autobet_pick_something":"Selecione células para um modo de aposta automática.",
+            "disabled_notifications":"Você não aceitou receber notificações. Isso pode ser modificado nas notificações do seu navegador.",
+            "connection_lost":"Conexão com o servidor foi perdida",
+            "connection_recovered":"Conexão reestabelecida",
+            "disabled_bets":"Aceitar apostas está indisponível no momento.",
+            "disabled_demo_bets":"Este jogo não aceita apostas no modo demo.",
+            "muted":"O chat está mudo até {time}",
+            "invalid_withdraw":"Valor de saque inválido.",
+            "only_one_withdraw":"Você já solicitou o saque.",
+            "enter_wallet":"Digite o número da carteira!",
+            "promo_limit":"Você atingiu o limite diário de ativação do código promocional.",
+            "autobet_mines_error":"Você selecionou mais células do que os cristais disponíveis.",
+            "vip_only_promocode":"O código promocional só está disponível com status VIP."
+        },
+        "profit_monitoring":{
+            "title":"Estatísticas",
+            "wager":"Aposta",
+            "profit":"Lucro",
+            "wins":"Vitórias",
+            "losses":"Derrotas",
+            "no_data":"Sem dados"
+        },
+        "rain":"Está chovendo!<br>{sum} {currency}",
+        "snow":"Está nevando!<br>{sum} {currency}",
+        "quiz":"Pergunta:",
+        "quiz_answer":"Resposta correta:",
+        "quiz_user":"Usuário:",
+        "chart":"Quadro",
+        "hilo-skip":"Pular",
+        "crash":"CRASHED",
+        "yes":"Sim",
+        "no":"Não",
+        "coming_soon":"Em Breve",
+        "reload":"recarga",
+        "spin":"Girar",
+        "wager":"Valor da aposta",
+        "chip":"Valor das Peças ({value})",
+        "profit":"Lucro",
+        "payout":"Pagamento",
+        "play":"Jogar",
+        "our_games":"Nossos Jogos",
+        "unit":"Unidade",
+        "cancel":"Cancelar",
+        "undo":"Desfazer",
+        "close":"Fechar",
+        "change":"Mudar",
+        "even":"par",
+        "odd":"ímpar",
+        "to":"{1} - {2}",
+        "take":"Pegar {value}",
+        "start":"Começar",
+        "stop":"Parar",
+        "overview":"Visualizar",
+        "share_text":"Assista meu jogo no runeruby.com!",
+        "share_vk":"Compartilhe o link no VK",
+        "share_chat":"Enviar para chat",
+        "share_telegram":"Compartilhe este jogo no Telegram",
+        "share_twitter":"Compartilhe este jogo no Twitter",
+        "share_link":"Compartilhe o link",
+        "link_copied":"Copiado!",
+        "game_mode":"Modo de jogo",
+        "color":"Cor",
+        "pins":"Número de pinos",
+        "autopick":"<i class=\"fas fa-wand-magic mr-1\"></i> Escolha Automática",
+        "clear":"Limpar",
+        "mines":"Número de minas",
+        "edit":"Editar",
+        "add":"Adicionar",
+        "already_purchased":"Comprado",
+        "purchase_sticker_pack":"Comprar para {coins} <i class=\"fas fa-coins\"></i>",
+        "hilo-higher":"mais Alto",
+        "hilo-lower":"mais Baixo",
+        "hilo-same":"O mesmo",
+        "chance":"Chance",
+        "chat_at":"Type @<strong>nomedousuário</strong> para notificar o usuário",
+        "autoStop":"Sacar em",
+        "target_payout":"Pagamento alvo",
+        "win_chance":"Chance de ganhar",
+        "demo_popup_link":"Jogar apostando dinheiro",
+        "double":"Dobrar",
+        "divide":"Dividir",
+        "got":"Obtido",
+        "videopoker":{
+            "f_r":"Royal Flush",
+            "s_f":"Straight Flush",
+            "k":"Quadra",
+            "f_h":"Full House",
+            "f":"Flash",
+            "s":"Straight",
+            "t":"Triplo",
+            "t_p":"Dois pares",
+            "p":"Par (J, Q, K, A)"
+        },
+        "deal":"Dar as cartas",
+        "stand":"Sair da mesa",
+        "hit":"Melhorar sua mão",
+        "split":"Dividir",
+        "insurance":"Você quer seguro?",
+        "accept":"Aceitar",
+        "decline":"Negar",
+        "insurance_success":"Você comprou o seguro.",
+        "blackjack":{
+            "0":"Pegar carta",
+            "1":"Você perdeu",
+            "2":"Você ganhou",
+            "3":"Você ganhou",
+            "4":"Você perdeu",
+            "5":"Você ganhou",
+            "6":"Você perdeu"
+        },
+        "difficulty":{
+            "title":"Dificuldade",
+            "low":"Baixa",
+            "medium":"Média",
+            "high":"Alta"
+        },
+        "baccarat":{
+            "player":"Jogador",
+            "tie":"Empate",
+            "pair_player":"{P} Par",
+            "pair_banker":"{B} Par",
+            "pair":"Par",
+            "banker":"Banqueiro",
+            "empty":"Seja o primeiro - faça uma aposta"
+        },
+        "verify":"Verificar",
+        "black":"Negro",
+        "red":"Vermelho",
+        "green":"Verde",
+        "yellow":"Amarelo",
+        "blue":"Azul"
+    },
+    "help":{
+        "contact_us":"contate nos",
+        "vk":{
+            "title":"VKontakte - Serviço de Apoio",
+            "time":"Tempo médio para resposta: 30 minutos"
+        },
+        "email":{
+            "title":"Email - Serviço de Apoio",
+            "time":"Tempo médio para resposta: 240 minutos"
+        },
+        "block":{
+            "questions":{
+                "title":"FAQ",
+                "about":{
+                    "title":"sobre nós",
+                    "description":"runeruby.com - apostas online com bitcoin. Jogos com mecânicas sensacionais e altas chances de ganhar."
+                },
+                "how_to_play":{
+                    "title":"Como jogar?",
+                    "description":"Vá para a página de qualquer jogo, especifique o valor da aposta e clique em \"Jogar\"."
+                },
+                "bonus":{
+                    "title":"Bônus",
+                    "description":"<a href=\"/bonus\">Dê uma olhada nessa página</a>!"
+                },
+                "fairness":{
+                    "title":"Imparcialidade",
+                    "description":"O gerador de número aleatório cria números aleatórios comprováveis e honestos, que são usados para determinar o resultado de cada jogo jogado no site. Cada usuário pode conferir o resultado de qualquer jogo de maneira completamente determinista. Ao providenciar um parâmetro, o Seed do Cliente, para as entradas de um gerador de número aleatório, o Win5x não pode manipular os resultados em seu próprio favor. O gerador de número aleatório runeruby.com permite que cada jogo solicite qualquer quantidade de números aleatórios para um determinado número inicial do cliente, número inicial do servidor e número único. Você pode entender melhor como isso funciona na página de jogo limpo."
+                },
+                "partner":{
+                    "title":"Programa de afiliados",
+                    "description":"Convide outros jogadores para nosso site através do seu link de referência e ganhe dinheiro. Você pode encontrar detalhes sobre isto no seu perfil."
+                },
+                "chat_rules":{
+                    "title":"Regras do Chat",
+                    "description":"Proibido:<ul><li>Spam</li><li>Mendicância</li><li>Encher de mensagens como \"chuva\" e \"quiz\"</li><li>Páginas/carteiras/links externos</li><li>Insultos de qualquer tipo</li><li>Venda de \"Táticas\" e serviços para aumentar o saldo de outros jogadores, etc</li></ul>"
+                },
+                "p":{
+                    "title":"Parceria",
+                    "description":"contate nos: <a href=\"mailto:support@runeruby.com\">support@runeruby.com</a>"
+                }
+            },
+            "payments":{
+                "title":"Depósito",
+                "how_to":{
+                    "title":"Como depositar?",
+                    "description":"Para depositar, clique no botão com o saldo no canto superior direito do site. Escolha um método de pagamento conveniente para você e digite a quantidade de moedas."
+                },
+                "com":{
+                    "title":"Comissões",
+                    "description":"Comissões sobre todos os métodos de pagamento estão indicadas na página de depósito"
+                },
+                "time":{
+                    "title":"Observação",
+                    "description":"Todas as transações são processadas instantaneamente. Atrasos podem ocorrer apenas no evento de problemas com o método de pagamento. Caso haja algum problema, escreva para nossa equipe de suporte, fornecendo informações detalhadas sobre seu problema."
+                }
+            },
+            "withdraws":{
+                "title":"Sacar fundos",
+                "how_to":{
+                    "title":"Como sacar seu dinheiro?",
+                    "description":"Para sacar dinheiro da sua conta, clique no botão da cateira no canto superior direito do site. Escolha o método de pagamento mais conveniente para você, digite o valor e clique em \"Ir para pagamento\". Para sacar dinheiro, você deve apostar 100% do valor do seu depósito (se você jogou sem um depósito, isto não é necessário)."
+                },
+                "com":{
+                    "title":"Comissões",
+                    "description":"Comissões para realizar a retirada dos fundos."
+                },
+                "time":{
+                    "title":"Tempo para Sacar",
+                    "description":"Todas as solicitações são processadas em média em 1 dia, o período máximo são 3 dias. Em raros casos, a retirada pode ser atrasada, a razão disso pode ser a sobretaxa dos bancos, etc.<br>Verifique se você digitou corretamente os detalhes do saque na páxina de transações no seu perfil. Cancele o pagamento se as informações estiverem incorretas. Se o pagamento já tiver sido feito com a quantia errada, o dinheiro não será ressarcido."
+                }
+            },
+            "other":{
+                "title":"Outros",
+                "rain":{
+                    "title":"Chuva/Neve",
+                    "description":"Chuva ou Neve é um chat bot que distribui aleatoriamente o saldo para jogadores aleatórios que estão online no site e fizeram um depósito nas últimas 24 horas."
+                },
+                "demo":{
+                    "title":"Conta demo",
+                    "description":"Você pode ativar uma conta demo clicando no ícone do saldo no canto superior direito do site. Contas demo existem para treinamento apenas - você não pode retirar esses fundos, e o histórico de jogos não ficará salvo."
+                },
+                "quiz":{
+                    "title":"Quiz",
+                    "description":"O quiz pode ser feito automaticamente na forma de exemplos matemáticos, ou por moderadores do site. O primeiro jogador a responder a pergunta corretamente recebe um prêmio."
+                },
+                "tactics":{
+                    "title":"Táticas",
+                    "description":"Não há nenhuma tática que funciona em todas as vezes. Tudo funciona no estilo do seu jogo: rápido com muito risco ou devagar com mais certeza."
+                },
+                "lost":{
+                    "title":"Eu perdi",
+                    "description":"Não existe nenhum jogo no nosso site com 100% de chance de ganhar. Mesmo 99,9% significa uma chance de 1 em 1000 de perder. Por exemplo, no jogo Stairs, quando você joga com 1 pedra - há uma chance de 1 em 20 (5%) de perder. Nós nunca interferimos nas jogadas, então tudo depende da sua sorte. Nós não podemos substituir o resultado do seu jogo, porque existe uma linha na sua parte que diz \"Seed do cliente\". Inicialmente, o \"Seed do cliente\" é gerado automaticamente, mas você pode sempre modificá-lo e colocar quaisquer caracteres ali. Para verificar os resultados dos seus jogos, clique em qualquer um dos seus jogos no histórico e na janela que aparece abaixo você verá 2 campos, \"Seed do cliente\" e \"Seed do servidor\". Para verficar o resultado do jogo, você precisa clicar em “mudar Seed do servidor” e clicar no botão “Verificar” – e você verá que o resultado do jogo permaneceu o mesmo. Nós te aconselhamos a jogar de forma que seja confortável para você. Desenvolva suas próprias estratégias de jogo. Não flerte, seja capaz de parar a tempo e sacar seu dinheiro. Apostar tem o objetivo de entretenimento. Lembre-se que você usa seu próprio dinheiro quando faz apostas. Não gaste mais do que você consegue pagar."
+                },
+                "reviews":{
+                    "title":"Avaliações",
+                    "description":"Avaliações estão disponíveis nos nossos grupos nas redes sociais."
+                },
+                "job":{
+                    "title":"Carreiras",
+                    "description":"A lista de vagas está disponível <a href=\"/job\">nesta página</a>. Tenha em mente que ela pode ficar vazia por um bom tempo – nem sempre precisamos de pessoas novas na equipe."
+                }
+            }
+        }
+    },
+    "invest":{
+        "sidebar":{
+            "your_bankroll":"Seu Bankroll",
+            "your_share":"Suas Ações",
+            "your_investing_profit":"Seu lucro",
+            "site_bankroll":"Bankroll do Site",
+            "site_profit":"Lucro do Site",
+            "amount":"Valor (Min {min})",
+            "invest":"Invista"
+        },
+        "history":{
+            "amount":"Investimento",
+            "your_share":"Suas Ações",
+            "profit":"Atual",
+            "status":"Status",
+            "cancelled":"Cancelado",
+            "disinvest":"Desinvestir",
+            "dead":"Perdido"
+        },
+        "your_balance":"Seu saldo: {balance}",
+        "min":"Valor mínimo: {min}",
+        "invest":"Invista",
+        "invest_fee":"<span>1%</span> de seu depósito será deduzido como taxa não reembolsável.",
+        "invest_fee_withdraw":"<span>{value}%</span> comissão será deduzida de sua retirada.",
+        "tabs":{
+            "overview":"Visão geral",
+            "invest":"Invista",
+            "history":"histórico"
+        }
+    },
+    "partner":{
+        "tabs":{
+            "overview":"Visão geral",
+            "list":"Referências",
+            "analytics":"Análise de dados"
+        },
+        "overview":{
+            "guest_content":"<p>Anuncie o runeruby.com e ganhe dinheiro participando de nosso programa de afiliados!</p><p>Você vai receber vários bônus para cada usuário ativo que se registrar e jogar o runeruby.com através do seu link.</p><button class=\"btn btn-primary\">Login</button>",
+            "content":"<p>Anuncie o runeruby.com e ganhe dinheiro participando de nosso programa de afiliados!</p><p>Você vai receber vários bônus para cada usuário ativo que se registrar e jogar o runeruby.com através do seu link.</p><strong class=\"mt-2\">Link de referência</strong><input readonly class=\"mt-2\" style=\"cursor: pointer !important;\" id=\"link\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Copy link\" value=\"https://runeruby.com/?c={id}\"><p class=\"mt-4\"><strong>Recompensas</strong><ul><li>A pessoa que você referiu vai receber um bônus após se registrar.</li><li>Você também vai receber um bônus se a pessoa que você referiu estiver ativa. Você pode ver isso na aba \"Referências\".</li><li>Se você convidou 10 pessoas ativas - visite a página \"Bônus\", clique em \"Programa de Afiliados\" e receba uma recompensa maior!</li><li>Você vai receber 5% do depósito da pessoa que você referiu</li></ul></p>",
+            "header": "O que você receberá por participar do programa de afiliados:",
+            "1": "1. Você receberá % do seu depósito de afiliado, que é baseado em seu nível VIP.",
+            "2": "2. Seu afiliado receberá um bônus gratuito no BTC após o registro.",
+            "3": "3. Você também receberá um bônus de seu afiliado se ele estiver ativo. Você pode rastrear isto através da guia \"Afiliados\".",
+            "4": "4. Cada 10 afiliados ativos lhe concederá uma rodada de roda de bônus com maiores recompensas."
+        },
+        "list":{
+            "name":"Nome",
+            "activity":"Bônus de atividade recebido"
+        },
+        "analytics":{
+            "referrals":"<strong>Número de referências:</strong> {count}",
+            "referrals_bonus":"<strong>Referências ativas:</strong> {count}"
+        }
+    },
+    "policy":{
+        "gaming_policy":"Este arquivo pode ser editado em /resources/lang/br/br.json",
+        "privacy_notice":"Este arquivo pode ser editado em /resources/lang/br/br.json",
+        "privacy_policy":"Este arquivo pode ser editado em /resources/lang/br/br.json",
+        "terms_and_conditions":"Este arquivo pode ser editado em /resources/lang/br/br.json"
+    },
+    "vip":{
+        "rank":{
+            "level":"nível VIP - :level",
+            "0":"-",
+            "1":"Ruby",
+            "2":"Esmeralda",
+            "3":"Safira",
+            "4":"Diamante",
+            "5":"Ouro"
+        },
+        "description":"Seu nível VIP é calculado por sua aposta na sua moeda favorita ({currency})",
+        "benefits_description":"benefícios: VIP",
+        "benefits":"Benefícios",
+        "benefit_list":{
+            "ruby":{
+                "1":"Bônus VIP semanal",
+                "2":"Acesso aos promocodes VIP",
+                "3":"Papel VIP no servidor Discord",
+                "4":"2% de comissão do depósito da afiliada"
+            },
+            "emerald":{
+                "1":"O limite de ativação do promocódigo por dia é aumentado de 2 para 3",
+                "2":"Aumento do Bônus VIP Semanal",
+                "3":"3% de comissão do depósito da afiliada"
+            },
+            "sapphire":{
+                "1":"Os promocodes VIP não afetarão o limite de ativação por dia",
+                "2":"Aumento do Bônus VIP Semanal",
+                "3":"5% de comissão do depósito da afiliada"
+            },
+            "diamond":{
+                "1":"Seus saques têm prioridade maior na fila",
+                "2":"O limite do código de ativação agora é redefinido a cada 12 horas",
+                "3":"Bônus Semanal Aumentado"
+            },
+            "gold":{
+                "1":"Códigos VIP não afetam o limite de ativação geral dos códigos promocionais",
+                "2":"Bônus Semanal Aumentado",
+                "3":"Aumento do Bônus VIP Semanal",
+                "4":"20% de comissão do depósito da afiliada"
+            }
+        },
+        "bonus":{
+            "tooltip":"Bônus VIP Semanal",
+            "title":"Bônus Semanal",
+            "progress_title":"Progresso",
+            "description":"Como recompensa por ser VIP no funbits, você recebe um bônus semanal, cujo tamanho máximo é determinado pelo seu status VIP - {vip}.<br><br>Cada aposta adiciona 0,1% ao bônus.<br>Você pode sacar seu bônus semanal a qualquer momento, mas tenha em mente que depois disso, você não poderá receber esse bônus pelo resto da semana.<br><br>Nós zeramos seu progresso semanal todo domingo. Lembre-se de retirar sua recompensa antes deste dia!",
+            "timeout":"<br><strong>You have already received the bonus.</strong><br>Come back on Sunday!<br><br>"
+        }
+    },
+    "wallet":{
+        "tabs":{
+            "deposit":"Depósito",
+            "withdraw":"Sacar",
+            "history":"Histórico",
+            "deposits":"Depósitos",
+            "withdraws":"Saques",
+            "exchange":"Troca"
+        },
+        "exchange": "Troca",
+        "exchange_success": "Sucesso!",
+        "set_email":"Defina o e-mail em seu perfil para usar esta forma de pagamento.",
+        "bank":{
+            "title":"Depósito bancário",
+            "description":"Pedido de verificação enviado com sucesso. Você pode ver o seu status em \"História\" -> \"Depósitos\" tab.",
+            "transfer_here":"Transferir fundos para este número bancário:",
+            "bank_check":"Solicitar verificação",
+            "transaction_id":"Identificação da transação",
+            "notify":"Após a conclusão da transferência, clique no botão \"Solicitar verificação\".<br>Nossos operadores verificarão sua transação e adicionarão fundos à sua conta manualmente.<br>Esta forma de pagamento <strong>não \"é</strong> instantâneo.",
+            "invalid_txid":"Id de transação invalida",
+            "already_have_one_in_moderation":"Você já tem um pedido de verificação pendente.",
+            "cancelled":"O pedido de verificação de depósito bancário foi cancelado"
+        },
+        "s":{
+            "amount":"Valor do depósito",
+            "deposit":"Depósito",
+            "invalid_amount":"Valor inválido",
+            "conversion_rate":"Taxa de conversão: {usd} USD = {token} <i class=\"{icon}\" style=\"color: {style}\"></i>"
+        },
+        "pending":"Pendente",
+        "method":"Forma de pagamento:",
+        "troubles":"Precisa de ajuda?<br>Contate nosso <a href=\"/help\">equipe de apoio</a>",
+        "fast":"Você será notificado imediatamente assim que fizer o depósito e poderá ver sua contagem de confirmação de transação",
+        "deposit":{
+            "address":"Seu {currency} endereço de depósito",
+            "confirmations":"Enviar somente {currency} para este local, {confirmations} confirmação(ões) necessária(s)."
+        },
+        "withdraw":{
+            "title":"Sacar",
+            "button":"Sacar",
+            "method":"Método de retirada:",
+            "enter_wallet":"carteira:",
+            "wallet":"carteira",
+            "go":"Sacar",
+            "content":"A retirada foi encomendada com sucesso. Você pode verificar seu status na seção \"História\".",
+            "vip_content":"<div class=\"mt-2\">Uma vez que seu nível VIP é<svg style=\"width: 14px; height: 14px;\"><use href=\"#vip-diamond\"></use></svg>, seu pedido foi colocado logo no início da fila.</div>"
+        },
+        "history":{
+            "empty":"Você não comprou nada ainda.",
+            "name":"Moeda",
+            "sum":"Valor",
+            "date":"Data",
+            "status":"Status",
+            "confirmations":"Confirmações",
+            "id":"ID: :id",
+            "paid":"com sucesso",
+            "wallet":"Endereço: {wallet}",
+            "cancel":"Cancelar",
+            "withdraw_cancelled":"O pagamento foi cancelado.",
+            "withdraw_status":{
+                "moderation":"Moderação",
+                "accepted":"Com sucesso",
+                "declined":"negado",
+                "reason":"Motivo:",
+                "cancelled":"Cancelado pelo usuário"
+            }
+        },
+        "copy":"Copiar",
+        "copied":"Copiado!"
+    },
+    "404": {
+        "title": "Desculpe, esta página não está disponível.",
+        "subtitle": "O link que você seguiu pode estar quebrado, ou a página pode ter sido removida."
+    }
+}

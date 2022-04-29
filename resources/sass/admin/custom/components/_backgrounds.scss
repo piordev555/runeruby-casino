@@ -1,0 +1,16 @@
+// 
+// backgrounds.scss
+//
+
+
+@each $color,
+$value in $theme-colors {
+    .bg-soft-#{$color} {
+        background-color: rgba(($value), 0.25) !important;
+    }
+}
+
+// Gradient
+.bg-gradient {
+    background: $bg-gradient;
+}

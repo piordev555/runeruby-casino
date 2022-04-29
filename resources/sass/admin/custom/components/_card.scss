@@ -1,0 +1,55 @@
+// 
+// card.scss
+//
+
+.card {
+    margin-bottom: $grid-gutter-width;
+    box-shadow: $box-shadow-sm;
+    border-radius: 0.25rem;
+}
+
+.card-drop {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 30px;
+    color: inherit;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: -6px;
+    &:hover {
+        background-color: $gray-200;
+        color: $dark;
+    }
+}
+
+
+// Card title / Card Header
+.card-title,
+.card-header {
+    margin-top: 0;
+}
+
+.card-nav {
+    margin: -0.5rem 0;
+}
+
+// Custom card box
+.card-box {
+    background-color: $card-bg;
+    padding: $card-spacer-x;
+    box-shadow: $box-shadow-sm;
+    margin-bottom: $grid-gutter-width;
+    @include border-radius($card-border-radius);
+}
+
+.header-title {
+    font-size: 1.04rem;
+    font-weight: 700;
+}
+
+.sub-header {
+    margin-bottom: $grid-gutter-width;
+    color: $gray-600;
+}

@@ -1,0 +1,22 @@
+// 
+// page-title.scss
+//
+
+.page-title-topbar {
+    font-size: 20px;
+    margin: 0;
+    line-height: $topbar-height;
+}
+
+.page-title {
+    padding: 20px 0;
+    .breadcrumb {
+        background-color: transparent;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    h4 {
+        font-size: 19px;
+    }
+}

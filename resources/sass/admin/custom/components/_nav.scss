@@ -1,0 +1,67 @@
+// 
+// nav.scss
+//
+
+
+// Bootstrap override - turn nav tab with broder
+
+.nav-tabs {
+    border-bottom: 2px solid rgba($gray-600, 0.2);
+
+    .nav-item {
+        margin-bottom: -2px;
+    }
+
+    li {
+        a {
+            border-color: transparent !important;
+            padding: 0.625rem 1.25rem;
+        }
+        a.active {
+            border-bottom: 2px solid $primary !important;
+        }
+    }
+}
+
+// pills
+.nav-tabs,.nav-pills {
+    > li {
+        > a {
+            color: $gray-700;
+            font-weight: $font-weight-bold;
+        }
+    }
+}
+
+.nav-pills {
+    background: $body-bg;
+    border-radius: $border-radius;
+    padding: 6px 2px;
+
+    .nav-link {
+        background-color: transparent;
+        color: $body-color;
+    }
+
+    .nav-link.active,
+    .show>.nav-link {
+        color: $body-color;
+        background-color: $card-bg;
+        box-shadow: $box-shadow-sm;
+    }
+}
+
+
+//Navtab custom
+.navtab-bg {
+    li {
+        >a {
+            background-color: $gray-300;
+            margin: 0 5px;
+        }
+    }
+}
+
+.tab-content {
+    padding: 20px 0 0 0;
+}  

@@ -1,0 +1,37 @@
+// Metis Menu Overwrite
+@import 'node_modules/metismenujs/scss/metismenujs';
+
+.metismenu {
+    padding: 0;
+
+    li {
+        list-style: none;
+
+        a {
+            &[aria-expanded="true"] {
+                color: $menu-item-active !important;
+            }
+        }
+    }
+
+    ul {
+        padding: 0;
+
+        li {
+            width: 100%;
+        }
+    }
+
+    .mm-collapse:not(.mm-show) {
+        display: none;
+    }
+
+    .mm-collapsing {
+        position: relative;
+        height: 0;
+        overflow: hidden;
+        transition-timing-function: ease;
+        transition-duration: .35s;
+        transition-property: height, visibility;
+    }
+}

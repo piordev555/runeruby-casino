@@ -1,0 +1,1 @@
+@include('errors.error', ['code' => 'Your account was banned', 'desc' => 'Possible reasons: using multiple accounts to gain advantage or abusing bugs. Contact support for more info (your id: ' . (auth('sanctum')->guest() ? 'unknown' : auth('sanctum')->user()->_id) . ')'])

@@ -1,0 +1,986 @@
+{
+    "third-party": {
+        "unavailable_currency": "Sorry, but you can't play with this currency.",
+        "guest": "You need to login in order to play this game."
+    },
+    "bonus":{
+        "lucky_spin_everyday": "Lucky Spin Everyday",
+        "have_a_try": "Have a try now",
+        "spin_now": "Spin Now",
+        "next_spin": "Next Spin: ",
+        "vip":{
+            "title":"VIP",
+            "description":"As a member of the VIP program, you are entitled for a weekly VIP bonus. Find out more about this!",
+            "unavailable_description":"All VIP program participants are entitled for a weekly bonus."
+        },
+        "wheel":{
+            "description":"Spin the wheel every 3 minutes for a free bonus!",
+            "title":"Wheel"
+        },
+        "promo":{
+            "description":"Have a promocode? Redeem it and get a bonus!",
+            "activate":"Activate",
+            "title":"Promocode",
+            "placeholder":"Code",
+            "success":"Success",
+            "invalid":"Invalid code",
+            "expired_time":"Invalid code.",
+            "expired_usages":"Invalid code: activation limit exceeded.",
+            "used":"You have already used this code."
+        },
+        "partner":{
+            "title":"Affiliate program",
+            "description":"Invite your friends to runeruby.com and get bonus for 10 active referrals!"
+        },
+        "rain":{
+            "description":"Every few hours, an event occurs in the chat that distributes the bonus to random people.",
+            "title":"Rain",
+            "modal_description":"Rain is a chatbot that distributes coins to random people. <br> Criteria for getting in the rain:<ul class=\"mt-2\"><li>Deposit is required in the last 24 hours</li><li>The bot sends a random number of coins at a random time (the minimum number of distributions is 10 per day, the maximum is 20)</li><li>Number of people - from 5 to 15</li></ul>"
+        },
+        "discord":{
+            "title":"Discord",
+            "common_desc":"Join our Discord server and get a bonus!",
+            "description":"Join our Discord server and get a bonus!",
+            "redirect":"Link account",
+            "link":"To receive a bonus, you have to:<ul><li>Link your Discord account</li><li>Join our Discord server</li></ul>After linking your Discord account and joining the server, return to this page and click on the \"Verify\" button.",
+            "subscribe":"Join our Discord server to receive a bonus.<br>After joining, click on the \"Verify\" button and the bonus will instantly be credited!",
+            "check":"Verify",
+            "redirect_group":"Join our Discord server",
+            "success":"Success!",
+            "error":{
+                "1":"You haven\"t joined our Discord server.",
+                "2":"You have already received this bonus."
+            }
+        },
+        "notifications":{
+            "title":"Notifications",
+            "description":"Turn on notifications and know about runeruby.com updates among the first!"
+        }
+    },
+    "footer":{
+        "accepted_currencies": "Accepted Currencies",
+        "user_agreement": "User Agreement",
+        "need_help": "Need Help?",
+        "terms_and_conditions": "Terms & Conditions",
+        "bonus": "Bonus Terms and Conditions",
+        "privacy_policy": "Privacy Policy",
+        "affiliates": "Affiliates"
+    },
+    "chat":{
+        "error":{
+            "length":"Message is too short or long",
+            "muted":"Chat is muted"
+        }
+    },
+    "dice":{
+        "lower":"Lower",
+        "higher":"Higher",
+        "chance":"Chance"
+    },
+    "error":{
+        "code":"Internal server error occurred ({code})",
+        "wait_finish":"Wait for the game to finish",
+        "validation":{
+            "required":"Fill in this field",
+            "min":{
+                "string":"Value is too small"
+            },
+            "max":{
+                "string":"Value is too large"
+            },
+            "unique":"This value has already been registered",
+            "regex":"Invalid value"
+        },
+        "invalid_browser":"<h1>Your web browser is out of date.</h1>To play on runeruby.com, you need to upgrade to the latest version.",
+        "no_js":"<h1>Error</h1>Your web browser does not support JavaScript."
+    },
+    "fairness":{
+        "title": "Fairness",
+        "tabs":{
+            "overview":"Overview",
+            "dev":"Implementation",
+            "transform":"Conversion",
+            "events":"Game events",
+            "calculator":"Сalculator"
+        },
+        "overview":{
+            "1":"<h6>Solving the Trust Issue with Online Gambling</h6><p>The underlying concept of provable fairness is that players have the ability to prove and verify that their results are fair and unmanipulated. This is achieved through the use of a commitment scheme, along with cryptographic hashing.</p><p>The commitment scheme is used to ensure that the player has an influence on all results generated. Cryptographic hashing is used to ensure that the casino also remains honest to this commitment scheme. Both concepts combined creates a trust-less environment when gambling online.</p><p>This is simplified in the following representation:</p>"
+        },
+        "dev":{
+            "1":"<h6> Random Number Generation </h6><p> For each bet being checked, we use: client seed, server seed, nonce and cursor as input parameters for the random number generation function. The function uses the <strong> HMAC_SHA256 </strong> cryptographic hash to generate bytes, which are then used as the basis for how we generate reliably random results on our platform. </p> ",
+            "2":"<h6 class=\"mt-4\"> Server seed </h6>The server seed is generated by our system in the form of a random string of 32 characters before the start of the game, which you cannot recognize until it is completed. The reason why we do not provide you with a server seed at any time is that in this case the player would be able to calculate the results of the games in advance.<h6 class=\"mt-4\"> Client seed </h6>The client seed is owned by the player and is used to ensure that the player also influences the randomness of the generated results. Without this component of the algorithm, only the server seed will have a complete influence on the result of each bet. All players are free to edit and change their client side regularly to create a new chain of random upcoming results. This ensures that the player has absolute control over the generation of the result, like cutting a deck in a regular casino. During registration, your browser creates a client seed to ensure the smooth operation of the site. Although this randomly generated client seed is considered appropriate, we strongly recommend that you choose your own so that your influence is included in randomness. You can do this in your profile settings.<h6 class=\"mt-4\"> Nonce </h6>Nonce is simply a number that increases by 1 with every new bet you make. Due to the peculiarities of the SHA256 cryptographic function, a completely new result is created each time. The implementation of nonce ensures that we remain committed to your client and server pair, while at the same time generating new results for every bet made.<h6 class=\"mt-4\"> Cursor </h6>We use 4 bytes of data to generate one game result. Since SHA256 is limited to 32 bytes, we use this cursor implementation to enable us to create more game events without having to change our provable honesty algorithm. The cursor is iterated only when the game requires more than 8 (32 bytes / 4 bytes) possible results. For example: when we need to use more than 8 cards in a blackjack game. The cursor starts at 0 and increments by 1 each time 32 bytes are returned by the HMAC_SHA256 function. If we do not need more than 8 random numbers to be generated for game events, the cursor does not increase because there is no need to generate any additional possible game results. "
+        },
+        "transform":{
+            "1":"<h6>Floating point bytes</h6><p>The result of the random number generator (byteGenerator) function is a hexadecimal 32-byte hash. As explained in the cursor implementation, we use 4 bytes of data to generate one game result. Each set of 4 bytes is used to generate floating point values ranging from 0 to 1 (4 bytes are used instead of one to provide a higher level of accuracy when generating floating point numbers. It is with these generated numbers that we get the formal result of the provable honest algorithm before it is translated into game events. </p> ",
+            "2":"<h6 class=\"mt-4\"> Floating point numbers in game events </h6><p> Since the random number generation process is universal for all our games,It is at this stage of the generation of the game result that a unique procedure is implemented, allowing you to determine the transfer from a floating point number to game events. A randomly generated result is multiplied by the possible remaining results of a particular game. For example: in a game that uses a deck of 52 cards, this can be done by simply multiplying the number by 52. The result of this equation is then converted to the corresponding game event. For games where multiple game events are required, this process continues every 4 bytes in the result chain, which was generated using the described byteGenerator function. </p> <h6 class=\"mt-4\"> Shuffle game events </h6>  <p> For games like Keno, Mines, and Video Poker, where the results cannot be duplicated, we use the random shuffling algorithm <a href=\"https://en.wikipedia.org/wiki/Fisher%E2%80% 93Yates_shuffle\" target=\"_blank\"> Fisher Yates </a>. </p> "
+        },
+        "events":{
+            "1":"<p> Game events are the translation of randomly generated numbers into the corresponding game-specific result. This includes everything from the outcome of a roll of dice to the order of the cards in the deck, or even the location of each bomb in Mines. The following is a detailed explanation of how we translate numbers into events for each specific game on our platform. </p> <h6> Blackjack, Hilo & Baccarat </h6> <p> There are 52 unique possible outcomes in the standard deck of cards: </p> ",
+            "2":"<h6> Diamonds </h6><p> When playing Diamonds, there are 7 possible outcomes in the form of diamonds. To achieve this, we multiply each floating-point number by 7, and then translate it into the corresponding diamond: </p> ",
+            "3":"<p> Then the player receives 5 diamonds. </p><h6> Dice </h6><p> In our version of the Dice game, we cover the possible throw spread from 00.00 to 100.00, which has a range of 10,001 possible results. Translation of game events is performed by multiplying the floating point number by the number of possible results, and then divide by 100 so that the resulting number matches the limits of our declared range of dice. </p> ",
+            "4":"<h6> Limbo </h6> <p> When it comes to Limbo, we use a two-step process. Firstly, we take the number and multiply it by the maximum possible multiplier and by% of the casino advantage. Then, to generate a game event using the <a href=\"https://en.wikipedia.org/wiki/Probability_distribution\" target=\"_blank\"> probability distribution </a>, we divide the maximum possible factor by the result of the first step to create a game event in the form of a final coefficient. </p> ",
+            "5":"<h6> Plinko </h6><p> For any Plinko game, the generated result is based on which cell the ball will fall into. </p> ",
+            "6":"<h6> Roulette </h6><p> Our roulette is taken from the European version of the game, in which the wheel consists of 37 different possible pockets in the range from 0 to 36. A game event is calculated by multiplying the number by 37, and then transferred to the appropriate pocket: </p> ",
+            "7":"<h6> Keno </h6> <p> Traditional Keno games require a selection of 10 possible game events in the form of cells on the game board. To achieve this, we multiply each floating-point number by the number of unique squares possible. </p> ",
+            "8":"<p> The implementation of a random Fisher-Yates sequence is used to prevent duplication of possible hits. </p><h6> Mines </h6><p> Mines consists of 24 separate game events in the form of mines on the playing field. Each number is multiplied by the number of possible unique tiles still remaining on the board. Cell locations are constructed using the grid position from left to right, from top to bottom. The implementation of a random Fisher-Yates sequence is used to prevent duplication of possible hits. Depending on the selected settings, 2 to 24 results of game events are used. </p><h6> Video Poker </h6><p> Playing Video Poker includes 52 individual game events in the form of cards in the deck.Each number is multiplied by the number of possible cards remaining in the deck. </p> ",
+            "9":"<p> The implementation of a random Fisher-Yates sequence is used to prevent duplication of possible hits. </p>"
+        },
+        "calculator":{
+            "game":"Game",
+            "client_seed":"Client seed",
+            "nonce":"Nonce",
+            "server_seed":"Server seed",
+            "result":"Result"
+        }
+    },
+    "game_help":{
+        "next":"Next",
+        "close":"Close",
+        "dice":{
+            "1":"Set the slider chance of winning and click \"Play\", to generate a result from 0 - 100",
+            "2":"If the bones fell in your chosen green zone - you won!"
+        },
+        "wheel":{
+            "1":"Select a game mode, bet on color and press \"Play\"",
+            "2":"If the wheel stops at the color sector that you have chosen, you won!"
+        },
+        "x50":{
+            "1":"Select a game mode, bet on color and press \"Play\"",
+            "2":"If the wheel stops at the color sector that you have chosen, you won!"
+        },
+        "plinko":{
+            "1":"Place a bet, select the difficulty of the game and the number of pins, and click \"Play\"",
+            "2":"The greater the complexity of the game and the number of pins, the higher the maximum and lower minimum winning odds",
+            "3":"Your reward is determined by the winning ratio, depending on where the ball fell"
+        },
+        "keno":{
+            "1":"Pick from 1 to 10 cells with numbers, place a bet and click \"Play\"",
+            "2":"Then the system randomly selects 10 numbers. The more hits on your numbers, the greater the gain!"
+        },
+        "mines":{
+            "1":"Place a bet, select the number of bombs and click \"Play\"",
+            "2":"The larger the number of bombs in the playing field, the higher the winning ratio.",
+            "3":"Look for stones, but beware of bombs!",
+            "4":"Take a win before you detonate on a bomb and lose a bet!"
+        },
+        "diamonds":{
+            "1":"Get the best diamond combination to win.",
+            "2":"The best combination is 5 identical diamonds.",
+            "3":"The combination hierarchy is similar to traditional poker."
+        },
+        "coinflip":{
+            "1":"Place a bet and click \"Play\" and guess what color will fall.",
+            "2":"You can guess a coin an unlimited number of times per game, all coefficients will be added up."
+        },
+        "blackjack":{
+            "1":"Place a bet, after which you and the dealer will be dealt two cards.",
+            "2":"Then you can take another card or stop and do not change the current hand.",
+            "3":"By clicking on \"Double\" you double your bet and take the last card.",
+            "4":"Insurance is available only when the first dealer card is an ace and insures you from the hands of a dealer with blackjack.",
+            "5":"The winner is the one closest to 21. If you and the dealer have the same value - there will be a draw."
+        },
+        "roulette":{
+            "1":"Put chips on any outcome of the game and click \"Play\"",
+            "2":"If you guessed the outcome of the game, you multiply your bet."
+        },
+        "baccarat":{
+            "1":"You can bet on the victory of a player, banker or a draw both individually and in any combination.",
+            "2":"The victory is won by the party with the most points close to 9. When a value of 10 or more is set, only the second digit of the double-digit number is taken into account.",
+            "3":"If at an individual bet on a player or a banker both parties gain the same amount of points, then the result is a tie without losing a bet.",
+            "4":"The maximum deal in one hand is 3 cards. The minimum is 2 if their total points are 5 or more."
+        },
+        "hilo":{
+            "1":"Guess if the next card will be higher or lower than the previous one in rank.",
+            "2":"Open an unlimited number of cards, odds are added up. You can stop at any time and pick up the winnings"
+        },
+        "limbo":{
+            "1":"To win, the specified target payout ratio must be lower than the one that fell out in the game.",
+            "2":"The maximum target ratio is 1,000,000."
+        },
+        "crash":{
+            "1":"Make a bet, click \"Play\" and watch how the schedule grows",
+            "2":"Withdraw funds before the chart collapses and you lose your bet."
+        },
+        "stairs":{
+            "1":"Make a bet, select the number of stones per move and click \"Play\"",
+            "2":"Climb up the stairs beware of falling on stones! The higher you rise, the greater the gain you will receive. ",
+            "3":"You can pick up a win at any time or go through all 13 moves and get the maximum reward."
+        },
+        "tower":{
+            "1":"Place a bet, select the number of bombs and click \"Play\"",
+            "2":"Look for stones moving from top to bottom, but beware of bombs!",
+            "3":"Take a win before you detonate on a bomb and lose a bet!"
+        },
+        "videopoker":{
+            "1":"Place a bet and click \"Play\"",
+            "2":"Next you will be dealt 5 cards. You can leave the cards you need by clicking on them. To end the game, click on \"Deal cards\" ",
+            "3":"If the combination is the same as shown in the table, you win and multiply your bet."
+        },
+        "bullvsbear":{
+            "1":"Each game starts out by determining what the ‘Game’s Strike Price’ will be by taking the averaged price of selected coin. We aren't using a price oracle, but instead we pull the market price directly from Coinbase’s Price Websocket API. This number is what traders will use to bet against in the following phase to predict if the market price will be above or below the “Game’s Strike Price” at the end of each game.",
+            "2":"Once the Game’s Strike Price has been set, players have one minute to bet on whether the market price at the end of each game will be above or below this number. All bets are put into two pools, those who predict the price will be above, and those who predict the price will be below.",
+            "3":"At the end of each game, the losing side’s bets are pooled and distributed to the winners proportionately. If a player bets more than the other winners, he or she will receive more of the pool. Now if a player loses, their losses are also proportionate to the size of their, meaning if a player bets more than the other players, in this situation that player won’t lose their entire bet, just a fraction.",
+            "4":"We wanted to avoid giving any significant advantage to last movers, hence we implemented a time-decaying gain factor to incentivize prompt betting — giving early movers better gains (or winnings) and discouraging people from bet stuffing late in the round. As a trader, you can keep an eye on current volatility and make your bet by waiting a little longer and taking lesser gains but with higher probability, or alternately, betting early with higher potential gain but lower probability of winning the game.",
+            "5":"Every betting round is 90 seconds long and starts at x5.00 payout. It decreases over time till it becomes x1.01."
+        }
+    },
+    "general":{
+        "language":"English",
+        "providers": "Game Providers",
+        "slowmode": "Slow mode is enabled: 1 message each 5 sec",
+        "slider": {
+            "1": "Welcome to runeruby.com Casino. Your fun, your profits."
+        },
+        "promotions": {
+            "title": "RuneRuby Promotions",
+            "faucet": {
+                "title": "Faucet",
+                "description": "Get free bonus to play on RuneRuby!",
+                "btn": "View"
+            },
+            "promo": {
+                "title": "Promocode",
+                "description": "Enter promocode to receive a free bonus!",
+                "btn": "View"
+            },
+            "vip": {
+                "title": "RuneRuby VIP",
+                "description": "You will get VIP ranks and it's bonuses just for playing on RuneRuby.",
+                "btn": "View"
+            },
+            "rain": {
+                "title": "Rain",
+                "description": "If you make an deposit with any amount of funds you will have a chance to receive a bonus within 24 hours.",
+                "btn": "Learn more"
+            },
+            "notification": {
+                "title": "Notifications",
+                "description": "Enable notifications to know about future promotions and receive a bonus immediately as a reward.",
+                "btn": "Enable"
+            },
+            "affiliates": {
+                "title": "Affiliates",
+                "description": "Advertise RuneRuby to your friends to receive rewards (for you and your friends!).",
+                "btn": "View"
+            }
+        },
+        "head":{
+            "index":"Home",
+            "description":"Online gambling with bonuses for new players",
+            "games":"Games",
+            "help":"Help",
+            "wallet":"Deposit",
+            "wallet_open_demo":"Demo",
+            "wallet_real":"Real",
+            "wallet_demo":"Demo",
+            "chat":"Chat",
+            "admin":"Administration",
+            "bonus":"Faucet",
+            "bonus_short":"Bonus",
+            "theme":"Theme",
+            "profile":"Profile",
+            "logout":"Logout",
+            "invest":"Bankroll",
+            "casino": "Casino",
+            "sport": "Sport"
+        },
+        "sidebar":{
+            "all_games": "Games",
+            "admin": "Admin",
+            "favorite": "Favorite",
+            "recent": "Recent",
+            "originals": "Games",
+            "slots": "Slots",
+            "multiplayer": "Multiplayer",
+            "blackjack": "Blackjack",
+            "poker": "Poker",
+            "table": "Table Games",
+            "instant": "Instant",
+            "roulette": "Roulette",
+            "baccarat": "Baccarat",
+            "evo-play": "Provider: EvoPlay",
+            "no_games": "This category is empty",
+            "mark_as_favorite": "Mark as favorite",
+            "remove_from_favorite": "Remove from favorites"
+        },
+        "chat_commands":{
+            "/user":"View user",
+            "/bet":"View bet",
+            "/ignore":"Ignore user",
+            "/unignore":"Stop ignoring user",
+            "/tip":"Tip user",
+            "/rain":"Make it Rain",
+            "/online":"View online users",
+            "/quiz": "Quiz",
+            "modal":{
+                "rain":{
+                    "amount":"Amount",
+                    "number_of_users":"Number of Users (Max 25)",
+                    "send":"Send",
+                    "invalid_users_length":"Invalid number of users",
+                    "invalid_amount":"Invalid amount"
+                },
+                "tip":{
+                    "amount":"Amount",
+                    "send":"Send Tip",
+                    "user":"Username",
+                    "make_public":"Make public",
+                    "invalid_name":"Invalid username",
+                    "invalid_amount":"Invalid amount",
+                    "notify":"{name} tipped you {value} {currency}"
+                },
+                "quiz": {
+                    "question": "Question",
+                    "answer": "Answer"
+                }
+            }
+        },
+        "biggest_winner_today": "LUCKY WINNERS",
+        "tip":"Tip",
+        "tip_chat":"<a href=\"{link}\">{name}</a> sent {value} <i class=\"{icon}\" style=\"color: {style}\"></i> to <a href=\"{tolink}\">{toname}</a>",
+        "or": "OR",
+        "wallet":{
+            "demo":{
+                "error":"Your demo balance must be at zero",
+                "obtain":"Receive demo balance"
+            }
+        },
+        "demo":{
+            "title":"Attention",
+            "description":"Registration is required if you want to play for real balance.",
+            "register":"Sign up"
+        },
+        "chat":{
+            "enter_message":"Type something here..."
+        },
+        "auth":{
+            "login":"Login",
+            "register":"Sign Up",
+            "through_login":"Login and password",
+            "through_social":"Social networks",
+            "wrong_credentials":"Wrong login or password",
+            "email_or_login": "Enter your email or login",
+            "reset_password": "Reset password",
+            "email_was_sent": "Email was sent successfully. If you haven't received it, check \"Spam\" folder.",
+            "passwords_invalid_match": "Verify your password again",
+            "credentials":{
+                "login":"Login",
+                "password":"Password",
+                "email":"Email"
+            },
+            "create_account":"Create account",
+            "forgot_password":"Forgot your password?",
+            "notice":"I  agree to the Terms & Conditions and Privacy Policy"
+        },
+        "profile":{
+            "password_changed":"Password was changed",
+            "general":"General",
+            "login":"Login",
+            "password":"Password",
+            "password_current":"Current password",
+            "password_new":"New password",
+            "password_repeat":"Confirm password",
+            "password_reset":"Reset",
+            "security":"Security",
+            "email":"Email",
+            "update":"Update",
+            "verify_email":"Email with confirmation link was sent to your address.",
+            "invalid_email":"Invalid email",
+            "settings":"Settings",
+            "wager":"Wagered",
+            "games":"Total games",
+            "best_mul":"Best payout",
+            "best_win":"Best profit",
+            "incognito":"This profile is private",
+            "set_private_profile":"Hide your profile",
+            "set_private_bets":"Hide your bets",
+            "empty":"Not enough data to display",
+            "privacy":"Privacy",
+            "fairness":"Fairness",
+            "client_seed":"Client seed",
+            "change":"Change",
+            "change_avatar":"Change avatar",
+            "avatar":"Avatar",
+            "stats":"Statistics",
+            "latest_games":"Latest games",
+            "vip":"VIP",
+            "partner":"Affiliate program",
+            "change_name":"Change name",
+            "new_name":"New name",
+            "social":"Linked accounts",
+            "vk":"VKontakte",
+            "fb":"Facebook",
+            "google":"Google",
+            "discord":"Discord",
+            "steam":"Steam",
+            "link":"Link",
+            "linked":"Linked",
+            "somebody_already_linked":"This social network account has already been linked to another runeruby.com account",
+            "link_discord":"To access VIP promo codes and roles on the Discord server, you need to link your account.",
+            "discord_vip":"Join our Discord server and get VIP promocodes!",
+            "discord_vip_ok":"Update server role",
+            "vip_discord_updated":"Discord server role has been updated.",
+            "bets":"Bets",
+            "wins":"Wins",
+            "losses":"Losses",
+            "wagered":"Wagered",
+            "total_profit":"Total profit",
+            "2fa":"2FA",
+            "keep_secure":"Don\"t let anyone see this!",
+            "copy_this_to_2fa":"Copy this code to your authenticator app (This code will be refreshed if you update the page!)",
+            "2fa_code":"Two Factor Code",
+            "2fa_enable":"Enable",
+            "error_2fa":"Invalid 2FA code",
+            "2fa_enabled":"2FA is enabled on your account.",
+            "disable_2fa":"Disable 2FA",
+            "2fa_validate":"Validate",
+            "2fa_description":"Enter 6-digit code from your two factor authenticator app",
+            "2fa_digits":"{digits} digits left",
+            "profit":"Profit",
+            "games_c":"Games:",
+            "chart":{
+                "today":"Today",
+                "3days":"3 days",
+                "1week":"1 week",
+                "1month":"1 month",
+                "loading":"Loading..."
+            }
+        },
+        "notifications":{
+            "title":"Notifications",
+            "withdraw_accepted":{
+                "title":"runeruby.com",
+                "message":"Your payment request created {diff} ({sum} {currency}) was accepted."
+            },
+            "withdraw_declined":{
+                "title":"runeruby.com",
+                "message":"Your payment request created {diff} ({sum} {currency}) was declined. Reason: {reason}"
+            },
+            "vip_discord":{
+                "title":"VIP",
+                "message":"You have received <svg style=\"width: 14px; height: 14px\"><use href=\"#vip-ruby\"></use></svg> ruby VIP status!<br><br>Want exclusive VIP promocodes? Join our Discord server and link your Discord account to get VIP role."
+            },
+            "email_reminder":{
+                "title":"runeruby.com",
+                "message":"Don\"t forget to add email address, otherwise you could lose access to your account!"
+            },
+            "deposit":"New deposit: {sum} {currency}"
+        },
+        "fairness":{
+            "client_seed":"Client seed:",
+            "server_seed":"Server seed:",
+            "nonce":"Nonce:"
+        },
+        "bet_next_round": "Bet (Next round)",
+        "play_now": "Play Now",
+        "become_top_player": "Nobody took this place in the leaderboard today! Become first to do that!",
+        "lines":"Lines",
+        "profit_per_line":"Bet Amount Per Line",
+        "invalid_amount_per_line":"Invalid bet amount per line",
+        "ignore":"Successfully added to ignore list",
+        "unignore":"You no longer ignore this user",
+        "ignored_already":"You already ignore this user",
+        "not_ignored":"This user is not ignored",
+        "not_available":"Unavailable",
+        "obtained":"Obtained",
+        "latest_bets": "Live",
+        "select_currency": "Select Coin",
+        "strike_price": "Game Strike Price",
+        "non_verifiable": "You can't verify this game through Provably Fair tools. Compare real market prices instead.",
+        "bullvsbear": {
+            "waiting_phase": "Waiting Phase",
+            "bet_phase": "Bet Phase",
+            "processing": "Processing",
+            "target": "I think that value will go...",
+            "up": "Up",
+            "down": "Down",
+            "decay_value": "Winning Payout"
+        },
+        "bets":{
+            "game":"Game",
+            "player":"Player",
+            "time":"Time",
+            "bet":"Bet",
+            "mul":"Payout",
+            "win":"Profit",
+            "manual":"Manual",
+            "auto":"Auto",
+            "games":"Number of games",
+            "victory_stop":"Stop on Win",
+            "on_win":"On win",
+            "on_loss":"On loss",
+            "reset":"Reset",
+            "increase":"Increase",
+            "auto_games_blocked":"To set a limit, click on &#8734;.",
+            "hidden":"The player has hidden his profile",
+            "hidden_name":"Hidden",
+            "make_bet":"Place a bet",
+            "all":"All",
+            "mine":"My Bets",
+            "high_rollers":"High Rollers",
+            "lucky_wins":"Lucky Winners"
+        },
+        "error":{
+            "invalid_password_confirm":"Passwords don\"t match",
+            "offline_node":"We are currency unable to process payments for this currency.",
+            "auth":"Authorization is required",
+            "wager":"Minimal amount - {value}",
+            "disabled":"Game is temporarily unavailable",
+            "unknown_game":"Unknown game",
+            "unknown_user":"Unknown user",
+            "invalid_wager":"Not enough money",
+            "unknown_error":"An error has occurred (code {code})",
+            "empty":"Select cells!",
+            "should_have_empty_balance":"To receive a bonus, your balance must be zero",
+            "autobet_pick_something":"Select cells for automatic bid mode.",
+            "disabled_notifications":"You have refused to accept notifications. This can be changed in your browser settings.",
+            "connection_lost":"Connecting to the server...",
+            "connection_recovered":"Connection restored",
+            "disabled_bets":"Accepting bets is currently unavailable.",
+            "disabled_demo_bets":"This game does not accept bets in demo mode.",
+            "muted":"Chat is muted until {time}",
+            "invalid_withdraw":"Invalid withdrawal amount.",
+            "only_one_withdraw":"You already have ordered withdrawal.",
+            "enter_wallet":"Enter wallet!",
+            "promo_limit":"You have reached your promocode activation limit per day.",
+            "autobet_mines_error":"You have selected more cells than the available crystals.",
+            "vip_only_promocode":"This promotional code is only available with VIP status.",
+            "promo_balance_limit": "Your balance should be lower in order to activate promocodes"
+        },
+        "profit_monitoring":{
+            "title":"Statistics",
+            "wager":"Wager",
+            "profit":"Profit",
+            "wins":"Wins",
+            "losses":"Losses",
+            "no_data":"No data"
+        },
+        "rain":"It's raining!<br>{sum} {currency}",
+        "snow":"It's snowing!<br>{sum} {currency}",
+        "quiz":"Question:",
+        "quiz_answer":"Correct answer:",
+        "quiz_user":"User:",
+        "chart":"Chart",
+        "hilo-skip":"Skip",
+        "crash":"CRASHED",
+        "yes":"Yes",
+        "no":"No",
+        "coming_soon":"Coming Soon",
+        "reload":"recharge",
+        "spin":"Spin",
+        "wager":"Bet amount",
+        "chip":"Chip Value ({value})",
+        "profit":"Profit",
+        "payout":"Payout",
+        "play":"Play",
+        "our_games":"Our Games",
+        "unit":"Unit",
+        "cancel":"Cancel",
+        "undo":"Undo",
+        "close":"Close",
+        "change":"Change",
+        "even":"even",
+        "odd":"odd",
+        "to":"{1} - {2}",
+        "take":"Take {value}",
+        "start":"Start",
+        "stop":"Stop",
+        "overview":"View",
+        "share_text":"Watch my game on runeruby.com!",
+        "share_vk":"Share the link on VK",
+        "share_chat":"Send to chat",
+        "share_telegram":"Share this game on Telegram",
+        "share_twitter":"Share this game on Twitter",
+        "share_link":"Share the link",
+        "link_copied":"Copied!",
+        "game_mode":"Game mode",
+        "color":"Color",
+        "pins":"Number of pins",
+        "autopick":"<i class=\"fas fa-wand-magic mr-1\"></i> Auto Pick",
+        "clear":"Clear",
+        "mines":"Number of mines",
+        "edit":"Edit",
+        "add":"Add",
+        "already_purchased":"Purchased",
+        "purchase_sticker_pack":"Buy for {coins} <i class=\"fas fa-coins\"></i>",
+        "hilo-higher":"Higher",
+        "hilo-lower":"Lower",
+        "hilo-same":"Same",
+        "chance":"Chance",
+        "chat_at":"Type @<strong>username</strong> to notify user",
+        "autoStop":"Cashout at",
+        "target_payout":"Target payout",
+        "win_chance":"Win chance",
+        "demo_popup_link":"Play for money",
+        "double":"Double",
+        "divide":"Split",
+        "got":"Got",
+        "videopoker":{
+            "f_r":"Royal Flush",
+            "s_f":"Straight Flush",
+            "k":"Four of a kind",
+            "f_h":"Full House",
+            "f":"Flash",
+            "s":"Straight",
+            "t":"Triple",
+            "t_p":"Two pairs",
+            "p":"Pair (J, Q, K, A)"
+        },
+        "deal":"Deal cards",
+        "stand":"Stand",
+        "hit":"Hit",
+        "split":"Split",
+        "insurance":"Do you want insurance?",
+        "accept":"Accept",
+        "decline":"Decline",
+        "insurance_success":"You bought insurance.",
+        "blackjack":{
+            "0":"Draw",
+            "1":"You lose",
+            "2":"You won",
+            "3":"You won",
+            "4":"You lose",
+            "5":"You won",
+            "6":"You lose"
+        },
+        "difficulty":{
+            "title":"Difficulty",
+            "low":"Low",
+            "medium":"Medium",
+            "high":"High"
+        },
+        "baccarat":{
+            "player":"Player",
+            "tie":"Tie",
+            "pair_player":"{P} Pair",
+            "pair_banker":"{B} Pair",
+            "pair":"Pair",
+            "banker":"Banker",
+            "empty":"Become first - make a bet"
+        },
+        "verify":"Verify",
+        "black":"Black",
+        "red":"Red",
+        "green":"Green",
+        "yellow":"Yellow",
+        "blue":"Blue"
+    },
+    "help":{
+        "header_title": "How can we help you?",
+        "search_placeholder": "Search help articles...",
+        "contact_methods": "Contact methods",
+        "no_results": "Nothing is found for this request.",
+        "faq": "FAQ",
+        "modal": {
+            "title": "Support",
+            "page": {
+                "index": {
+                    "title": "Hello!",
+                    "description": "Welcome to RuneRuby! Let us know if we can help with anything.",
+                    "my_chats": "My Chats",
+                    "menu": {
+                        "ask_question": "Live Chat",
+                        "general_questions": "View FAQ",
+                        "moderate": "Moderate"
+                    }
+                },
+                "live_chat": {
+                    "welcome_message": "Our support team is ready to answer your questions. You will be notified once you get answer.",
+                    "bot": "Automatic reply"
+                }
+            }
+        },
+        "contact_us":"Contact us",
+        "vk":{
+            "title":"VKontakte - Support Service",
+            "time":"Average response time: 30 minutes"
+        },
+        "email":{
+            "title":"Email - Support Service",
+            "time":"Average response time: 240 minutes"
+        },
+        "block":{
+            "questions":{
+                "title":"FAQ",
+                "about":{
+                    "title":"About us",
+                    "description":"runeruby.com - online bitcoin gambling. We have games with exciting mechanics and high winning odds."
+                },
+                "how_to_play":{
+                    "title":"How to play?",
+                    "description":"Go to the page of any game, specify the amount of the bet and click \"Play\"."
+                },
+                "bonus":{
+                    "title":"Bonuses",
+                    "description":"<a href=\"/bonus\">Check out this page</a>!"
+                },
+                "fairness":{
+                    "title":"Fairness",
+                    "description":"The random number generator creates provable and absolutely honest random numbers, which are used to determine the result of each game played on the site. Each user can check the outcome of any game in a completely deterministic way. By providing one parameter, Client Seed, to the inputs of a random number generator, Win5x cannot manipulate the results in its favor. The runeruby.com random number generator allows each game to request any number of random numbers from a given initial client number, initial server number and one-time number. You can learn more about how it works on the fair play page."
+                },
+                "partner":{
+                    "title":"Affiliate program",
+                    "description":"Invite other players to our site through your referral link and earn money. Details can be found in your profile."
+                },
+                "chat_rules":{
+                    "title":"Chat Rules",
+                    "description":"Prohibited:<ul><li>Spam</li><li>Begging</li><li>Flooding with messages like \"rain\" and \"quiz\"</li><li>External links/wallets/pages</li><li>Insults of any kind</li><li>Selling \"Tactics\" and services to raise the balance to other players, etc.</li></ul>"
+                },
+                "p":{
+                    "title":"Partnership",
+                    "description":"Contact us: <a href=\"mailto:support@runeruby.com\">support@runeruby.com</a>"
+                }
+            },
+            "payments":{
+                "title":"Deposit",
+                "how_to":{
+                    "title":"How to deposit?",
+                    "description":"To deposit, click on the button with the balance in the upper right corner of the site. Choose a payment method convenient for you and enter the amount of coins."
+                },
+                "com":{
+                    "title":"Commissions",
+                    "description":"Commissions of all payment methods are indicated on deposit page"
+                },
+                "time":{
+                    "title":"Note",
+                    "description":"All transactions are processed instantly. Delays can occur only in the event of problems with the payment method. In case of problems, write to our support team and provide the most detailed information about your problem."
+                }
+            },
+            "withdraws":{
+                "title":"Withdraw funds",
+                "how_to":{
+                    "title":"How to withdraw money?",
+                    "description":"To withdraw money from your account, click on the Wallet button in the upper right corner of the site. Choose the withdrawal method convenient for you, enter the amount and click \"Go to payment\". To withdraw money, you must wager 100% of the amount of your deposit (if you played without a deposit - this is not required)."
+                },
+                "com":{
+                    "title":"Commissions",
+                    "description":"Commissions for the withdrawal of funds we undertake."
+                },
+                "time":{
+                    "title":"Withdrawal Timing",
+                    "description":"All requests are processed on average for 1 day, the maximum period is 3 days. In rare cases, the withdrawal may be delayed, the reason for this is the loading of banks, etc.<br>Check that you have correctly entered the details for the output on the transaction page in your profile. Cancel the payment if they are incorrect. If the payment has already been made to the wrong number, the money will not be returned."
+                }
+            },
+            "other":{
+                "title":"Other",
+                "rain":{
+                    "title":"Rain/Snow",
+                    "description":"Rain or Snow is a chat bot that randomly distributes the balance to random players who are online on the site and made deposit in the last 24 hours."
+                },
+                "demo":{
+                    "title":"Demo account",
+                    "description":"You can activate a demo account by clicking on the balance icon in the upper right corner of the site. It exists for training purposes only - you cannot withdraw these funds, and the history of the games will not be saved."
+                },
+                "quiz":{
+                    "title":"Quiz",
+                    "description":"The quiz can be held automatically in the form of mathematical examples, or by site moderators. The first player to answer the question correctly receives a reward."
+                },
+                "tactics":{
+                    "title":"Tactics",
+                    "description":"There are no tactics that are guaranteed to work. It all depends on your style of play: fast with great risk or slowly but surely."
+                },
+                "lost":{
+                    "title":"I lost",
+                    "description":"There is no game on our site with a 100% chance of winning. Even 99.9% is a 1 in 1000 chance that you can lose. For example, in the game Stairs, when you play on 1 stone - this is a chance of 1 out of 20 (5%) that you lose. We never interfere in the gameplay, so it all depends on your luck. We can’t substitute the result of your game, because there’s a line on your part that says “Client seed”. Initially, the “Client seed” is generated automatically, but you can always change it and put any characters there. To check the results of your games, click on any of your games in history and in the window that appears below you will see 2 fields “Client seed” and “Server seed”. To check the result of the game, you need to click on “change server seed” and click the “Check” button - and you will see that the result of the game has remained unchanged. We advise you to play more comfortable. Develop your own strategies and play them. Do not flirt, be able to stop in time and withdraw money. Gambling is designed to entertain. Remember that you draw with money when you make bets. Do not spend more than you can afford to lose."
+                },
+                "reviews":{
+                    "title":"Reviews",
+                    "description":"Reviews are available in our social network groups."
+                },
+                "job":{
+                    "title":"Jobs",
+                    "description":"The list of vacancies is available at <a href=\"/job\">this page</a>. Keep in mind that it can be empty for a long time - we do not always need new people in the team."
+                }
+            }
+        }
+    },
+    "invest":{
+        "sidebar":{
+            "your_bankroll":"Your Bankroll",
+            "your_share":"Your Shares",
+            "your_investing_profit":"Your Profit",
+            "site_bankroll":"Site's Bankroll",
+            "site_profit":"Site's Profit",
+            "amount":"Amount (Min {min})",
+            "invest":"Invest"
+        },
+        "history":{
+            "amount":"Investment",
+            "your_share":"Your Share",
+            "profit":"Current",
+            "status":"Status",
+            "cancelled":"Cancelled",
+            "disinvest":"Disinvest",
+            "dead":"Lost"
+        },
+        "your_balance":"Your balance: {balance}",
+        "min":"Minimal amount: {min}",
+        "invest":"Invest",
+        "invest_fee":"<span>1%</span> of your deposit will be deducted as non-refundable fee.",
+        "invest_fee_withdraw":"<span>{value}%</span> commission will be deducted from your withdraw.",
+        "tabs":{
+            "overview":"Overview",
+            "invest":"Invest",
+            "history":"History"
+        }
+    },
+    "partner":{
+        "tabs":{
+            "overview":"Overview",
+            "list":"Affiliates",
+            "analytics":"Analytics"
+        },
+        "overview":{
+            "guest_content":"<p>Advertise runeruby.com and earn money by participating in our affiliate program!</p><p>You will receive various bonuses for each active user who will register and play on runeruby.com through your link.</p>",
+            "content":"<p>Advertise runeruby.com and earn money by participating in our affiliate program!</p><p>You will receive various bonuses for each active user who will register and play on runeruby.com through your link.</p><strong class=\"mt-2\">Referral link</strong><input readonly class=\"mt-2\" style=\"cursor: pointer !important;\" id=\"link\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Copy link\" value=\"https://runeruby.com/?c={id}\">",
+            "header": "What you will get for participating in affiliate program:",
+            "1": "1. You will get % of your affiliate deposit, which is based on your VIP level.",
+            "2": "2. Your affiliate will receive a free bonus in BTC after registration.",
+            "3": "3. You will also receive a bonus from your affiliate if he is active. You can track this through the \"Affiliates\" tab.",
+            "4": "4. Every 10 active affiliates will grant you a bonus Wheel spin with increased rewards."
+        },
+        "list":{
+            "name":"Name",
+            "activity":"Activity bonus received"
+        },
+        "analytics":{
+            "referrals":"<strong>Number of affiliates:</strong> {count}",
+            "referrals_bonus":"<strong>Active affiliates:</strong> {count}"
+        }
+    },
+    "policy":{
+        "gaming_policy":"This file can be edited in /resources/lang/en/en.json",
+        "privacy_notice":"This file can be edited in /resources/lang/en/en.json",
+        "privacy_policy":"This file can be edited in /resources/lang/en/en.json",
+        "terms_and_conditions":"This file can be edited in /resources/lang/en/en.json"
+    },
+    "vip":{
+        "rank":{
+            "level":"VIP level - :level",
+            "0":"-",
+            "1":"Ruby",
+            "2":"Emerald",
+            "3":"Sapphire",
+            "4":"Diamond",
+            "5":"Gold"
+        },
+        "description":"Your VIP level is calculated by your wager in your favorite currency ({currency})",
+        "benefits_description":"VIP benefits:",
+        "benefits":"Benefits",
+        "benefit_list":{
+            "ruby":{
+                "1":"Weekly VIP Bonus",
+                "2":"Access to VIP promocodes",
+                "3":"VIP role on the Discord server",
+                "4":"2% commission from affiliate deposit"
+            },
+            "emerald":{
+                "1":"Promocode activation limit per day is increased from 2 to 3",
+                "2":"Increased Weekly VIP Bonus",
+                "3":"3% commission from affiliate deposit"
+            },
+            "sapphire":{
+                "1":"VIP promocodes won't affect activation limit per day",
+                "2":"Increased Weekly VIP Bonus",
+                "3":"5% commission from affiliate deposit"
+            },
+            "diamond":{
+                "1":"The minimal amount for withdrawal is reduced",
+                "2":"Increased Weekly VIP Bonus",
+                "3":"10% commission from affiliate deposit"
+            },
+            "gold":{
+                "1":"Your withdrawals have a higher priority in the queue",
+                "2":"Promocode activation limit resets every 12 hours",
+                "3":"Increased Weekly VIP Bonus",
+                "4":"20% commission from affiliate deposit"
+            }
+        },
+        "bonus":{
+            "tooltip":"Weekly VIP Bonus",
+            "title":"Weekly Bonus",
+            "progress_title":"Progress",
+            "description":"As a reward for being VIP on runeruby.com, you get a weekly bonus, the maximum size of which is determined by your VIP status - {vip}.<br><br>Each your bet adds 0.1% to progress bar.<br>You can withdraw your weekly bonus at any time, but keep in mind that after this you will not be able to receive this bonus for the rest of the week.<br><br>We reset weekly progress every Sunday. Remember to take the reward before this day!",
+            "timeout":"<br><strong>You have already received the bonus.</strong><br>Come back on Sunday!<br><br>"
+        }
+    },
+    "wallet":{
+        "tabs":{
+            "deposit":"Deposit",
+            "withdraw":"Withdraw",
+            "history":"History",
+            "deposits":"Deposits",
+            "withdraws":"Withdraws",
+            "exchange":"Exchange"
+        },
+        "exchange": "Exchange",
+        "exchange_success": "Success!",
+        "set_email":"Set email in your profile to use this payment method.",
+        "bank":{
+            "title":"Bank Deposit",
+            "description":"Verification request sent successfully. You can view it's status in \"History\" -> \"Deposits\" tab.",
+            "transfer_here":"Transfer funds to this bank number:",
+            "bank_check":"Request verification",
+            "transaction_id":"Transaction id",
+            "notify":"After transfer is completed, click on the \"Request verification\" button.<br>Our operators will check your transaction and add funds to your account manually.<br>This payment method <strong>isn\"t</strong> instant.",
+            "invalid_txid":"Invalid transaction id",
+            "already_have_one_in_moderation":"You already have one verification request pending.",
+            "cancelled":"Bank deposit verification request was cancelled"
+        },
+        "s":{
+            "amount":"Deposit amount",
+            "deposit":"Deposit",
+            "invalid_amount":"Invalid amount",
+            "conversion_rate":"Conversion rate: {usd} USD = {token} <i class=\"{icon}\" style=\"color: {style}\"></i>"
+        },
+        "pending":"Pending",
+        "method":"Payment method:",
+        "troubles":"Need help?<br>Contact our <a href=\"mailto:support@runeruby.com\">support team</a>",
+        "fast":"You will be notified instantly once you make deposit and will be able to view your transaction confirmation count",
+        "deposit":{
+            "address":"Your {currency} deposit address",
+            "confirmations":"Only send {currency} to this address, {confirmations} confirmation(s) required.",
+            "sum": "Amount",
+            "go": "Make deposit"
+        },
+        "withdraw":{
+            "title":"Withdraw",
+            "amount":"Amount (Min {min} {currency})",
+            "button":"Withdraw",
+            "fee":"Your withdrawal will have {fee} {currency} subtracted from your remaining balance to cover the transaction fee.",
+            "method":"Withdraw method:",
+            "enter_wallet":"Wallet:",
+            "wallet":"Wallet",
+            "go":"Withdraw",
+            "content":"Withdraw was successfully ordered. You can check its status in the \"History\" section.",
+            "vip_content":"<div class=\"mt-2\">Since your VIP level is <svg style=\"width: 14px; height: 14px;\"><use href=\"#vip-gold\"></use></svg>, your request was placed at the very beginning of the queue.</div>"
+        },
+        "history":{
+            "empty":"You haven’t ordered anything yet.",
+            "name":"Currency",
+            "not_paid": "Not paid",
+            "sum":"Amount",
+            "date":"Date",
+            "status":"Status",
+            "confirmations":"confirmations",
+            "id":"ID: :id",
+            "paid":"Successful",
+            "wallet":"Address: {wallet}",
+            "cancel":"Cancel",
+            "withdraw_cancelled":"Payment has been cancelled.",
+            "withdraw_status":{
+                "moderation":"Moderation",
+                "accepted":"Successful",
+                "declined":"Declined",
+                "reason":"Reason:",
+                "cancelled":"Cancelled by user"
+            }
+        },
+        "copy":"Copy",
+        "copied":"Copied!"
+    },
+    "404": {
+        "title": "Sorry, this page isn't available.",
+        "subtitle": "The link you followed may be broken, or the page may have been removed."
+    }
+}

@@ -1,0 +1,65 @@
+$themes: (
+    default: (
+        name: 'light',
+        header: white,
+        body: white,
+        secondary: #7a7a7a,
+        border: #eceff1,
+        shadow: rgba(17, 51, 83, 0.02) 0 4px 12px 0,
+        wallet: darken(white, 1.5%),
+        text: black,
+        sidebar: lighten(#eceff1, 4.5%),
+        link: #5a5a5a,
+        link-hover: black,
+        input: #f0f3f6,
+        green: #27ae60,
+        red: #e74c3c,
+        violet: #d31d6e,
+        textInverted: white,
+        selectorArrow: url("data:image/svg+xml;utf8,<svg fill='black' height='34' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>")
+    ),
+    dark: (
+        name: 'dark',
+        header: #1a191e,
+        body: #1a191e,
+        secondary: #e61f48,
+        border: darken(#1a191e, 0.5%),
+        shadow: rgba(17, 51, 83, 0.02) 0 4px 12px 0,
+        wallet: #27272d,
+        text: white,
+        sidebar: lighten(#1a191e, 3.33%),
+        link: #a8a8a8,
+        link-hover: white,
+        input: #24232a,
+        green: #2ecc71,
+        red: #e74c3c,
+        violet: #d31d6e,
+        textInverted: black,
+        selectorArrow: url("data:image/svg+xml;utf8,<svg fill='white' height='34' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>")
+    )
+);
+
+@mixin themed() {
+    @each $theme, $map in $themes {
+        .theme--#{$theme} & {
+            $theme-map: () !global;
+            @each $key, $submap in $map {
+                $value: map-get(map-get($themes, $theme), '#{$key}');
+                $theme-map: map-merge($theme-map, ($key: $value)) !global;
+            }
+            @content;
+            $theme-map: null !global;
+        }
+    }
+}
+
+@function themed_url($url, $extension) {
+    //noinspection SassScssUnresolvedVariable
+    @return url($url + '.' + map_get($theme_map, 'name') + '.' + $extension);
+}
+
+@function t($key) {
+    //noinspection SassScssUnresolvedVariable
+    @return map-get($theme-map, $key);
+}
+

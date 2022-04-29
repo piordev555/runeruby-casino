@@ -1,0 +1,209 @@
+/*!
+ * superWheel v1.0
+ * https://22codes.com/
+ *
+ * Released under Codecanyon Standard license
+ * https://codecanyon.net/licenses/standard
+ *
+ */
+.wheel {
+	position: relative;
+	max-width: 100%;
+	margin: 4em auto 1em;
+	font-size: 25px;
+	font-weight: bold;
+}
+.wheel,
+.wheel *{
+box-sizing: border-box;
+	-webkit-user-select: none;
+       -moz-user-select: none;
+		-ms-user-select: none;
+			user-select: none;
+}
+.sWheel-wrapper {
+	position: relative;
+}
+.wheel .sWheel-inner{
+	display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.wheel .sWheel{
+	border-radius: 100%;
+	overflow: hidden;
+}
+.wheel .sWheel,
+.wheel .sWheel>.sWheel-bg-layer,
+.wheel .sWheel>.sWheel-txt-wrap,
+.wheel .sWheel>.sWheel-txt-wrap>.sWheel-txt{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.wheel .sWheel>.sWheel-txt-wrap>.sWheel-txt,
+.wheel .sWheel>.sWheel-bg-layer {
+	margin: 0 auto;
+	border-radius: 100%;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+	color: #ecf0f1;
+}
+.wheel .sWheel>.sWheel-txt-wrap,
+.wheel .sWheel>.sWheel-bg-layer {
+	-webkit-transform: rotate(-90deg);
+	        transform: rotate(-90deg);
+}
+.wheel .sWheel .sWheel-child .sWheel-inside{
+    display: table;
+	-webkit-transform: rotate(0) skew(-45deg);
+	        transform: rotate(0) skew(-45deg);
+    width: 50%;
+    height: 50%;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    text-align: right;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    overflow: hidden;
+}
+.wheel .sWheel .sWheel-child .sWheel-inside> div {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+    -webkit-transform-origin: 115% 25%;
+            transform-origin: 115% 25%;
+    padding-right: 40px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.wheel .sWheel>.sWheel-bg-layer>div {
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	height: 100%;
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+	border: 1px solid transparent;
+	background-color: #404040;
+}
+.wheel .sWheel>.sWheel-bg-layer>div:nth-child(odd){
+	background-color: #616161;
+}
+.wheel .sWheel>.sWheel-txt-wrap>.sWheel-txt>div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	/*overflow: hidden;*/
+	line-height: 1.2em;
+	max-height: 23.4em;
+	text-align: right;
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 1px;
+	width: 50%;
+	padding-right: 6%;
+	font-weight: bold;
+	font-size: 100%;
+	cursor: default;
+	color: #fff;
+	text-align: right;
+}
+.wheel .sWheel>.sWheel-txt-wrap>.sWheel-txt>div img{
+    max-width: 40%;
+}
+.wheel .sWheel-center {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+	text-align: center;
+}
+.wheel .sWheel-center>.sw-center-empty,
+.wheel .sWheel-center>.sw-center-html {
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+	z-index: 2;
+}
+.wheel .sWheel-center>.sw-center-empty{
+	position: absolute;
+}
+.wheel .sWheel-center>img{
+    max-width: 100%;
+    width: 200px;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.wheel .sWheel-center>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent !important;
+}
+.wheel .sWheel-marker {
+      border-spacing: 90px;
+      width: 16%;
+      height: 8%;
+      position: absolute;
+      left: 50%;
+      top: -12%;
+      margin-top: 7%;
+      margin-left: -8%;
+      -webkit-transition: 0.2 rotate linear;
+      transition: 0.2 rotate linear;
+      z-index: 1;
+      display: block;
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      -webkit-transform-origin: 50% 35%;
+              transform-origin: 50% 35%;
+}
+.wheel .sWheel-marker>svg {
+    height: 100%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+.wheel .rotate{
+	-webkit-transform: rotate(100deg);
+	        transform: rotate(100deg);
+}
+.sWheel>.sWheel-bg-layer>svg {
+	margin: 0 auto;
+	border-radius: 50%;
+	display: block;
+	width: 100%;
+    height: 100%;
+	-webkit-transform: rotate(0deg);
+	        transform: rotate(0deg);
+}
+@-webkit-keyframes animateColor {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes animateColor {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

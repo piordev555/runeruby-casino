@@ -1,0 +1,60 @@
+// 
+// accordions.scss
+//
+
+.custom-accordionwitharrow {
+    .card {
+        +.card {
+            margin-top: 0.5rem;
+        }
+        .card-header{
+            background-color: transparent;
+        }
+    }
+
+    .accordion-arrow {
+        font-size: 1.2rem;
+    }
+
+    a {
+        &.collapsed {
+            i.accordion-arrow {
+                &:before {
+                    content: "\e831";
+                }
+            }
+        }
+    }
+}
+
+// Custom Accordion
+
+.custom-accordion {
+    .card {
+        overflow: visible;
+        border-color: transparent !important;
+        border-left: 2px dashed $gray-300 !important;
+        box-shadow: none;
+        padding-left: 40px;
+
+        .card-header {
+            border-radius: 7px !important;
+
+            &:before {
+                content: "";
+                position: absolute;
+                left: 6px;
+                top: 22px;
+                width: 42px;
+                height: 2px;
+                background: $gray-300;
+            }
+        }
+
+        .icon {
+            position: absolute;
+            left: -18px;
+            top: -2px;
+        }
+    }
+}

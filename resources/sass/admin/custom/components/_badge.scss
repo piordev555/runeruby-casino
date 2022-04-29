@@ -1,0 +1,19 @@
+// 
+// badge.scss
+//
+.badge-soft {
+    color: $gray-800;
+}
+
+// badge soft
+
+@mixin badge-soft-variant($bg) {
+    background-color: rgba($bg, 0.2);
+    color: $bg !important;
+}
+
+@each $color, $value in $theme-colors {
+    .badge-soft-#{$color} {
+      @include badge-soft-variant($value);
+    }
+}

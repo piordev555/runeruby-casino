@@ -1,0 +1,64 @@
+//
+// authentication.scss
+//
+
+// authentication pages background
+body {
+    &.authentication-bg {
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 0;
+    }
+}
+
+
+.authentication-form {
+    .form-group {
+        .input-group-text {
+            background-color: transparent;
+
+            svg {
+                height: 22px;
+                width: 22px;
+            }
+        }
+    }
+}
+
+.icon-fb {
+    color: #3c5a98;
+}
+
+.icon-google {
+    color: #e94134;
+}
+
+.auth-page-sidebar {
+    padding: 0;
+    background-image: url('../../../../sass/admin/custom/images/auth-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+
+    .overlay {
+        flex: 1;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba($black,.4);
+    }
+
+    .auth-user-testimonial {
+        text-align: center;
+        color: $white;
+        position: absolute;
+        margin: 0 auto;
+        padding: 0 1.75rem;
+        bottom: 3rem;
+        left: 0;
+        right: 0;
+    }
+}

@@ -1,0 +1,71 @@
+// 
+// layouts.scss
+//
+
+// scrollable-layout
+
+@include media-breakpoint-up(xl) {
+.scrollable-layout{
+    padding-bottom: 0;
+    #wrapper {
+        display: flex;
+    }
+
+    .left-side-menu{
+        position: relative;
+        min-width: 250px;
+        min-height: 100vh;
+    }
+
+    .navbar-custom {
+        position: absolute;
+    }
+
+    .content-page {
+        margin-left: 0;
+        width: 100%;
+        padding-bottom: 60px;
+    }
+
+    &.left-side-menu-condensed{
+        .left-side-menu{
+            min-width: 70px;
+        }
+        .content-page {
+            margin-left: 0px!important;
+        }
+    }
+}
+
+}
+
+// boxed-layout
+
+.boxed-layout {
+    background: darken($body-bg, 2%);
+
+    #wrapper {
+        max-width: $boxed-layout-width;
+        margin: 0 auto;
+        box-shadow: $box-shadow;
+        background: $body-bg;
+    }
+
+    .navbar-custom {
+        max-width: $boxed-layout-width;
+        margin: 0 auto;
+    }
+
+    .footer {
+        margin: 0 auto;
+        max-width: calc(#{$boxed-layout-width} - #{$leftbar-width});
+        background: $body-bg;
+    }
+
+    &.left-side-menu-condensed {
+        min-height: auto;
+        .footer {
+            max-width: calc(#{$boxed-layout-width} - #{$leftbar-width-collapsed});
+        }
+    }
+}

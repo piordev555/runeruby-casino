@@ -1,0 +1,123 @@
+{
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "repositories": [{
+        "type": "package",
+        "package": {
+            "version": "dev-master",
+            "name": "win5x/lightopenid",
+            "source": {
+                "url": "https://github.com/RuneRuby-Team/LightOpenID.git",
+                "type": "git",
+                "reference": "master"
+            },
+            "autoload": {
+                "classmap": ["openid.php", "provider/provider.php"]
+            }
+        }
+    }],
+    "require": {
+        "php": "^7.4",
+        "ext-curl": "*",
+        "ext-gmp": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-mongodb": "*",
+        "ext-openssl": "*",
+        "ext-zip": "*",
+        "arcanedev/log-viewer": "^7.0",
+        "arielmejiadev/larapex-charts": "^1.0",
+        "clue/redis-react": "2.3",
+        "codenix-sv/coingecko-api": "^1.0",
+        "coinpaymentsnet/coinpayments-php": "^1.4",
+        "digitaldonkey/ethereum-php": "dev-master",
+        "fideloper/proxy": "^4.2",
+        "fruitcake/laravel-cors": "^1.0",
+        "furqansiddiqui/erc20-php": "^0.1.4",
+        "fzaninotto/faker": "^1.9.1",
+        "gburtini/distributions": "^0.0.2",
+        "geoip2/geoip2": "^2.10",
+        "guzzlehttp/guzzle": "^6.3",
+        "iexbase/tron-api": "^2.0",
+        "intervention/image": "^2.5",
+        "jakobo/hotp-php": "^1.0",
+        "jdenticon/jdenticon": "^1.0",
+        "jenssegers/mongodb": "dev-develop",
+        "laravel-notification-channels/discord": "^1.1",
+        "laravel-notification-channels/webpush": "^5.0",
+        "laravel/framework": "^7.0",
+        "laravel/sanctum": "^2.6",
+        "laravel/tinker": "^2.0",
+        "laravel/ui": "^2.0",
+        "maennchen/zipstream-php": "^2.0",
+        "mbezhanov/ethereum-converter": "^1.0",
+        "morrislaptop/laravel-queue-clear": "^1.2",
+        "nbobtc/bitcoind-php": "^2.1",
+        "neto737/bitgosdk-php": "^2.2",
+        "paypal/paypal-checkout-sdk": "^1.0",
+        "pragmarx/tracker": "^4.0",
+        "predis/predis": "^1.1",
+        "pusher/pusher-php-server": "~3.0",
+        "qoraiche/laravel-mail-editor": "^2.0",
+        "robthree/twofactorauth": "^1.7",
+        "sc0vu/web3.php": "dev-master",
+        "spatie/async": "^1.4",
+        "spatie/laravel-analytics": "^3.9",
+        "stripe/stripe-php": "^7.44",
+        "torann/geoip": "^1.2",
+        "vkcom/vk-php-sdk": "^5.101",
+        "web3p/ethereum-tx": "^0.4.0",
+        "win5x/lightopenid": "dev-master"
+    },
+    "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.3",
+        "facade/ignition": "^2.0",
+        "mockery/mockery": "^1.3.1",
+        "nunomaduro/collision": "^4.1",
+        "phpunit/phpunit": "^8.5"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    }
+}

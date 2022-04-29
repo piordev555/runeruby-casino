@@ -1,0 +1,61 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    RewriteCond %{REQUEST_URI}  ^/socket.io            [NC]
+    RewriteCond %{QUERY_STRING} transport=websocket    [NC]
+    RewriteRule /(.*)           ws://localhost:8443/$1 [P,L]
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Send Requests To Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+
+    # prevents the rule from being overrided by .htaccess files in subdirectories
+    RewriteOptions InheritDownBefore
+
+    # provide a URL-path base (not a file-path base) for any relative paths in the rule's target
+    RewriteBase /
+
+    # GZIP
+    ## allows you to have certain browsers uncompress information on the fly
+    AddEncoding gzip .gz
+    ## serve gzip .css files if they exist and the client accepts gzip
+    RewriteCond %{HTTP:Accept-encoding} gzip
+    RewriteCond %{REQUEST_FILENAME}\.gz -s
+    RewriteRule ^(.*)\.css $1\.css\.gz [QSA]
+    ## serve gzip .js files if they exist and the client accepts gzip
+    RewriteCond %{HTTP:Accept-encoding} gzip
+    RewriteCond %{REQUEST_FILENAME}\.gz -s
+    RewriteRule ^(.*)\.js $1\.js\.gz [QSA]
+    ## serve gzip .html files if they exist and the client accepts gzip
+    RewriteCond %{HTTP:Accept-encoding} gzip
+    RewriteCond %{REQUEST_FILENAME}\.gz -s
+    RewriteRule ^(.*)\.html $1\.html\.gz [QSA]
+    ## serve correct content types, and prevent mod_deflate double gzip
+    RewriteRule \.css\.gz$ - [T=text/css,E=no-gzip:1,E=is_gzip:1]
+    RewriteRule \.js\.gz$ - [T=text/javascript,E=no-gzip:1,E=is_gzip:1]
+    RewriteRule \.html\.gz$ - [T=text/html,E=no-gzip:1,E=is_gzip:1]
+    Header set Content-Encoding "gzip" env=is_gzip
+
+    <FilesMatch ".(flv|gif|jpg|jpeg|png|ico|swf|js|css|pdf)$">
+      Header set Cache-Control "max-age=31536000"
+    </FilesMatch>
+
+    <IfModule mod_expires.c>
+        ExpiresActive On
+        ExpiresDefault "access plus 1 year"
+    </IfModule>
+</IfModule>

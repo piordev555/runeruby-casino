@@ -1,0 +1,32 @@
+// 
+// taskboard.scss
+//
+
+.tasklist {
+    min-height: 40px;
+    margin-bottom: 0;
+    > li {
+      background-color: $card-bg;
+      box-shadow: $box-shadow-sm;
+      padding: 20px;
+      margin-bottom: 24px;
+      border-radius: 7px;
+      &:last-of-type {
+        margin-bottom: 0;
+        .btn-sm {
+          padding: 2px 8px;
+          font-size: 12px;
+        }
+      }
+    }
+  
+}
+
+
+
+.task-placeholder {
+  border: 1px dashed $gray-300 !important;
+  background-color: $card-bg !important;
+  padding: 20px;
+  box-shadow: none !important;
+}

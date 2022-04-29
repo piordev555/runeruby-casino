@@ -1,0 +1,74 @@
+$container-max-widths: (
+    md: 720px,
+    lg: 960px,
+    xl: 1228px
+);
+
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints";
+@import "polyfills";
+@import "themes";
+
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+$input-btn-focus-box-shadow: none;
+$btn-focus-box-shadow: none;
+$input-btn-focus-width: 0;
+
+$sidebar-width: 50px;
+$header-height: 73px;
+$chat-width: 300px;
+
+@mixin blur($color, $opacity, $unsupportedOpacity, $blur) {
+    background-color: rgba($color, $unsupportedOpacity);
+    @supports ((-webkit-backdrop-filter: blur($blur)) or (backdrop-filter: blur($blur))) {
+        background-color: rgba($color, $opacity) !important;
+        -webkit-backdrop-filter: blur($blur);
+        backdrop-filter: blur($blur);
+    }
+}
+
+.text-success {
+    @include themed() {
+        color: t('green') !important;
+    }
+}
+
+.text-danger {
+    @include themed() {
+        color: t('red') !important;
+    }
+}
+
+.text-primary {
+    @include themed() {
+        color: t('secondary') !important;
+    }
+}
+
+.bg-success {
+    @include themed() {
+        background: t('green') !important;
+    }
+}
+
+.bg-danger {
+    @include themed() {
+        background: t('red') !important;
+    }
+}
+
+.primary {
+    @include themed() {
+        fill: t('text');
+    }
+}
+
+.secondary {
+    @include themed() {
+        fill: t('secondary');
+    }
+}
