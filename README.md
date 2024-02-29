@@ -1,5 +1,4 @@
-# Runeruby-casino
-![Screenshot_1](https://user-images.githubusercontent.com/103172597/165888849-8a99ae94-47eb-4c5a-8f29-9cdadc2a2ef9.png)
+#casino
 
 # Installation
 
